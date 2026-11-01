@@ -1,0 +1,16 @@
+{
+  "pass": true,
+  "engine": "weighted-webgl-mesh",
+  "checks": [
+    "five categories",
+    "four-column wardrobe",
+    "type filtering",
+    "full-body mesh preview",
+    "visible animated pixels",
+    "pause and resume",
+    "outfit paging",
+    "renderer cleanup",
+    "return to phone navigation"
+  ],
+  "errors": []
+}

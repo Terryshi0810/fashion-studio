@@ -1,0 +1,19 @@
+{
+  "pass": true,
+  "checks": [
+    "five desktop views",
+    "five mobile views",
+    "320px no overflow",
+    "map renovation",
+    "click merge",
+    "generator cost",
+    "order delivery",
+    "shop stock",
+    "free energy",
+    "catalog reward once",
+    "contest scoring and reward",
+    "reload persistence",
+    "pointer drag"
+  ],
+  "errors": []
+}

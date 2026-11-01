@@ -1,0 +1,19 @@
+name: Feature request
+description: 提议新功能或体验改进
+title: "[Feature] "
+labels: [feature]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: 目标
+      description: 这个功能要解决什么问题？
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 验收标准
+      description: 完成后如何确认它已经实现？
+    validations:
+      required: true

@@ -1,0 +1,1244 @@
+{
+  "pass": true,
+  "report": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "frame": {
+        "x": 505,
+        "y": 50,
+        "width": 430,
+        "height": 900
+      },
+      "geometry": [
+        {
+          "view": "map",
+          "overflow": false,
+          "main": {
+            "x": 512,
+            "y": 115,
+            "width": 416,
+            "height": 756,
+            "bottom": 871
+          },
+          "nav": {
+            "x": 512,
+            "y": 871,
+            "width": 416,
+            "height": 72,
+            "bottom": 943
+          },
+          "hud": {
+            "x": 512,
+            "y": 57,
+            "width": 416,
+            "height": 58,
+            "bottom": 115
+          },
+          "board": null,
+          "generators": null,
+          "task": {
+            "x": 535,
+            "y": 788.875,
+            "width": 370,
+            "height": 64,
+            "bottom": 852.875
+          },
+          "columns": "1fr"
+        },
+        {
+          "view": "work",
+          "overflow": false,
+          "main": {
+            "x": 512,
+            "y": 115,
+            "width": 416,
+            "height": 756,
+            "bottom": 871
+          },
+          "nav": {
+            "x": 512,
+            "y": 871,
+            "width": 416,
+            "height": 72,
+            "bottom": 943
+          },
+          "hud": {
+            "x": 512,
+            "y": 57,
+            "width": 416,
+            "height": 58,
+            "bottom": 115
+          },
+          "board": {
+            "x": 530,
+            "y": 341.875,
+            "width": 380,
+            "height": 372.875,
+            "bottom": 714.75
+          },
+          "generators": {
+            "x": 524,
+            "y": 726.75,
+            "width": 392,
+            "height": 56.5,
+            "bottom": 783.25
+          },
+          "task": null,
+          "columns": "1fr"
+        },
+        {
+          "view": "shop",
+          "overflow": false,
+          "main": {
+            "x": 512,
+            "y": 115,
+            "width": 416,
+            "height": 756,
+            "bottom": 871
+          },
+          "nav": {
+            "x": 512,
+            "y": 871,
+            "width": 416,
+            "height": 72,
+            "bottom": 943
+          },
+          "hud": {
+            "x": 512,
+            "y": 57,
+            "width": 416,
+            "height": 58,
+            "bottom": 115
+          },
+          "board": null,
+          "generators": null,
+          "task": null,
+          "columns": "190px 190px"
+        },
+        {
+          "view": "catalog",
+          "overflow": false,
+          "main": {
+            "x": 512,
+            "y": 115,
+            "width": 416,
+            "height": 756,
+            "bottom": 871
+          },
+          "nav": {
+            "x": 512,
+            "y": 871,
+            "width": 416,
+            "height": 72,
+            "bottom": 943
+          },
+          "hud": {
+            "x": 512,
+            "y": 57,
+            "width": 416,
+            "height": 58,
+            "bottom": 115
+          },
+          "board": null,
+          "generators": null,
+          "task": null,
+          "columns": "124.656px 124.672px 124.656px"
+        },
+        {
+          "view": "contest",
+          "overflow": false,
+          "main": {
+            "x": 512,
+            "y": 115,
+            "width": 416,
+            "height": 756,
+            "bottom": 871
+          },
+          "nav": {
+            "x": 512,
+            "y": 871,
+            "width": 416,
+            "height": 72,
+            "bottom": 943
+          },
+          "hud": {
+            "x": 512,
+            "y": 57,
+            "width": 416,
+            "height": 58,
+            "bottom": 115
+          },
+          "board": null,
+          "generators": null,
+          "task": null,
+          "columns": "1fr"
+        }
+      ],
+      "errors": [],
+      "network": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "geometry": [
+        {
+          "view": "map",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 58,
+            "width": 390,
+            "height": 714,
+            "bottom": 772
+          },
+          "nav": {
+            "x": 0,
+            "y": 772,
+            "width": 390,
+            "height": 72,
+            "bottom": 844
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 58,
+            "bottom": 58
+          },
+          "board": null,
+          "generators": null,
+          "task": {
+            "x": 23,
+            "y": 675.875,
+            "width": 344,
+            "height": 64,
+            "bottom": 739.875
+          },
+          "columns": "1fr"
+        },
+        {
+          "view": "work",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 58,
+            "width": 390,
+            "height": 714,
+            "bottom": 772
+          },
+          "nav": {
+            "x": 0,
+            "y": 772,
+            "width": 390,
+            "height": 72,
+            "bottom": 844
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 58,
+            "bottom": 58
+          },
+          "board": {
+            "x": 12,
+            "y": 284.875,
+            "width": 366,
+            "height": 360.125,
+            "bottom": 645
+          },
+          "generators": {
+            "x": 12,
+            "y": 657,
+            "width": 366,
+            "height": 56.5,
+            "bottom": 713.5
+          },
+          "task": null,
+          "columns": "1fr"
+        },
+        {
+          "view": "shop",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 58,
+            "width": 390,
+            "height": 714,
+            "bottom": 772
+          },
+          "nav": {
+            "x": 0,
+            "y": 772,
+            "width": 390,
+            "height": 72,
+            "bottom": 844
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 58,
+            "bottom": 58
+          },
+          "board": null,
+          "generators": null,
+          "task": null,
+          "columns": "177px 177px"
+        },
+        {
+          "view": "catalog",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 58,
+            "width": 390,
+            "height": 714,
+            "bottom": 772
+          },
+          "nav": {
+            "x": 0,
+            "y": 772,
+            "width": 390,
+            "height": 72,
+            "bottom": 844
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 58,
+            "bottom": 58
+          },
+          "board": null,
+          "generators": null,
+          "task": null,
+          "columns": "116px 116px 116px"
+        },
+        {
+          "view": "contest",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 58,
+            "width": 390,
+            "height": 714,
+            "bottom": 772
+          },
+          "nav": {
+            "x": 0,
+            "y": 772,
+            "width": 390,
+            "height": 72,
+            "bottom": 844
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 58,
+            "bottom": 58
+          },
+          "board": null,
+          "generators": null,
+          "task": null,
+          "columns": "1fr"
+        }
+      ],
+      "errors": [],
+      "network": []
+    },
+    {
+      "width": 375,
+      "height": 667,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 667
+      },
+      "geometry": [
+        {
+          "view": "map",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 54,
+            "width": 375,
+            "height": 547,
+            "bottom": 601
+          },
+          "nav": {
+            "x": 0,
+            "y": 601,
+            "width": 375,
+            "height": 66,
+            "bottom": 667
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 375,
+            "height": 54,
+            "bottom": 54
+          },
+          "board": null,
+          "generators": null,
+          "task": {
+            "x": 23,
+            "y": 506.875,
+            "width": 329,
+            "height": 64,
+            "bottom": 570.875
+          },
+          "columns": "1fr"
+        },
+        {
+          "view": "work",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 54,
+            "width": 375,
+            "height": 547,
+            "bottom": 601
+          },
+          "nav": {
+            "x": 0,
+            "y": 601,
+            "width": 375,
+            "height": 66,
+            "bottom": 667
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 375,
+            "height": 54,
+            "bottom": 54
+          },
+          "board": {
+            "x": 50,
+            "y": 251.1875,
+            "width": 275,
+            "height": 277.4375,
+            "bottom": 528.625
+          },
+          "generators": {
+            "x": 12,
+            "y": 538.625,
+            "width": 351,
+            "height": 56.5,
+            "bottom": 595.125
+          },
+          "task": null,
+          "columns": "1fr"
+        },
+        {
+          "view": "shop",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 54,
+            "width": 375,
+            "height": 547,
+            "bottom": 601
+          },
+          "nav": {
+            "x": 0,
+            "y": 601,
+            "width": 375,
+            "height": 66,
+            "bottom": 667
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 375,
+            "height": 54,
+            "bottom": 54
+          },
+          "board": null,
+          "generators": null,
+          "task": null,
+          "columns": "169.5px 169.5px"
+        },
+        {
+          "view": "catalog",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 54,
+            "width": 375,
+            "height": 547,
+            "bottom": 601
+          },
+          "nav": {
+            "x": 0,
+            "y": 601,
+            "width": 375,
+            "height": 66,
+            "bottom": 667
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 375,
+            "height": 54,
+            "bottom": 54
+          },
+          "board": null,
+          "generators": null,
+          "task": null,
+          "columns": "111px 111px 111px"
+        },
+        {
+          "view": "contest",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 54,
+            "width": 375,
+            "height": 547,
+            "bottom": 601
+          },
+          "nav": {
+            "x": 0,
+            "y": 601,
+            "width": 375,
+            "height": 66,
+            "bottom": 667
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 375,
+            "height": 54,
+            "bottom": 54
+          },
+          "board": null,
+          "generators": null,
+          "task": null,
+          "columns": "1fr"
+        }
+      ],
+      "errors": [],
+      "network": []
+    },
+    {
+      "width": 360,
+      "height": 720,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 360,
+        "height": 720
+      },
+      "geometry": [
+        {
+          "view": "map",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 58,
+            "width": 360,
+            "height": 590,
+            "bottom": 648
+          },
+          "nav": {
+            "x": 0,
+            "y": 648,
+            "width": 360,
+            "height": 72,
+            "bottom": 720
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 360,
+            "height": 58,
+            "bottom": 58
+          },
+          "board": null,
+          "generators": null,
+          "task": {
+            "x": 23,
+            "y": 551.875,
+            "width": 314,
+            "height": 64,
+            "bottom": 615.875
+          },
+          "columns": "1fr"
+        },
+        {
+          "view": "work",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 58,
+            "width": 360,
+            "height": 590,
+            "bottom": 648
+          },
+          "nav": {
+            "x": 0,
+            "y": 648,
+            "width": 360,
+            "height": 72,
+            "bottom": 720
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 360,
+            "height": 58,
+            "bottom": 58
+          },
+          "board": {
+            "x": 12,
+            "y": 284.875,
+            "width": 336,
+            "height": 332.9375,
+            "bottom": 617.8125
+          },
+          "generators": {
+            "x": 12,
+            "y": 629.8125,
+            "width": 336,
+            "height": 56.5,
+            "bottom": 686.3125
+          },
+          "task": null,
+          "columns": "1fr"
+        },
+        {
+          "view": "shop",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 58,
+            "width": 360,
+            "height": 590,
+            "bottom": 648
+          },
+          "nav": {
+            "x": 0,
+            "y": 648,
+            "width": 360,
+            "height": 72,
+            "bottom": 720
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 360,
+            "height": 58,
+            "bottom": 58
+          },
+          "board": null,
+          "generators": null,
+          "task": null,
+          "columns": "162px 162px"
+        },
+        {
+          "view": "catalog",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 58,
+            "width": 360,
+            "height": 590,
+            "bottom": 648
+          },
+          "nav": {
+            "x": 0,
+            "y": 648,
+            "width": 360,
+            "height": 72,
+            "bottom": 720
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 360,
+            "height": 58,
+            "bottom": 58
+          },
+          "board": null,
+          "generators": null,
+          "task": null,
+          "columns": "106px 106px 106px"
+        },
+        {
+          "view": "contest",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 58,
+            "width": 360,
+            "height": 590,
+            "bottom": 648
+          },
+          "nav": {
+            "x": 0,
+            "y": 648,
+            "width": 360,
+            "height": 72,
+            "bottom": 720
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 360,
+            "height": 58,
+            "bottom": 58
+          },
+          "board": null,
+          "generators": null,
+          "task": null,
+          "columns": "1fr"
+        }
+      ],
+      "errors": [],
+      "network": []
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 568
+      },
+      "geometry": [
+        {
+          "view": "map",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 54,
+            "width": 320,
+            "height": 448,
+            "bottom": 502
+          },
+          "nav": {
+            "x": 0,
+            "y": 502,
+            "width": 320,
+            "height": 66,
+            "bottom": 568
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 54,
+            "bottom": 54
+          },
+          "board": null,
+          "generators": null,
+          "task": {
+            "x": 23,
+            "y": 450.390625,
+            "width": 274,
+            "height": 64,
+            "bottom": 514.390625
+          },
+          "columns": "1fr"
+        },
+        {
+          "view": "work",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 54,
+            "width": 320,
+            "height": 448,
+            "bottom": 502
+          },
+          "nav": {
+            "x": 0,
+            "y": 502,
+            "width": 320,
+            "height": 66,
+            "bottom": 568
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 54,
+            "bottom": 54
+          },
+          "board": {
+            "x": 26,
+            "y": 327.5,
+            "width": 268,
+            "height": 271.0625,
+            "bottom": 598.5625
+          },
+          "generators": {
+            "x": 12,
+            "y": 251,
+            "width": 296,
+            "height": 64.5,
+            "bottom": 315.5
+          },
+          "task": null,
+          "columns": "1fr"
+        },
+        {
+          "view": "shop",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 54,
+            "width": 320,
+            "height": 448,
+            "bottom": 502
+          },
+          "nav": {
+            "x": 0,
+            "y": 502,
+            "width": 320,
+            "height": 66,
+            "bottom": 568
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 54,
+            "bottom": 54
+          },
+          "board": null,
+          "generators": null,
+          "task": null,
+          "columns": "142px 142px"
+        },
+        {
+          "view": "catalog",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 54,
+            "width": 320,
+            "height": 448,
+            "bottom": 502
+          },
+          "nav": {
+            "x": 0,
+            "y": 502,
+            "width": 320,
+            "height": 66,
+            "bottom": 568
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 54,
+            "bottom": 54
+          },
+          "board": null,
+          "generators": null,
+          "task": null,
+          "columns": "92.6562px 92.6719px 92.6562px"
+        },
+        {
+          "view": "contest",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 54,
+            "width": 320,
+            "height": 448,
+            "bottom": 502
+          },
+          "nav": {
+            "x": 0,
+            "y": 502,
+            "width": 320,
+            "height": 66,
+            "bottom": 568
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 54,
+            "bottom": 54
+          },
+          "board": null,
+          "generators": null,
+          "task": null,
+          "columns": "1fr"
+        }
+      ],
+      "errors": [],
+      "network": []
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 430,
+        "height": 932
+      },
+      "geometry": [
+        {
+          "view": "map",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 58,
+            "width": 430,
+            "height": 802,
+            "bottom": 860
+          },
+          "nav": {
+            "x": 0,
+            "y": 860,
+            "width": 430,
+            "height": 72,
+            "bottom": 932
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 58,
+            "bottom": 58
+          },
+          "board": null,
+          "generators": null,
+          "task": {
+            "x": 23,
+            "y": 731.875,
+            "width": 384,
+            "height": 64,
+            "bottom": 795.875
+          },
+          "columns": "1fr"
+        },
+        {
+          "view": "work",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 58,
+            "width": 430,
+            "height": 802,
+            "bottom": 860
+          },
+          "nav": {
+            "x": 0,
+            "y": 860,
+            "width": 430,
+            "height": 72,
+            "bottom": 932
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 58,
+            "bottom": 58
+          },
+          "board": {
+            "x": 25,
+            "y": 284.875,
+            "width": 380,
+            "height": 372.875,
+            "bottom": 657.75
+          },
+          "generators": {
+            "x": 12,
+            "y": 669.75,
+            "width": 406,
+            "height": 56.5,
+            "bottom": 726.25
+          },
+          "task": null,
+          "columns": "1fr"
+        },
+        {
+          "view": "shop",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 58,
+            "width": 430,
+            "height": 802,
+            "bottom": 860
+          },
+          "nav": {
+            "x": 0,
+            "y": 860,
+            "width": 430,
+            "height": 72,
+            "bottom": 932
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 58,
+            "bottom": 58
+          },
+          "board": null,
+          "generators": null,
+          "task": null,
+          "columns": "197px 197px"
+        },
+        {
+          "view": "catalog",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 58,
+            "width": 430,
+            "height": 802,
+            "bottom": 860
+          },
+          "nav": {
+            "x": 0,
+            "y": 860,
+            "width": 430,
+            "height": 72,
+            "bottom": 932
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 58,
+            "bottom": 58
+          },
+          "board": null,
+          "generators": null,
+          "task": null,
+          "columns": "129.328px 129.328px 129.328px"
+        },
+        {
+          "view": "contest",
+          "overflow": false,
+          "main": {
+            "x": 0,
+            "y": 58,
+            "width": 430,
+            "height": 802,
+            "bottom": 860
+          },
+          "nav": {
+            "x": 0,
+            "y": 860,
+            "width": 430,
+            "height": 72,
+            "bottom": 932
+          },
+          "hud": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 58,
+            "bottom": 58
+          },
+          "board": null,
+          "generators": null,
+          "task": null,
+          "columns": "1fr"
+        }
+      ],
+      "errors": [],
+      "network": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "frame": {
+        "x": 169,
+        "y": 62,
+        "width": 430,
+        "height": 900
+      },
+      "geometry": [
+        {
+          "view": "map",
+          "overflow": false,
+          "main": {
+            "x": 176,
+            "y": 127,
+            "width": 416,
+            "height": 756,
+            "bottom": 883
+          },
+          "nav": {
+            "x": 176,
+            "y": 883,
+            "width": 416,
+            "height": 72,
+            "bottom": 955
+          },
+          "hud": {
+            "x": 176,
+            "y": 69,
+            "width": 416,
+            "height": 58,
+            "bottom": 127
+          },
+          "board": null,
+          "generators": null,
+          "task": {
+            "x": 199,
+            "y": 800.875,
+            "width": 370,
+            "height": 64,
+            "bottom": 864.875
+          },
+          "columns": "1fr"
+        },
+        {
+          "view": "work",
+          "overflow": false,
+          "main": {
+            "x": 176,
+            "y": 127,
+            "width": 416,
+            "height": 756,
+            "bottom": 883
+          },
+          "nav": {
+            "x": 176,
+            "y": 883,
+            "width": 416,
+            "height": 72,
+            "bottom": 955
+          },
+          "hud": {
+            "x": 176,
+            "y": 69,
+            "width": 416,
+            "height": 58,
+            "bottom": 127
+          },
+          "board": {
+            "x": 194,
+            "y": 353.875,
+            "width": 380,
+            "height": 372.875,
+            "bottom": 726.75
+          },
+          "generators": {
+            "x": 188,
+            "y": 738.75,
+            "width": 392,
+            "height": 56.5,
+            "bottom": 795.25
+          },
+          "task": null,
+          "columns": "1fr"
+        },
+        {
+          "view": "shop",
+          "overflow": false,
+          "main": {
+            "x": 176,
+            "y": 127,
+            "width": 416,
+            "height": 756,
+            "bottom": 883
+          },
+          "nav": {
+            "x": 176,
+            "y": 883,
+            "width": 416,
+            "height": 72,
+            "bottom": 955
+          },
+          "hud": {
+            "x": 176,
+            "y": 69,
+            "width": 416,
+            "height": 58,
+            "bottom": 127
+          },
+          "board": null,
+          "generators": null,
+          "task": null,
+          "columns": "190px 190px"
+        },
+        {
+          "view": "catalog",
+          "overflow": false,
+          "main": {
+            "x": 176,
+            "y": 127,
+            "width": 416,
+            "height": 756,
+            "bottom": 883
+          },
+          "nav": {
+            "x": 176,
+            "y": 883,
+            "width": 416,
+            "height": 72,
+            "bottom": 955
+          },
+          "hud": {
+            "x": 176,
+            "y": 69,
+            "width": 416,
+            "height": 58,
+            "bottom": 127
+          },
+          "board": null,
+          "generators": null,
+          "task": null,
+          "columns": "124.656px 124.672px 124.656px"
+        },
+        {
+          "view": "contest",
+          "overflow": false,
+          "main": {
+            "x": 176,
+            "y": 127,
+            "width": 416,
+            "height": 756,
+            "bottom": 883
+          },
+          "nav": {
+            "x": 176,
+            "y": 883,
+            "width": 416,
+            "height": 72,
+            "bottom": 955
+          },
+          "hud": {
+            "x": 176,
+            "y": 69,
+            "width": 416,
+            "height": 58,
+            "bottom": 127
+          },
+          "board": null,
+          "generators": null,
+          "task": null,
+          "columns": "1fr"
+        }
+      ],
+      "errors": [],
+      "network": []
+    }
+  ]
+}

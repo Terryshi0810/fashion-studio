@@ -1,0 +1,45 @@
+{
+  "pass": true,
+  "checks": [
+    "one-time item reward",
+    "one-time set reward",
+    "one-time rating reward",
+    "fragment acquisition",
+    "unobtained try-on",
+    "explicit demo confirmation",
+    "unchanged workbench inventory",
+    "reload persistence",
+    "25 real catalog entries",
+    "five real outfits",
+    "four-column mobile grid",
+    "five display sizes",
+    "no network",
+    "reduced motion",
+    "renderer cleanup",
+    "real Spine distinction"
+  ],
+  "report": [
+    {
+      "width": 320,
+      "height": 568,
+      "pass": true
+    },
+    {
+      "width": 375,
+      "height": 667,
+      "pass": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "network": []
+}

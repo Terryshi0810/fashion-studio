@@ -1,0 +1,20 @@
+{
+  "pass": true,
+  "checks": [
+    "true touch merge",
+    "two-tap placement",
+    "generator energy",
+    "order delivery",
+    "daily gift and energy",
+    "shop purchase",
+    "one-time catalog rewards",
+    "contest scoring and reward",
+    "decorations",
+    "six floor unlock",
+    "reload persistence",
+    "internal scrolling",
+    "fixed phone navigation",
+    "short-screen sticky generators"
+  ],
+  "errors": []
+}

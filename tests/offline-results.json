@@ -1,0 +1,17 @@
+{
+  "pass": true,
+  "checks": [
+    "offline file opening",
+    "all artwork embedded",
+    "no network requests",
+    "real touch merge",
+    "decoration purchase and application",
+    "advanced mode confirmation",
+    "all six floors unlock",
+    "reset confirmation is non-destructive",
+    "ESC modal dismissal",
+    "five mobile views"
+  ],
+  "errors": [],
+  "network": []
+}

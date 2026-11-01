@@ -1,0 +1,1 @@
+{"name":"fashion-studio-demo","version":"0.2.0","private":true,"description":"时光百货可交互试玩","scripts":{"start":"node server.js","test":"node --test tests/core.test.js","build":"node build-standalone.js"}}
