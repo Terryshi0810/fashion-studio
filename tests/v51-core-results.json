@@ -1,0 +1,69 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "name": "Fresh board: three reserved producers and four unit materials",
+      "pass": true
+    },
+    {
+      "name": "Producer output: nearest empty tile, one charge per item, no overwrite",
+      "pass": true
+    },
+    {
+      "name": "Locked shoe and accessory producers explain unlock and spend nothing",
+      "pass": true
+    },
+    {
+      "name": "Unlock gates follow mall progression; separate chain costs",
+      "pass": true
+    },
+    {
+      "name": "Full board production rolls back without energy loss",
+      "pass": true
+    },
+    {
+      "name": "Insufficient energy and batch shortage are atomic",
+      "pass": true
+    },
+    {
+      "name": "Two identical items merge, release source and conserve tier weight",
+      "pass": true
+    },
+    {
+      "name": "Different items swap; maximum tier never disappears",
+      "pass": true
+    },
+    {
+      "name": "Producer relocation swaps material and remains reserved through sorting",
+      "pass": true
+    },
+    {
+      "name": "Material cannot overwrite or recycle a producer",
+      "pass": true
+    },
+    {
+      "name": "First milestone rewards and recurring rounds are granted once",
+      "pass": true
+    },
+    {
+      "name": "Legacy full stacked board: every item retained, trays counted, migration idempotent",
+      "pass": true
+    },
+    {
+      "name": "Tray retrieval fills one empty tile; full tray retrieval leaves stock untouched",
+      "pass": true
+    },
+    {
+      "name": "Research consumes legacy tray materials and preserves mall/order progress",
+      "pass": true
+    },
+    {
+      "name": "Randomized drag, production and sorting keep reserves and inventory valid",
+      "pass": true
+    },
+    {
+      "name": "Malformed workshop inventory rejected rather than silently reset",
+      "pass": true
+    }
+  ]
+}

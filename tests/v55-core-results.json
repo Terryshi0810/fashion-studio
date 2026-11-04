@@ -1,0 +1,118 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "name": "Independent V55 schema and reference uncertainty are explicit",
+      "pass": true
+    },
+    {
+      "name": "All 203 authored assets and every producer grade retain their verified hashes",
+      "pass": true
+    },
+    {
+      "name": "New board shows six distinct locked producers and three reachable customer orders",
+      "pass": true
+    },
+    {
+      "name": "Locked producers cannot produce, move, receive a drop, store, recycle, upgrade or gain charge",
+      "pass": true
+    },
+    {
+      "name": "Level alone never automatically grants or enables the next producer",
+      "pass": true
+    },
+    {
+      "name": "Unlock is atomic, free, idempotent, and keeps the same cell even on a full board",
+      "pass": true
+    },
+    {
+      "name": "Zero-energy unlock works; supplying a still-locked family cannot bypass its gate",
+      "pass": true
+    },
+    {
+      "name": "Production, full-board rejection and energy rejection preserve their original contract",
+      "pass": true
+    },
+    {
+      "name": "Merge, maximum-tier swap and blocked terrain preserve item counts",
+      "pass": true
+    },
+    {
+      "name": "Deliveries validate all requirements and cannot consume or pay twice",
+      "pass": true
+    },
+    {
+      "name": "Storage, undo, tools and the last functional producer remain protected",
+      "pass": true
+    },
+    {
+      "name": "Producer fractional charge survives save/reload and locked cells never gain it",
+      "pass": true
+    },
+    {
+      "name": "V51/52/53 saves migrate without relocking owned producers or changing legacy systems",
+      "pass": true
+    },
+    {
+      "name": "Full V53 board migration keeps all 35 old tokens and all 8 warehouse tokens",
+      "pass": true
+    },
+    {
+      "name": "Actual newcomer route statistics",
+      "pass": true,
+      "actions": 235,
+      "unlocks": [
+        {
+          "family": "styling",
+          "level": 4,
+          "tutorial": 4,
+          "deliveries": 4
+        },
+        {
+          "family": "footwear",
+          "level": 7,
+          "tutorial": 7,
+          "deliveries": 7
+        },
+        {
+          "family": "leather",
+          "level": 9,
+          "tutorial": 9,
+          "deliveries": 9
+        }
+      ]
+    },
+    {
+      "name": "Complete newcomer route is playable using production, merges, part rewards and explicit unlocks",
+      "pass": true
+    },
+    {
+      "name": "Late producers need series progression and earlier families, with no circular dependency",
+      "pass": true
+    },
+    {
+      "name": "All seven producer families, grades and secondary chains work after unlock",
+      "pass": true
+    },
+    {
+      "name": "Repeated normal-order supply can open every secondary chain through real producer merges",
+      "pass": true
+    },
+    {
+      "name": "Series publishing still opens rows, increases mall income, and saves dialogue choices once",
+      "pass": true
+    },
+    {
+      "name": "UI delivery adapter preserves high-balance currency, mall expansion and outfit journal links",
+      "pass": true
+    },
+    {
+      "name": "Corrupt locks, duplicate tokens and invalid orders are rejected without resetting saves",
+      "pass": true
+    },
+    {
+      "name": "Older tab unloads cannot replace newer V55 progress",
+      "pass": true
+    }
+  ]
+}

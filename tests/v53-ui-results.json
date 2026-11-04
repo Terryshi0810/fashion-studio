@@ -1,0 +1,721 @@
+{
+  "pass": true,
+  "url": "http://127.0.0.1:8139/fashion-studio-mobile-trial-v53.html",
+  "checks": [
+    {
+      "name": "320×568: 工作台无重叠、无横向溢出、所有按钮在底部导航上方",
+      "pass": true,
+      "geometry": {
+        "children": [
+          {
+            "className": "a52-orders ",
+            "rect": {
+              "x": 8,
+              "y": 53,
+              "width": 304,
+              "height": 77,
+              "top": 53,
+              "right": 312,
+              "bottom": 130,
+              "left": 8
+            }
+          },
+          {
+            "className": "a52-board-head",
+            "rect": {
+              "x": 8,
+              "y": 133,
+              "width": 304,
+              "height": 23,
+              "top": 133,
+              "right": 312,
+              "bottom": 156,
+              "left": 8
+            }
+          },
+          {
+            "className": "a52-board",
+            "rect": {
+              "x": 55.78125,
+              "y": 159,
+              "width": 208.4375,
+              "height": 268,
+              "top": 159,
+              "right": 264.21875,
+              "bottom": 427,
+              "left": 55.78125
+            }
+          },
+          {
+            "className": "a52-selection",
+            "rect": {
+              "x": 8,
+              "y": 430,
+              "width": 304,
+              "height": 35,
+              "top": 430,
+              "right": 312,
+              "bottom": 465,
+              "left": 8
+            }
+          },
+          {
+            "className": "a52-tools",
+            "rect": {
+              "x": 8,
+              "y": 468,
+              "width": 304,
+              "height": 35,
+              "top": 468,
+              "right": 312,
+              "bottom": 503,
+              "left": 8
+            }
+          }
+        ],
+        "overlap": [],
+        "outside": [],
+        "broken": [],
+        "nav": {
+          "x": 0,
+          "y": 514,
+          "width": 320,
+          "height": 54,
+          "top": 514,
+          "right": 320,
+          "bottom": 568,
+          "left": 0
+        },
+        "work": {
+          "x": 8,
+          "y": 53,
+          "width": 304,
+          "height": 450,
+          "top": 53,
+          "right": 312,
+          "bottom": 503,
+          "left": 8
+        },
+        "board": {
+          "x": 55.78125,
+          "y": 159,
+          "width": 208.4375,
+          "height": 268,
+          "top": 159,
+          "right": 264.21875,
+          "bottom": 427,
+          "left": 55.78125
+        },
+        "cells": 63,
+        "documentWidth": 320,
+        "viewportWidth": 320
+      }
+    },
+    {
+      "name": "360×640: 工作台无重叠、无横向溢出、所有按钮在底部导航上方",
+      "pass": true,
+      "geometry": {
+        "children": [
+          {
+            "className": "a52-orders ",
+            "rect": {
+              "x": 8,
+              "y": 53,
+              "width": 344,
+              "height": 77,
+              "top": 53,
+              "right": 352,
+              "bottom": 130,
+              "left": 8
+            }
+          },
+          {
+            "className": "a52-board-head",
+            "rect": {
+              "x": 8,
+              "y": 133,
+              "width": 344,
+              "height": 23,
+              "top": 133,
+              "right": 352,
+              "bottom": 156,
+              "left": 8
+            }
+          },
+          {
+            "className": "a52-board",
+            "rect": {
+              "x": 47.78125,
+              "y": 159,
+              "width": 264.4375,
+              "height": 340,
+              "top": 159,
+              "right": 312.21875,
+              "bottom": 499,
+              "left": 47.78125
+            }
+          },
+          {
+            "className": "a52-selection",
+            "rect": {
+              "x": 8,
+              "y": 502,
+              "width": 344,
+              "height": 35,
+              "top": 502,
+              "right": 352,
+              "bottom": 537,
+              "left": 8
+            }
+          },
+          {
+            "className": "a52-tools",
+            "rect": {
+              "x": 8,
+              "y": 540,
+              "width": 344,
+              "height": 35,
+              "top": 540,
+              "right": 352,
+              "bottom": 575,
+              "left": 8
+            }
+          }
+        ],
+        "overlap": [],
+        "outside": [],
+        "broken": [],
+        "nav": {
+          "x": 0,
+          "y": 586,
+          "width": 360,
+          "height": 54,
+          "top": 586,
+          "right": 360,
+          "bottom": 640,
+          "left": 0
+        },
+        "work": {
+          "x": 8,
+          "y": 53,
+          "width": 344,
+          "height": 522,
+          "top": 53,
+          "right": 352,
+          "bottom": 575,
+          "left": 8
+        },
+        "board": {
+          "x": 47.78125,
+          "y": 159,
+          "width": 264.4375,
+          "height": 340,
+          "top": 159,
+          "right": 312.21875,
+          "bottom": 499,
+          "left": 47.78125
+        },
+        "cells": 63,
+        "documentWidth": 360,
+        "viewportWidth": 360
+      }
+    },
+    {
+      "name": "390×844: 工作台无重叠、无横向溢出、所有按钮在底部导航上方",
+      "pass": true,
+      "geometry": {
+        "children": [
+          {
+            "className": "a52-heading",
+            "rect": {
+              "x": 8,
+              "y": 72,
+              "width": 374,
+              "height": 27,
+              "top": 72,
+              "right": 382,
+              "bottom": 99,
+              "left": 8
+            }
+          },
+          {
+            "className": "a52-orders ",
+            "rect": {
+              "x": 8,
+              "y": 104,
+              "width": 374,
+              "height": 90,
+              "top": 104,
+              "right": 382,
+              "bottom": 194,
+              "left": 8
+            }
+          },
+          {
+            "className": "a52-board-head",
+            "rect": {
+              "x": 8,
+              "y": 199,
+              "width": 374,
+              "height": 26,
+              "top": 199,
+              "right": 382,
+              "bottom": 225,
+              "left": 8
+            }
+          },
+          {
+            "className": "a52-board",
+            "rect": {
+              "x": 21.171875,
+              "y": 230,
+              "width": 347.65625,
+              "height": 447,
+              "top": 230,
+              "right": 368.828125,
+              "bottom": 677,
+              "left": 21.171875
+            }
+          },
+          {
+            "className": "a52-selection",
+            "rect": {
+              "x": 8,
+              "y": 682,
+              "width": 374,
+              "height": 41,
+              "top": 682,
+              "right": 382,
+              "bottom": 723,
+              "left": 8
+            }
+          },
+          {
+            "className": "a52-tools",
+            "rect": {
+              "x": 8,
+              "y": 728,
+              "width": 374,
+              "height": 36,
+              "top": 728,
+              "right": 382,
+              "bottom": 764,
+              "left": 8
+            }
+          }
+        ],
+        "overlap": [],
+        "outside": [],
+        "broken": [],
+        "nav": {
+          "x": 0,
+          "y": 772,
+          "width": 390,
+          "height": 72,
+          "top": 772,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "work": {
+          "x": 8,
+          "y": 72,
+          "width": 374,
+          "height": 692,
+          "top": 72,
+          "right": 382,
+          "bottom": 764,
+          "left": 8
+        },
+        "board": {
+          "x": 21.171875,
+          "y": 230,
+          "width": 347.65625,
+          "height": 447,
+          "top": 230,
+          "right": 368.828125,
+          "bottom": 677,
+          "left": 21.171875
+        },
+        "cells": 63,
+        "documentWidth": 390,
+        "viewportWidth": 390
+      }
+    },
+    {
+      "name": "手机点击生产器成功出料并扣除1点体力",
+      "pass": true
+    },
+    {
+      "name": "手机拖动同款材料完成二合",
+      "pass": true
+    },
+    {
+      "name": "430×932: 工作台无重叠、无横向溢出、所有按钮在底部导航上方",
+      "pass": true,
+      "geometry": {
+        "children": [
+          {
+            "className": "a52-heading",
+            "rect": {
+              "x": 8,
+              "y": 72,
+              "width": 414,
+              "height": 27,
+              "top": 72,
+              "right": 422,
+              "bottom": 99,
+              "left": 8
+            }
+          },
+          {
+            "className": "a52-orders ",
+            "rect": {
+              "x": 8,
+              "y": 104,
+              "width": 414,
+              "height": 90,
+              "top": 104,
+              "right": 422,
+              "bottom": 194,
+              "left": 8
+            }
+          },
+          {
+            "className": "a52-board-head",
+            "rect": {
+              "x": 8,
+              "y": 199,
+              "width": 414,
+              "height": 26,
+              "top": 199,
+              "right": 422,
+              "bottom": 225,
+              "left": 8
+            }
+          },
+          {
+            "className": "a52-board",
+            "rect": {
+              "x": 8,
+              "y": 230,
+              "width": 414,
+              "height": 532.28125,
+              "top": 230,
+              "right": 422,
+              "bottom": 762.28125,
+              "left": 8
+            }
+          },
+          {
+            "className": "a52-selection",
+            "rect": {
+              "x": 8,
+              "y": 767.28125,
+              "width": 414,
+              "height": 41,
+              "top": 767.28125,
+              "right": 422,
+              "bottom": 808.28125,
+              "left": 8
+            }
+          },
+          {
+            "className": "a52-tools",
+            "rect": {
+              "x": 8,
+              "y": 813.28125,
+              "width": 414,
+              "height": 36,
+              "top": 813.28125,
+              "right": 422,
+              "bottom": 849.28125,
+              "left": 8
+            }
+          }
+        ],
+        "overlap": [],
+        "outside": [],
+        "broken": [],
+        "nav": {
+          "x": 0,
+          "y": 860,
+          "width": 430,
+          "height": 72,
+          "top": 860,
+          "right": 430,
+          "bottom": 932,
+          "left": 0
+        },
+        "work": {
+          "x": 8,
+          "y": 72,
+          "width": 414,
+          "height": 777.28125,
+          "top": 72,
+          "right": 422,
+          "bottom": 849.28125,
+          "left": 8
+        },
+        "board": {
+          "x": 8,
+          "y": 230,
+          "width": 414,
+          "height": 532.28125,
+          "top": 230,
+          "right": 422,
+          "bottom": 762.28125,
+          "left": 8
+        },
+        "cells": 63,
+        "documentWidth": 430,
+        "viewportWidth": 430
+      }
+    },
+    {
+      "name": "1080×1920: 工作台无重叠、无横向溢出、所有按钮在底部导航上方",
+      "pass": true,
+      "geometry": {
+        "children": [
+          {
+            "className": "a52-heading",
+            "rect": {
+              "x": 20,
+              "y": 162,
+              "width": 1040,
+              "height": 60.75,
+              "top": 162,
+              "right": 1060,
+              "bottom": 222.75,
+              "left": 20
+            }
+          },
+          {
+            "className": "a52-orders ",
+            "rect": {
+              "x": 20,
+              "y": 234,
+              "width": 1040,
+              "height": 201.5,
+              "top": 234,
+              "right": 1060,
+              "bottom": 435.5,
+              "left": 20
+            }
+          },
+          {
+            "className": "a52-board-head",
+            "rect": {
+              "x": 20,
+              "y": 446.75,
+              "width": 1040,
+              "height": 58.5,
+              "top": 446.75,
+              "right": 1060,
+              "bottom": 505.25,
+              "left": 20
+            }
+          },
+          {
+            "className": "a52-board",
+            "rect": {
+              "x": 136.25,
+              "y": 516.5,
+              "width": 807.5,
+              "height": 1038.21875,
+              "top": 516.5,
+              "right": 943.75,
+              "bottom": 1554.71875,
+              "left": 136.25
+            }
+          },
+          {
+            "className": "a52-selection",
+            "rect": {
+              "x": 20,
+              "y": 1565.96875,
+              "width": 1040,
+              "height": 91.75,
+              "top": 1565.96875,
+              "right": 1060,
+              "bottom": 1657.71875,
+              "left": 20
+            }
+          },
+          {
+            "className": "a52-tools",
+            "rect": {
+              "x": 20,
+              "y": 1668.96875,
+              "width": 1040,
+              "height": 80.5,
+              "top": 1668.96875,
+              "right": 1060,
+              "bottom": 1749.46875,
+              "left": 20
+            }
+          }
+        ],
+        "overlap": [],
+        "outside": [],
+        "broken": [],
+        "nav": {
+          "x": 0,
+          "y": 1758,
+          "width": 1080,
+          "height": 162,
+          "top": 1758,
+          "right": 1080,
+          "bottom": 1920,
+          "left": 0
+        },
+        "work": {
+          "x": 20,
+          "y": 162,
+          "width": 1040,
+          "height": 1587.46875,
+          "top": 162,
+          "right": 1060,
+          "bottom": 1749.46875,
+          "left": 20
+        },
+        "board": {
+          "x": 136.25,
+          "y": 516.5,
+          "width": 807.5,
+          "height": 1038.21875,
+          "top": 516.5,
+          "right": 943.75,
+          "bottom": 1554.71875,
+          "left": 136.25
+        },
+        "cells": 63,
+        "documentWidth": 1080,
+        "viewportWidth": 1080
+      }
+    },
+    {
+      "name": "签名 APK 解包网页根目录可启动，工作台资源无丢失",
+      "pass": true,
+      "geometry": {
+        "children": [
+          {
+            "className": "a52-heading",
+            "rect": {
+              "x": 8,
+              "y": 72,
+              "width": 374,
+              "height": 27,
+              "top": 72,
+              "right": 382,
+              "bottom": 99,
+              "left": 8
+            }
+          },
+          {
+            "className": "a52-orders ",
+            "rect": {
+              "x": 8,
+              "y": 104,
+              "width": 374,
+              "height": 90,
+              "top": 104,
+              "right": 382,
+              "bottom": 194,
+              "left": 8
+            }
+          },
+          {
+            "className": "a52-board-head",
+            "rect": {
+              "x": 8,
+              "y": 199,
+              "width": 374,
+              "height": 26,
+              "top": 199,
+              "right": 382,
+              "bottom": 225,
+              "left": 8
+            }
+          },
+          {
+            "className": "a52-board",
+            "rect": {
+              "x": 21.171875,
+              "y": 230,
+              "width": 347.65625,
+              "height": 447,
+              "top": 230,
+              "right": 368.828125,
+              "bottom": 677,
+              "left": 21.171875
+            }
+          },
+          {
+            "className": "a52-selection",
+            "rect": {
+              "x": 8,
+              "y": 682,
+              "width": 374,
+              "height": 41,
+              "top": 682,
+              "right": 382,
+              "bottom": 723,
+              "left": 8
+            }
+          },
+          {
+            "className": "a52-tools",
+            "rect": {
+              "x": 8,
+              "y": 728,
+              "width": 374,
+              "height": 36,
+              "top": 728,
+              "right": 382,
+              "bottom": 764,
+              "left": 8
+            }
+          }
+        ],
+        "overlap": [],
+        "outside": [],
+        "broken": [],
+        "nav": {
+          "x": 0,
+          "y": 772,
+          "width": 390,
+          "height": 72,
+          "top": 772,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "work": {
+          "x": 8,
+          "y": 72,
+          "width": 374,
+          "height": 692,
+          "top": 72,
+          "right": 382,
+          "bottom": 764,
+          "left": 8
+        },
+        "board": {
+          "x": 21.171875,
+          "y": 230,
+          "width": 347.65625,
+          "height": 447,
+          "top": 230,
+          "right": 368.828125,
+          "bottom": 677,
+          "left": 21.171875
+        },
+        "cells": 63,
+        "documentWidth": 390,
+        "viewportWidth": 390
+      }
+    }
+  ],
+  "limitation": "Chromium 移动端视口与触控模拟；未进行实体 Android 手机安装。"
+}

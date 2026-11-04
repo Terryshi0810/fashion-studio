@@ -1,0 +1,16 @@
+{
+  "pass": true,
+  "date": "2026-11-04",
+  "coreChecks": 23,
+  "uiChecks": 22,
+  "assets": 390,
+  "oldV53Unchanged": true,
+  "hashes": {
+    "artifacts/FashionStudio-V54-1080x1920.apk": "35bafddfeb39019a3a5e3ad326a7f1789bb09b6ce41b60122b48b8da0d2f06de",
+    "artifacts/FashionStudio-V54-MobileWeb.zip": "448c3ac77d8226204721c38ae91e15892959018d2bb660e5a439cafb2aab62b0",
+    "fashion-studio-mobile-trial-v54-runtime.js": "8c76a0e82f03ace3b7bafb81bef06c6ec02c649bde54dd258fc1d3be290a4ba7",
+    "design/v54-workshop-plan.json": "ee5fc12230262b6cf5e46f873f68c71416a33dd3977aea79f48f6c99ea7d9caf"
+  },
+  "deviceInstallTest": false,
+  "originalExactUnlockThresholdsVerified": false
+}

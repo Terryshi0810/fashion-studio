@@ -1,0 +1,53 @@
+/* V52: normal-flow mobile layout. Board dimensions are fitted after headers and nav. */
+/* 经营控制条已提供主线入口，主线详情在弹窗展示，不挤占可拖动场景。 */
+body[data-view="map"] #view>.story-command-card{display:none!important}
+body[data-view="work"] #view{display:block!important;padding:4px 8px!important;min-height:0!important;height:auto!important;overflow:visible!important}
+body[data-view="work"] .main{padding-bottom:0!important}
+body[data-view="work"] .demo-note{display:none!important}
+.atelier52{width:min(100%,540px);margin:0 auto;display:flex;flex-direction:column;gap:5px;color:#63465b;padding:0;box-sizing:border-box;font-family:"Microsoft YaHei",system-ui,sans-serif}
+.atelier52 *,.a52-customer *{box-sizing:border-box}
+.atelier52 button,.a52-customer button{font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.atelier52 button{min-height:0!important}
+.atelier52 button:disabled,.a52-customer button:disabled{opacity:.5;cursor:default}
+.a52-heading{display:flex;align-items:center;justify-content:space-between;height:27px;gap:8px}
+.a52-heading>div{display:flex;align-items:baseline;gap:8px}.a52-heading b{font-size:16px}.a52-heading small{font-size:10px;color:#937287}
+.a52-heading>button,.a52-board-head button{border:1px solid #ddc6cb;background:#fff6ed;color:#75536b;border-radius:10px;padding:4px 8px;font-size:10px;line-height:1.2;min-height:26px}
+.a52-orders{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;width:100%;flex:none}
+.a52-order{min-width:0;border:1px solid #dfc4cf;border-radius:12px;padding:4px;background:linear-gradient(135deg,#fffdf5,#f9e8ef);box-shadow:0 2px 0 #dcc1ce}
+.a52-order header{display:flex;align-items:center;justify-content:space-between;gap:3px;font-size:10px;height:19px;white-space:nowrap}.a52-order header span{font-size:15px;color:#be8f56}.a52-order header b{overflow:hidden;text-overflow:ellipsis}.a52-order header small{font-size:8px;color:#a17c92}
+.a52-needs{display:flex;align-items:center;justify-content:center;min-height:36px;gap:3px}
+.a52-needs button{position:relative;border:0;background:none;padding:0;color:#80596e;min-width:28px}.a52-needs button>span{display:block;width:34px;height:34px;background:#fffaf5;border-radius:7px}
+.a52-needs img{width:100%;height:100%;object-fit:contain;display:block}.a52-needs button>small{position:absolute;bottom:0;right:-2px;border-radius:6px;background:#f8f0d7;color:#6a4961;padding:1px 3px;font-size:9px;line-height:1}
+.a52-deliver{display:block;width:100%;border:1px solid #c793a7;background:linear-gradient(#e6aec3,#be7f9e);color:#fff;border-radius:8px;min-height:25px;font-size:10px;padding:4px 1px;white-space:nowrap;box-shadow:inset 0 1px #fff5}.a52-deliver strong{font-size:10px}.a52-order.is-ready{border-color:#caa34f;box-shadow:0 0 0 1px #f7d98c}.a52-order.is-ready .a52-deliver{background:linear-gradient(#f1ce7d,#d7a258);border-color:#c6984b;color:#6c4728}
+.a52-board-head{display:flex;gap:5px;align-items:center;min-height:26px;font-size:10px;flex:none}.a52-board-head>span{flex:1;min-width:0}
+.a52-board{align-self:center;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));grid-template-rows:repeat(9,minmax(0,1fr));gap:3px;padding:5px;flex:none;width:100%;aspect-ratio:7/9;min-height:0;background:linear-gradient(135deg,#dcc7cb,#c7aabd);border:2px solid #fff5ed;border-radius:13px;box-shadow:0 3px 9px #91697d33;touch-action:none;user-select:none;-webkit-user-select:none}
+body[data-view="work"] #view .atelier52 .a52-cell{position:relative!important;display:grid!important;place-items:center!important;min-width:0!important;min-height:0!important;width:100%!important;height:100%!important;border:1px solid #dfc8d0!important;background:linear-gradient(145deg,#fffaf2,#f4e7ec)!important;border-radius:7px!important;padding:0!important;margin:0!important;overflow:visible!important;touch-action:none!important;transform:none;box-shadow:inset 0 1px 2px #fff8;transition:border-color .1s,box-shadow .1s}
+.atelier52 .a52-cell img{display:block!important;width:100%!important;height:100%!important;min-width:0;min-height:0;object-fit:contain!important;pointer-events:none;filter:drop-shadow(0 1px 1px #68485426)}
+.a52-cell>small{position:absolute;bottom:0;right:1px;font:700 8px/1.1 system-ui;color:#896179;text-shadow:0 1px #fff;pointer-events:none}.a52-charge{position:absolute;right:0;top:-1px;color:#b98720;font:bold 10px/1 system-ui;pointer-events:none}
+body[data-view="work"] #view .atelier52 .a52-cell.is-producer{background:linear-gradient(#e4f2e8,#c9e0d5)!important;border-color:#a5bfae!important}
+body[data-view="work"] #view .atelier52 .a52-cell.is-locked{background:linear-gradient(#d1bec8,#c7b3bf)!important;border-color:#c5aeba!important;box-shadow:inset 0 2px 3px #a58e9e22;opacity:.7}
+.a52-lock{font-size:13px;color:#a78b9e;pointer-events:none}
+body[data-view="work"] #view .atelier52 .a52-cell:is(.is-selected,.is-match,.is-focus,.a52-drop){border-color:#bf9549!important;box-shadow:inset 0 0 0 1px #ffd787,0 0 8px #ffd58888;z-index:1}
+.a52-dragging img{opacity:.25}.a52-drag-preview{position:fixed;top:0;left:0;width:60px;height:60px;z-index:20000;pointer-events:none;filter:drop-shadow(0 7px 5px #66405a55);will-change:transform}.a52-drag-preview img{width:100%;height:100%;object-fit:contain}
+.a52-selection{display:flex;align-items:center;gap:5px;min-height:39px;flex:none;border:1px solid #e4cfd6;background:#fff8f1;border-radius:10px;padding:4px 6px}
+.a52-selection>div{flex:1;min-width:0}.a52-selection b{display:block;font-size:11px;line-height:1.4;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.a52-selection small{display:block;font-size:9px;line-height:1.4;color:#9b7c8e;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.a52-selection>button{flex:none;width:34px;height:31px;border:1px solid #dec4ce;border-radius:9px;background:linear-gradient(#fff5ed,#ecd6df);color:#9c6b8c;font-size:19px;padding:0}
+.a52-tools{display:flex;gap:5px;min-height:35px;flex:none}.a52-tools button{display:flex;justify-content:center;align-items:center;gap:4px;flex:1;min-width:0;border:1px solid #dfc5cc;border-radius:10px;background:linear-gradient(#fffaf1,#f0dfe6);color:#92617e;padding:5px 2px;font-size:16px}.a52-tools button span{font-size:10px;white-space:nowrap}
+.a52-customer{width:min(100%,620px);margin:auto;padding:12px 4px 30px;color:#77566f}.a52-customer h1{font-size:24px}.a52-customer header>p{font-size:13px}.a52-orders-full{grid-template-columns:1fr;margin-bottom:16px;gap:12px}.a52-orders-full .a52-order{padding:12px}.a52-orders-full header{font-size:16px;height:28px}.a52-orders-full header small{font-size:11px}.a52-orders-full .a52-order>p{font-size:13px}.a52-orders-full .a52-needs{justify-content:flex-start;flex-wrap:wrap;gap:12px;margin:10px 0}.a52-orders-full .a52-needs button{display:flex;align-items:center;gap:8px;min-width:130px;max-width:100%;padding-right:12px}.a52-orders-full .a52-needs button>span{width:55px;height:55px;flex:none}.a52-orders-full .a52-needs b{font-size:12px;overflow-wrap:anywhere}.a52-orders-full .a52-needs small{left:34px;right:auto}.a52-orders-full .a52-deliver{height:38px;font-size:14px}.a52-orders-full .a52-order footer{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:8px}.a52-orders-full footer small{font-size:11px}.a52-orders-full footer button{border:0;border-bottom:1px solid #ad829a;background:none;color:#936780;font-size:11px;padding:4px}
+.a52-modal-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:12px 0}.a52-modal-grid>button{display:flex;flex-direction:column;align-items:center;gap:4px;min-width:0;border:1px solid #e0c9d3;background:#fff7f0;border-radius:12px;padding:8px 3px;color:#80546f}.a52-modal-grid img{display:block;width:76px;max-width:100%;height:76px;object-fit:contain}.a52-modal-grid b{font-size:11px;line-height:1.4;overflow-wrap:anywhere}.a52-modal-grid small,.a52-modal-grid span{font-size:10px}.a52-modal-grid p{grid-column:1/-1;line-height:1.8}
+.a52-atlas-tabs{display:flex;gap:6px;overflow-x:auto;padding:4px 1px 10px;touch-action:pan-x}.a52-atlas-tabs button{flex:none;border:1px solid #ddc4d0;background:#fff7f0;color:#876279;border-radius:8px;padding:6px}.a52-atlas-tabs .active{background:#d99dbb;color:white}.a52-tool-list{display:flex;flex-direction:column;gap:10px}.a52-tool-list small{display:block;font-size:11px}.a52-story-copy p{line-height:1.9;font-size:14px}.a52-story-copy .btn{margin:8px 0}
+.a52-pop img{animation:a52-pop .28s cubic-bezier(.2,.8,.2,1)}.a52-spark{position:absolute;inset:0;display:grid;place-items:center;font-size:34px;color:#f8cf7c;pointer-events:none;animation:a52-spark .45s ease-out forwards;z-index:3}
+.a52-reward-flight{position:fixed;width:44px;height:44px;pointer-events:none;z-index:20001;filter:drop-shadow(0 2px 3px #64405a55)}.a52-reward-flight img{width:100%;height:100%;object-fit:contain}
+@keyframes a52-pop{0%{scale:.65}65%{scale:1.15}100%{scale:1}}@keyframes a52-spark{0%{opacity:1;scale:.6}100%{opacity:0;scale:1.8}}
+@media(max-height:700px){.atelier52{gap:3px}.a52-heading{display:none}.a52-order{padding:3px}.a52-order header{height:16px}.a52-needs{min-height:30px}.a52-needs button>span{width:29px;height:29px}.a52-deliver{height:23px;padding:3px 0}.a52-board-head{min-height:23px}.a52-board-head button{min-height:23px;padding:3px 5px}.a52-selection{height:35px;min-height:35px}.a52-tools{height:35px;min-height:35px}.a52-tools button{padding:3px 1px}.a52-board{gap:2px;padding:4px}}
+@media(prefers-reduced-motion:reduce){.a52-pop img,.a52-spark{animation:none}}
+@media(max-width:600px) and (max-height:700px){
+ body[data-view="work"] .topbar{height:49px!important;min-height:49px!important;padding:4px 6px!important}
+ body[data-view="work"] .player{min-height:36px!important;height:36px!important}
+ body[data-view="work"] .player .avatar{width:36px!important;height:36px!important}
+ body[data-view="work"] .resource{height:28px!important;min-height:28px!important}
+ body[data-view="work"] .audio-toggle{width:32px!important;height:34px!important;min-height:34px!important}
+ body[data-view="work"] #mobile-nav{height:calc(54px + env(safe-area-inset-bottom,0px))!important;min-height:54px!important;padding-top:0!important;padding-bottom:env(safe-area-inset-bottom,0px)!important}
+ body[data-view="work"] #mobile-nav .nav-item{min-height:50px!important;padding-top:0!important;padding-bottom:0!important}
+ body[data-view="work"] #mobile-nav .nav-item .icon{width:29px!important;height:29px!important}
+}

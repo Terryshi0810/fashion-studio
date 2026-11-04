@@ -44,3 +44,10 @@ loop-demo/
 FashionStudio-V30-MobileWeb/
 *.previous
 
+
+# Runnable external-resource editions
+!fashion-studio-mobile-trial-v4[7-9]*.html
+!fashion-studio-mobile-trial-v4[7-9]*.js
+!fashion-studio-mobile-trial-v5[0-6]*.html
+!fashion-studio-mobile-trial-v5[0-6]*.js
+!assets/fashion-magazine-opening.mp4

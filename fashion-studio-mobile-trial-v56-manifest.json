@@ -1,0 +1,1986 @@
+{
+  "version": "V56",
+  "layout": "assets/<name>",
+  "assets": [
+    {
+      "name": "bgm-little-west-lost-in-my-view.ogg",
+      "size": 2625035,
+      "sha256": "958c70960aa7f8778e98fc82ca1679a3123024d9b6862db2155ee9759aff9f03"
+    },
+    {
+      "name": "boutique-interior-v1.webp",
+      "size": 223368,
+      "sha256": "00a3adb34943b251afb207ce569347376f14aea9adb845f53b1ae5161092cc9e"
+    },
+    {
+      "name": "boutique-people-atlas-v1.webp",
+      "size": 214740,
+      "sha256": "b057da526fa8faa4454125b48d9c26723e71cfd58702b8b8bf0e43e16f586d9c"
+    },
+    {
+      "name": "button-click-a.wav",
+      "size": 104944,
+      "sha256": "e87ce6ce0da675bae158f6ff2246176d2fa6b6516a6c599f4a7bc89e79818520"
+    },
+    {
+      "name": "community-city-v1.webp",
+      "size": 258206,
+      "sha256": "1b4d039300daf193ce92f8c16e2ad8f5d40e54e937a4a6c389ea34e5d3c1c383"
+    },
+    {
+      "name": "department-store.png",
+      "size": 3131566,
+      "sha256": "9b26ca0ef99f4852540b5f892fc1fe9945e71df56aa0f99e30405e55357986e7"
+    },
+    {
+      "name": "designer.png",
+      "size": 1716861,
+      "sha256": "c7d4f3cf8031f2f1618254eb6d57bf44cc446e3002327831ca7be6663d1791fc"
+    },
+    {
+      "name": "dress-base-character.png",
+      "size": 890151,
+      "sha256": "4f218cbec042cf241ffd54b8337775f2722faf9a9a23aa072eb26ba77cb31ac4"
+    },
+    {
+      "name": "dress-look-1-bottom-clean.png",
+      "size": 1175709,
+      "sha256": "49c07ef61137d8d88929af3197856915ec8592a4c51d6b659c021ba28d5f4cae"
+    },
+    {
+      "name": "dress-look-1-bottom.png",
+      "size": 1366377,
+      "sha256": "20482676f01c16246bb402c8d565d9a4d283906fc4c836122b474a035995cfa8"
+    },
+    {
+      "name": "dress-look-1-hair-clean.png",
+      "size": 901600,
+      "sha256": "bd9275eff4b8175f1b708019c07248cdfd8340197f009e0ad76cef8598d0dcc8"
+    },
+    {
+      "name": "dress-look-1-hair.png",
+      "size": 1059369,
+      "sha256": "c0cc311d4b920e643a4ab96fbb6b3b02b8018a9338634f388a5658809f79c3bb"
+    },
+    {
+      "name": "dress-look-1-shoes-clean.png",
+      "size": 1172210,
+      "sha256": "8cc4a0b62cca64c1e9717f3cfd54808514df6e8b6040aba87b6f9efbfb17b0c1"
+    },
+    {
+      "name": "dress-look-1-shoes.png",
+      "size": 1381762,
+      "sha256": "79566ec7a200c0763692aec50b236413be87e20c8f84818f82ffaa01a41ba906"
+    },
+    {
+      "name": "dress-look-1-top-clean.png",
+      "size": 952540,
+      "sha256": "e0c9e7c741161c6c7776c4bf13bab3b2eeced4860f5e35f8359710da282910f8"
+    },
+    {
+      "name": "dress-look-1-top.png",
+      "size": 1168940,
+      "sha256": "3a52f0a40a91601e1cad65f60041767c30b5a5655ccb5be6e9c97174ce875d33"
+    },
+    {
+      "name": "dress-look-1.png",
+      "size": 1066787,
+      "sha256": "25e9495c3542052ab8d1d27757566af1a16bbb022eb5708d88c40ea875ceef39"
+    },
+    {
+      "name": "dress-look-2-bottom-clean.png",
+      "size": 1071686,
+      "sha256": "efcf2144027531f3c0adcea14af48b24110dd6ba739d3c643c72761c72fafb90"
+    },
+    {
+      "name": "dress-look-2-bottom.png",
+      "size": 1268208,
+      "sha256": "7d5e1c057db93519b8ac560fef6325584d8494213fc5a09d15a9f81a5e5761f8"
+    },
+    {
+      "name": "dress-look-2-coat-clean.png",
+      "size": 650577,
+      "sha256": "130150a9836806dff1bf1301a0b26a62adb3c3f3af9a4ba48f0b251741fdd0bf"
+    },
+    {
+      "name": "dress-look-2-coat.png",
+      "size": 775464,
+      "sha256": "d3802da497588c865eab30350287e81db3f42d6c40c3e45bcf83ada432ea7f3d"
+    },
+    {
+      "name": "dress-look-2-hair-clean.png",
+      "size": 650790,
+      "sha256": "d5f5a5408a36d02312663f1db1aa40d3d00517fa8d3ff2b19c1c64fff7a39fbb"
+    },
+    {
+      "name": "dress-look-2-hair.png",
+      "size": 772899,
+      "sha256": "3f5fd1c3382fd68214e0b0697201616bb8fd26e26c2d7689006288cd24acad90"
+    },
+    {
+      "name": "dress-look-2-necklace-clean.png",
+      "size": 669348,
+      "sha256": "e3ab1376402d6291cdda7c2a0897a8fd37ec9943dacf869f7669f0ca927914a0"
+    },
+    {
+      "name": "dress-look-2-necklace.png",
+      "size": 815088,
+      "sha256": "6f0dc53a451e8e060197291f89266c8163e46f2961b94c85431891889fb9f50e"
+    },
+    {
+      "name": "dress-look-2-shoes-clean.png",
+      "size": 741011,
+      "sha256": "cc1ece41ea51b95fc985be95baa3d5a1d0c76ceaf6de0c85f1be809786228bb7"
+    },
+    {
+      "name": "dress-look-2-shoes.png",
+      "size": 917724,
+      "sha256": "70fdd2fa8c241dc8f2d37621c1da4400686180f6981683f7efee38dec1d5c842"
+    },
+    {
+      "name": "dress-look-2.png",
+      "size": 1066411,
+      "sha256": "d2e59ee2591a01581ac1e1a839564ab3ce59dd49cae9b6e3897aabad0e3837f9"
+    },
+    {
+      "name": "dress-look-3-bottom-clean.png",
+      "size": 1386903,
+      "sha256": "f742879096dd226c55fc50fe1d237745e744b42dc830f7f661212d989ad5e9c9"
+    },
+    {
+      "name": "dress-look-3-bottom.png",
+      "size": 1641735,
+      "sha256": "7254d6a90f3e993c9566bc1a5cc720e916f333e32808c6c014e0f3d5b60f9e05"
+    },
+    {
+      "name": "dress-look-3-coat-clean.png",
+      "size": 842147,
+      "sha256": "97a19f7c33043815dc101d4130e2dede461fefaf49c7e887c6ee9ecc8470a0e7"
+    },
+    {
+      "name": "dress-look-3-coat.png",
+      "size": 1044625,
+      "sha256": "7477c3873f4c9c302b88acc7583978f269d77c7caf1802fc54e7cd5553517426"
+    },
+    {
+      "name": "dress-look-3-hair-clean.png",
+      "size": 760057,
+      "sha256": "fa0204a3cbc533b2e1e8920c87c22d8d8025dd8a3afdd196459983750e6d37fc"
+    },
+    {
+      "name": "dress-look-3-hair.png",
+      "size": 905328,
+      "sha256": "569f81869101ee009af878ebe12521d8142eb4ae1fb2667abb9decbb4b8f4d6e"
+    },
+    {
+      "name": "dress-look-3-necklace-clean.png",
+      "size": 505162,
+      "sha256": "be8f8dfe80f6f842c477296864e4b4e09943d8d9b6d031a6a49f4b95c2ece1a2"
+    },
+    {
+      "name": "dress-look-3-necklace.png",
+      "size": 641418,
+      "sha256": "a240e2ddf03680c8ca517121f5173df6368586d8107e480e120d62dc84d51ccc"
+    },
+    {
+      "name": "dress-look-3.png",
+      "size": 1217341,
+      "sha256": "b16a93d3c3b056064b2b957286dcd7e655271a833bfb6ba1238b52cbdb8cf582"
+    },
+    {
+      "name": "dress-look-4-bottom-clean.png",
+      "size": 982018,
+      "sha256": "b9b6427f23ef5b92bd0403188649ac38b7a146bcf25a5211efa6a176c088e268"
+    },
+    {
+      "name": "dress-look-4-bottom.png",
+      "size": 1138186,
+      "sha256": "09bd963baee7ccecea8a105f61b413cbf05c64d8e02c40a50d72be109d4fc476"
+    },
+    {
+      "name": "dress-look-4-coat-clean.png",
+      "size": 1040609,
+      "sha256": "02638b7afab7a069b568070ac51f3b427b2e342ef673e7d02cb7c17e433aa359"
+    },
+    {
+      "name": "dress-look-4-coat.png",
+      "size": 1276950,
+      "sha256": "e9d9f9ffdf5c6fa158bd7ca66e6668755bce860f8079ee79a3084586691d2061"
+    },
+    {
+      "name": "dress-look-4-hair-clean.png",
+      "size": 652513,
+      "sha256": "a3352ec07c7ad8fe9443034b8bf538008b41384807e9960302d8fa06e006ef95"
+    },
+    {
+      "name": "dress-look-4-hair.png",
+      "size": 760052,
+      "sha256": "f0075f71a8249813ba6b9e38f4760e3e6ae62a76236a20aa82a57813b510129c"
+    },
+    {
+      "name": "dress-look-4-necklace-clean.png",
+      "size": 267710,
+      "sha256": "010e346a295a48f8abdc6316fef3439c4f1ef2d03d613f2986ac4545587107ce"
+    },
+    {
+      "name": "dress-look-4-necklace.png",
+      "size": 347418,
+      "sha256": "3a18db4e9b7f9db35e4c93a2eec803168b4703af62e3c9a531003d8f9664c00e"
+    },
+    {
+      "name": "dress-look-4-shoes-clean.png",
+      "size": 880987,
+      "sha256": "7b661b23481a86a191bd59a19f194c28a3d3c6311544de5eb196a579585a9c67"
+    },
+    {
+      "name": "dress-look-4-shoes.png",
+      "size": 1114342,
+      "sha256": "fc23db2fc21f271b8e56102d923926a26192c08ec0a97aaf12406321e6dcd4cf"
+    },
+    {
+      "name": "fashion-items.png",
+      "size": 1985559,
+      "sha256": "4b66741cbb8e86c2c5088b0a964e6c7c699a42d6612b14402a613d61dafee521"
+    },
+    {
+      "name": "fashion-magazine-opening.mp4",
+      "size": 7937921,
+      "sha256": "ea7b0f0fecaac40b793f244fe04c3818a84cce1c4e5eba1085601bfcde021fdf"
+    },
+    {
+      "name": "favicon.svg",
+      "size": 353,
+      "sha256": "00d8040b865b31d897022b8cbba6777e37f1c6bbbb2572e1dd4473e23c8b43c6"
+    },
+    {
+      "name": "home-bedroom-empty.webp",
+      "size": 2138462,
+      "sha256": "558672c12fc14a7c75cff933352a1e89cc3dbf94363d0363b2e5df4a5917a49b"
+    },
+    {
+      "name": "home-bedroom-finished.webp",
+      "size": 2659248,
+      "sha256": "ac2274a2f88a0d64a96808ca72497d28614a2b8d05dcbcc8e454afcfe1f5bcaa"
+    },
+    {
+      "name": "home-furniture-bear-new.webp",
+      "size": 1094102,
+      "sha256": "f36b29e5d15627f8313502e32cc2b9ac00938dd4c47a15c3692cab1813ca5e9f"
+    },
+    {
+      "name": "home-furniture-bear.webp",
+      "size": 1123506,
+      "sha256": "db4721b951dbe27f914f9878e965bfab75e8c7e7338b79e7efa819a7a20be3ff"
+    },
+    {
+      "name": "home-furniture-bed-new.webp",
+      "size": 459092,
+      "sha256": "175f952a4e542186dd2d9f71569bdc414bd9fd9655d4f60d9ab35cb2cdd7d000"
+    },
+    {
+      "name": "home-furniture-bed.webp",
+      "size": 475790,
+      "sha256": "61a6055b037e0a33925d25e48b189c1643acf389675e6c6e44d7f6126d1e9a89"
+    },
+    {
+      "name": "home-furniture-lights-new-stage.webp",
+      "size": 229196,
+      "sha256": "5e4c0ddf0485782b7aa70b6ae26c5944e621ad935c366e3d81ed1f3f589a504b"
+    },
+    {
+      "name": "home-furniture-lights-new.webp",
+      "size": 825924,
+      "sha256": "0a5c3fa43fbd4f881a148a81404505d8e248a36d77f9c5e2327dd9cae3717493"
+    },
+    {
+      "name": "home-furniture-lights.webp",
+      "size": 512546,
+      "sha256": "1083ef86dbae51032e04385364a11a001308ba4473471794d6259ea7ba3f075b"
+    },
+    {
+      "name": "home-furniture-pendant-new.webp",
+      "size": 459788,
+      "sha256": "2d6ac61bdf354af15dbb3dec51a6538e05200b46fe69f235ddab68b2b644594d"
+    },
+    {
+      "name": "home-furniture-pendant.webp",
+      "size": 271262,
+      "sha256": "1e123bea11bb5168d1aeb01806aa7694893b83d7a57f1d344a66ebd16d9a64a7"
+    },
+    {
+      "name": "home-furniture-sofa-new.webp",
+      "size": 1101472,
+      "sha256": "c35f3bcc3deedea0c65d44dfc8df42355346f0cb28bc05e65bb794f0b9c465ec"
+    },
+    {
+      "name": "home-furniture-sofa.webp",
+      "size": 809178,
+      "sha256": "041727ac60230e8014c4cded0afac97d94dd6b6fb64eec3907b77584645ea69c"
+    },
+    {
+      "name": "home-furniture-table-new.webp",
+      "size": 794706,
+      "sha256": "d025963f78f4b1006081e4e52e46dcd903d517d51184873549910d609e49cd75"
+    },
+    {
+      "name": "home-furniture-table.webp",
+      "size": 688046,
+      "sha256": "5d7782d2f7d391e1576c347dd167447101451f7c277debbd14963572556e1872"
+    },
+    {
+      "name": "home-room-v1.webp",
+      "size": 142370,
+      "sha256": "6410c90358c5faf3a116dfb6feb4520b82908ebab05b6d3e3eb999921f077d6c"
+    },
+    {
+      "name": "item-00.webp",
+      "size": 23914,
+      "sha256": "b5f9e991adf191c98e85ba716344de19287ffcc85b31c523d4b120025a4b5d99"
+    },
+    {
+      "name": "item-01.webp",
+      "size": 31262,
+      "sha256": "35011949e6e50dfc044ee6d2f438b0562948d077bbee035132ceb1586f259390"
+    },
+    {
+      "name": "item-02.webp",
+      "size": 41964,
+      "sha256": "55475ca9d1a548d31cfa78be8c9293da78a27afd40d15a4a09d3811f44c86411"
+    },
+    {
+      "name": "item-03.webp",
+      "size": 44536,
+      "sha256": "5728cc100198873b98be9c210c145fd5ae5e8d578fb5d9b9292604aec5fed413"
+    },
+    {
+      "name": "item-04.webp",
+      "size": 31402,
+      "sha256": "5b61a5df97369e5943cee46ede6331d148138ec0c2dd870a442874924433d4fe"
+    },
+    {
+      "name": "item-05.webp",
+      "size": 22428,
+      "sha256": "6dcde4c5c129f03650c1e8c45d4d5ab426be3a44a776cab7807e35e46141c89a"
+    },
+    {
+      "name": "item-06.webp",
+      "size": 26188,
+      "sha256": "2ef6733eb905a9a2ca5d17573c309dac345733fcc432463de3b707432d98d518"
+    },
+    {
+      "name": "item-07.webp",
+      "size": 26112,
+      "sha256": "9174a88957be2ad6b0e3b4e889f809659601a9ad07c1895e932d02eaeae86dcd"
+    },
+    {
+      "name": "item-08.webp",
+      "size": 24658,
+      "sha256": "01fb1c84f3a26542bd5dd84aca3bd8d4530667b24373639c4a1e71f832ab6b1e"
+    },
+    {
+      "name": "item-09.webp",
+      "size": 18364,
+      "sha256": "0b569cabe427240b9361d7b49b8c7f8637e5f6a68f0a29386ca3095579ceff88"
+    },
+    {
+      "name": "item-10.webp",
+      "size": 28686,
+      "sha256": "f0f735ce11f09d1de22dfc97c1f9ef23f9298b482b668945313beccac8700050"
+    },
+    {
+      "name": "item-11.webp",
+      "size": 23352,
+      "sha256": "e2ddcd34108953cae64f54f8347ac5aac8d13cc1d74289fd6c9651dba1a679d2"
+    },
+    {
+      "name": "item-12.webp",
+      "size": 23818,
+      "sha256": "1e6a91942b6521ac681e1e088050cba5295bca61ef2e794b77077231de389160"
+    },
+    {
+      "name": "item-13.webp",
+      "size": 23414,
+      "sha256": "ef3ef748028e932347428f0cf6daf98063883e103f2b80aa8390440d802ac737"
+    },
+    {
+      "name": "item-14.webp",
+      "size": 17208,
+      "sha256": "bba08916aa90b3a8fd9c307650f604dc22d4e8a8f06f8662cd4e5a8065db230e"
+    },
+    {
+      "name": "item-15.webp",
+      "size": 20928,
+      "sha256": "d6a0cc75670a214c970dfd8e17c6ab895b323adfce448dddf1498c2641ca93dc"
+    },
+    {
+      "name": "item-16.webp",
+      "size": 28512,
+      "sha256": "66c8f396c2c33636d1afe558bb24422c39381d0d70ff889cf7f76211a7a6c73b"
+    },
+    {
+      "name": "item-17.webp",
+      "size": 27798,
+      "sha256": "2419d8b4337619fb63c1772545bc5aed5b9700411d102ab80fd4afd6c629952d"
+    },
+    {
+      "name": "item-18.webp",
+      "size": 24378,
+      "sha256": "a879007453eedc18467ea83a6073d5affe38e1e01ed93256a904ab955084ab84"
+    },
+    {
+      "name": "item-19.webp",
+      "size": 24478,
+      "sha256": "f3d512a1d4ee27c048c8aa319c56edb6ff50e85d9b7bb22279595555fc99a28c"
+    },
+    {
+      "name": "item-20.webp",
+      "size": 23670,
+      "sha256": "c20341ac455a2ffc590633c76e661e61e667c39e76241a354fa4ff992f4fe05d"
+    },
+    {
+      "name": "item-21.webp",
+      "size": 21186,
+      "sha256": "d6a29c3ecbd18a65a4157165513894ec41ebbbccbc7b0dc6ddaa6d30678a1b2e"
+    },
+    {
+      "name": "item-22.webp",
+      "size": 24258,
+      "sha256": "18780df0ecf3a596de959db357ae3c6698129c8cd44899433d2a858168e66786"
+    },
+    {
+      "name": "item-23.webp",
+      "size": 25782,
+      "sha256": "717643b4527850baa45083bd313171204c6c2eb23630b7e90cbca7d6e79f134f"
+    },
+    {
+      "name": "item-24.webp",
+      "size": 24612,
+      "sha256": "69c05bcbfbebbf1cb02a3b6bf32b920f3c3da8f144ef299ae89dcdb2c12e34fc"
+    },
+    {
+      "name": "lookbook-bridal.png",
+      "size": 2242764,
+      "sha256": "9c4734b5d46b7393d268c273c118c85dc07037ca6808c6c188cd9384aa5fe9dc"
+    },
+    {
+      "name": "lookbook-items.png",
+      "size": 2508682,
+      "sha256": "5e9293a56e634ca8e0115dc266356d1e239ca4f6ac4675e895e51fbc793870a6"
+    },
+    {
+      "name": "lookbook-models.png",
+      "size": 2129553,
+      "sha256": "3b2a93a071ffc4ad2f6f3e42e189fcf83c8fc4c60852bf386ef7d24e9f50c21d"
+    },
+    {
+      "name": "lookbook-preview-rig.json",
+      "size": 455,
+      "sha256": "1a1afb13f6b779dd8eb0bdd3f4bc5fd48c298c0af924257a64b324f3f8560b94"
+    },
+    {
+      "name": "mall-box-1-v21.webp",
+      "size": 135520,
+      "sha256": "847fbe0231ef4c9ea3eae23f1ada48ddac5c703f68ecaf980b69716d1aa3339c"
+    },
+    {
+      "name": "mall-box-2-v21.webp",
+      "size": 174382,
+      "sha256": "69270b6d98beed5cfff3c3bc1ef46b6fa2ccc00a1a3e24d92b543fc566d8cab5"
+    },
+    {
+      "name": "mall-box-3-v21.webp",
+      "size": 140250,
+      "sha256": "0a5aaa2d77d5426cfa875bae489e7fa43f6c3e02476877a27a39e3d0a9a8819a"
+    },
+    {
+      "name": "mall-box-4-v21.webp",
+      "size": 206826,
+      "sha256": "ae7995b2f4b33529058a4a825122d48b14532d6be5fc86959dca4b83d0dd59f6"
+    },
+    {
+      "name": "mall-floor-aligned-v22.webp",
+      "size": 734518,
+      "sha256": "fb6d485a68f9ec8ba982c5bf60bedf4e45e2d54dd1d81d3a83f8370d495638e7"
+    },
+    {
+      "name": "mall-floor-empty-v21.webp",
+      "size": 260422,
+      "sha256": "7d055d08442253f4881567965ec811b86de00cdaaae1312e6110177f9a3dca04"
+    },
+    {
+      "name": "mall-floor-empty-v22.webp",
+      "size": 426980,
+      "sha256": "c4035f29bb69fa3b0e66faeb03489d8294ea492cb7f70c9b16302aa9bf3c0480"
+    },
+    {
+      "name": "mall-floor-finished-v21.webp",
+      "size": 480026,
+      "sha256": "5a79533acc7620e15af23492dc5ce952b67145a0f7b959ed41ea7a1f7ec4abff"
+    },
+    {
+      "name": "mall-floor-v30.webp",
+      "size": 450094,
+      "sha256": "dc30e54e70841c84f0332199a91ae2dd5c4e63136dfed4e18dc485eb051817e0"
+    },
+    {
+      "name": "mall-locked-box-v22.webp",
+      "size": 174382,
+      "sha256": "69270b6d98beed5cfff3c3bc1ef46b6fa2ccc00a1a3e24d92b543fc566d8cab5"
+    },
+    {
+      "name": "mall-locked-box-v30.webp",
+      "size": 37486,
+      "sha256": "cd4dd6cacd62f0e99ab3560bc41623db13d298bf8d85d4eb1008df1edf546bc4"
+    },
+    {
+      "name": "mall-mobile.webp",
+      "size": 373702,
+      "sha256": "438be959c1b85a720a486d54575325a4e1e9508ba4f186e7650a982508471b40"
+    },
+    {
+      "name": "mall-original.png",
+      "size": 2840880,
+      "sha256": "cfdac1a86e25e81d8c30f0b3a1d0177d3a051c71db25761c290aaa1c98533c23"
+    },
+    {
+      "name": "mall-prop-bath-v21.webp",
+      "size": 637620,
+      "sha256": "3267a9def3f1d21cb15a9c0d18b9760cd3601d62adc217cbd1eb32479e28a98c"
+    },
+    {
+      "name": "mall-prop-lounge-v21.webp",
+      "size": 249090,
+      "sha256": "1df41e5b5de0483a10cf32021df0fdb85f1a23b52f323ecd9a06a5d1f5a4fcbc"
+    },
+    {
+      "name": "mall-prop-mannequin-v21.webp",
+      "size": 308628,
+      "sha256": "e234ac527717291bc58e4d9e3c460c8d740773d0d5cb191176c62e9abb23b96f"
+    },
+    {
+      "name": "mall-prop-rack-v21.webp",
+      "size": 406722,
+      "sha256": "7d0ae330357c2a0659f3b29e8f7504eba1f83184aec7759cddee29e2a1741b6c"
+    },
+    {
+      "name": "mall-prop-shoe-v21.webp",
+      "size": 241672,
+      "sha256": "79781c007047fe630d4d377bf2f27341b47978e22ef1f3a5d4a172967c0a1385"
+    },
+    {
+      "name": "mall-prop-vanity-v21.webp",
+      "size": 214442,
+      "sha256": "8df9f91337987d702d7e15e4cb0a0fc39077e3dc8c522a62c89b3dccc17e9c11"
+    },
+    {
+      "name": "mall-prop-wash-v21.webp",
+      "size": 349622,
+      "sha256": "05c1bf37a70dbb5d3e66a13fb1e965615be5db57366c998dbc2aa631ab1d8208"
+    },
+    {
+      "name": "mall-prop-window-v21.webp",
+      "size": 322142,
+      "sha256": "bc5301f060f495d57adee82f39193e8f9e54cf8f4198ea726c71a6d2329300bc"
+    },
+    {
+      "name": "mall-unlock-1-v22.webp",
+      "size": 308628,
+      "sha256": "e234ac527717291bc58e4d9e3c460c8d740773d0d5cb191176c62e9abb23b96f"
+    },
+    {
+      "name": "mall-unlock-1-v30.webp",
+      "size": 102952,
+      "sha256": "7b976d68c954544038f04e0bc6e25185b290f566d9f161c1054694417f7f1709"
+    },
+    {
+      "name": "mall-unlock-2-v22.webp",
+      "size": 655390,
+      "sha256": "04e1d609a834af835091af04bd01aa16b6c453cf0d5e9ca8ba954f02d4d9c963"
+    },
+    {
+      "name": "mall-unlock-2-v30.webp",
+      "size": 99998,
+      "sha256": "b6c437e5bd1ed8e54b1bbf709bfcf137063f762ed3cee0432fd4556ac98a0604"
+    },
+    {
+      "name": "mall-unlock-3-v22.webp",
+      "size": 349622,
+      "sha256": "05c1bf37a70dbb5d3e66a13fb1e965615be5db57366c998dbc2aa631ab1d8208"
+    },
+    {
+      "name": "mall-unlock-3-v30.webp",
+      "size": 113958,
+      "sha256": "1f5065684295bb62a6c0841aae25273e0a02f6057743abd2cacc20f1976d6d28"
+    },
+    {
+      "name": "mall-unlock-4-v22.webp",
+      "size": 241672,
+      "sha256": "79781c007047fe630d4d377bf2f27341b47978e22ef1f3a5d4a172967c0a1385"
+    },
+    {
+      "name": "mall-unlock-4-v30.webp",
+      "size": 75444,
+      "sha256": "49aa908240ba1e6593487ff194d89c533ea97a9374d80f1d0932500c8e422752"
+    },
+    {
+      "name": "mall-unlock-5-v22.webp",
+      "size": 459536,
+      "sha256": "be441d5b2b3f7184af460bc869489e6b56e31617bcd55937669c160c1258d4e0"
+    },
+    {
+      "name": "mall-unlock-5-v30.webp",
+      "size": 113582,
+      "sha256": "ce40b5a60202ccf0117b882d160444ddec01b5e9f7e60fa8b06bcc4f4a94a9b2"
+    },
+    {
+      "name": "mall-unlock-6-v30.webp",
+      "size": 21088,
+      "sha256": "fbe0bc2c626d15631e89ae72cdcf848214e95b8694ee274390504a2c5b2bce63"
+    },
+    {
+      "name": "mall-unlock-7-v30.webp",
+      "size": 20896,
+      "sha256": "aaa11fe561cf5ba23ef50723521b2247d9f212792ef6c4a0f3b7a246ef62b01f"
+    },
+    {
+      "name": "mall-unlock-8-v30.webp",
+      "size": 22148,
+      "sha256": "5017751881657b4d7c441ce89b72aacb00a112c2bf5b716c9b64de223bd362e4"
+    },
+    {
+      "name": "model-0.webp",
+      "size": 88998,
+      "sha256": "3abe821910583d815ef7083891c6106ea1b3f6415e347411adff326f442a8e19"
+    },
+    {
+      "name": "model-1.webp",
+      "size": 90874,
+      "sha256": "4ca6652d3246538338235ce76be0785d16b82d84d6d07bb6084f4a3fa38bd2ca"
+    },
+    {
+      "name": "model-2.webp",
+      "size": 85044,
+      "sha256": "fdf6fc8e08b8ed4fdf0cc8b12b63ee0e742cf9045c981372a1e0802523966038"
+    },
+    {
+      "name": "model-3.webp",
+      "size": 93386,
+      "sha256": "ebdaca7ad7408c6b83b2967524c61cd5b266193b8337b527fd225f76ccdc88ab"
+    },
+    {
+      "name": "model-4.webp",
+      "size": 76916,
+      "sha256": "cbff7c5b326e37722c58d0ddeaac32edcb7b08f395379cdcb438a4513eba61ab"
+    },
+    {
+      "name": "pixel-boots-brown.webp",
+      "size": 5412,
+      "sha256": "940cd640e8ccddc5e79b866695d30aeb573da5aff06685d09f692d3c6da38bbe"
+    },
+    {
+      "name": "pixel-boots-purple.webp",
+      "size": 5086,
+      "sha256": "b6b9293109d35a7ed7f7c16b3c3d19d301ccbe0cc8d3ecd66f801f3c5757e303"
+    },
+    {
+      "name": "pixel-crown-gold.webp",
+      "size": 5490,
+      "sha256": "e830a77962821ba826904c3a3fea50d767f4b1bf8ebe3bf26a6c5f5962caabb7"
+    },
+    {
+      "name": "pixel-dress-lilac.webp",
+      "size": 10414,
+      "sha256": "1e2910a33a078e6b7ed9be89e39bb3bf5bcdc35fc8b9098caca368751f82304f"
+    },
+    {
+      "name": "pixel-dress-pink.webp",
+      "size": 11654,
+      "sha256": "53574e205665fbcd9a4ed1a754c2ddccf74953b1f2f93d4678ef720a9471eefe"
+    },
+    {
+      "name": "pixel-dress-red.webp",
+      "size": 13584,
+      "sha256": "1cc9b73e5310c250b9efb0714a8adcb89dc33cf599a4573c1e633ee4aa90585c"
+    },
+    {
+      "name": "pixel-earrings-blue.webp",
+      "size": 5544,
+      "sha256": "2112ed0586f2b2976a01afb3d71f9ab0eed259ff764542ddace7a5c4aa479a27"
+    },
+    {
+      "name": "pixel-knit-yellow.webp",
+      "size": 9974,
+      "sha256": "fbe8efb8300eaf46b25f1c7cd45bb1daa4b78b674898323c9d565002931a9d44"
+    },
+    {
+      "name": "pixel-necklace-rose.webp",
+      "size": 4046,
+      "sha256": "2d8455fc9c4a8239a781669e4173ebd690e417b3de54b37f37322edc59aea224"
+    },
+    {
+      "name": "pixel-ring-rose.webp",
+      "size": 2562,
+      "sha256": "39efc5d1d9a006e48ffed21f4b95f1aaca74738c5c9a052d35854536228f90b9"
+    },
+    {
+      "name": "pixel-shoes-pink.webp",
+      "size": 5808,
+      "sha256": "9e78c51291a16daf186da2b6453607061844c2cc6f04ce1dca7504f96c28f5dd"
+    },
+    {
+      "name": "pixel-socks-white.webp",
+      "size": 4312,
+      "sha256": "6e811719a3e61aa1563bae9ffc966caba08eef45841058c87768e22deabe1568"
+    },
+    {
+      "name": "profile-dressing-room-v1.webp",
+      "size": 205044,
+      "sha256": "e87264039b79b416791f7a7f9add0bfc016760bc618b6744754d88a124cf3076"
+    },
+    {
+      "name": "scene.webp",
+      "size": 279518,
+      "sha256": "0abe49ff8cb6c870aec88e55cd028046cc36af51a88037e5ef96c308fd77e49c"
+    },
+    {
+      "name": "signin-bow-v50.png",
+      "size": 258518,
+      "sha256": "38467d9a1f84ca0ef9ec693e9d1e7738cc68df6739065f1ebaa8cab67855ab51"
+    },
+    {
+      "name": "signin-reference.png",
+      "size": 2433646,
+      "sha256": "20be6bdbf0a76057e9d30efd8fd55c46c3590fb14115fe5a8a85eb0ba63ee3ea"
+    },
+    {
+      "name": "work-bag-t1.png",
+      "size": 42215,
+      "sha256": "e513dee2e6a5a7d6e38386a3b3df7f4463f98103b2e2ee6315d824a84f728ec9"
+    },
+    {
+      "name": "work-bag-t2.png",
+      "size": 48390,
+      "sha256": "6b43e6291ee1883d596f74db389465b22d6cf0818ad651d5af39f2bd39afe0f5"
+    },
+    {
+      "name": "work-bag-t3.png",
+      "size": 50359,
+      "sha256": "cca32c9dd5438b58af5ce2ae283b70e1b0493cd1c3b22e2b693185d18fd6f64e"
+    },
+    {
+      "name": "work-bag-t4.png",
+      "size": 52611,
+      "sha256": "666ef26437db18226ab37773d3afde964d0ee33df01c9f6c1db4af04692a0945"
+    },
+    {
+      "name": "work-bag-t5.png",
+      "size": 52277,
+      "sha256": "a92d93027fb0b12f002b3586ade976a6fb3470aacdf0d53fc1124c78ef2f05a2"
+    },
+    {
+      "name": "work-bag-t6.png",
+      "size": 60454,
+      "sha256": "4be1d19290069e660b38dccecab5a3a6c2d9e6d566118c274b25f9ecdcf6e333"
+    },
+    {
+      "name": "work-earrings-t1.png",
+      "size": 32594,
+      "sha256": "080d9fe41ace154c6c7d43fcb4ad297de81aefa1f82e49c82391b72c024a723d"
+    },
+    {
+      "name": "work-earrings-t2.png",
+      "size": 39756,
+      "sha256": "0138e5d29a33c972bb61a1843ffecc8b63228a5df82b3af28201eaef4c4dc74e"
+    },
+    {
+      "name": "work-earrings-t3.png",
+      "size": 42627,
+      "sha256": "958eac44330382a3fb8fb124849b9823d97bf4d4884e396257e493564dfed3b9"
+    },
+    {
+      "name": "work-earrings-t4.png",
+      "size": 45529,
+      "sha256": "33ce6b97e99802885b16c3aea91ff9248eec115c48216a43863b23808179902b"
+    },
+    {
+      "name": "work-earrings-t5.png",
+      "size": 40574,
+      "sha256": "912f6fb428ed4adec199fd2665eed75f810c35639fdc60b199980036d80de607"
+    },
+    {
+      "name": "work-earrings-t6.png",
+      "size": 50950,
+      "sha256": "975805972ae9b84752df74737a42d8919425cf8d5309a8063420b01d6a750fac"
+    },
+    {
+      "name": "work-hairclip-t1.png",
+      "size": 38731,
+      "sha256": "1918ca24ad36ea15a554e4fc5e6f6d6e61728f9f0aac246570d8301e3602b20c"
+    },
+    {
+      "name": "work-hairclip-t2.png",
+      "size": 39737,
+      "sha256": "213568d515f9ba3cae4426851eac8514287ee934f73f596c56558d6e5d83f687"
+    },
+    {
+      "name": "work-hairclip-t3.png",
+      "size": 44724,
+      "sha256": "c822f06952c354da21ba2477c08ca5a8620d82afeaeeaf99d9d22b782f47792e"
+    },
+    {
+      "name": "work-hairclip-t4.png",
+      "size": 45075,
+      "sha256": "5af6073b20959aa79c41cc5c184c0a53d92711cbbf8a128f30f11cd4f49819a4"
+    },
+    {
+      "name": "work-hairclip-t5.png",
+      "size": 43162,
+      "sha256": "7cf78fed4f800c55db0c768be389cfd5c9532d7284d51c2cbd1a3a883b9d9dfc"
+    },
+    {
+      "name": "work-hairclip-t6.png",
+      "size": 55630,
+      "sha256": "4527d9fa090f7eb40e3fc0e489f98f612f34d05d8f43796a5c5472bd4f1b69af"
+    },
+    {
+      "name": "work-lipstick-t1.png",
+      "size": 24899,
+      "sha256": "f5dd89a8bf56f0bd975b70265fbf453d050e0c7cef9672f79939d2a794a552b6"
+    },
+    {
+      "name": "work-lipstick-t2.png",
+      "size": 29289,
+      "sha256": "7e5e4e07899ec4afadc7473005b2fd43e68fd9e01dc3359c0999b041f1fe8d90"
+    },
+    {
+      "name": "work-lipstick-t3.png",
+      "size": 30952,
+      "sha256": "5dd6c7b7921391a2de93fdbc8a1a9f438c687ce764be19fa37d9d99c4921140b"
+    },
+    {
+      "name": "work-lipstick-t4.png",
+      "size": 37757,
+      "sha256": "7147c384edd95747cc0f7341f60300907e06957fecb74e8d0cad14352ea091bb"
+    },
+    {
+      "name": "work-lipstick-t5.png",
+      "size": 38574,
+      "sha256": "0de66feb4dd7b63ba6f7d33cc1949283a0a6c2f76f4b8b25777d4a114ec10644"
+    },
+    {
+      "name": "work-lipstick-t6.png",
+      "size": 49841,
+      "sha256": "c75b25219d30d52fd72a56cb6ee8a6eb84fa12e5943f64cb3260fa8fdfc517bd"
+    },
+    {
+      "name": "work-necklace-t1.png",
+      "size": 28634,
+      "sha256": "568b41080d85e083b839ae814bf0bd5b574e6f0ec5e54301c16c93cf38b1564f"
+    },
+    {
+      "name": "work-necklace-t2.png",
+      "size": 32151,
+      "sha256": "20dd3f322851e0c438e5a912b2c289c99005948cf41f718d86ccb2db694f1e0e"
+    },
+    {
+      "name": "work-necklace-t3.png",
+      "size": 36824,
+      "sha256": "0a03e0b2c0894607a17e4f41b89a947b790862746c9cc972139d1832236f086f"
+    },
+    {
+      "name": "work-necklace-t4.png",
+      "size": 43021,
+      "sha256": "ee8efba25ac5a2387117bf0e41c38ba07db6449ef4a9520f5a43683d43912881"
+    },
+    {
+      "name": "work-necklace-t5.png",
+      "size": 41351,
+      "sha256": "06250486cda25598247abd0f7ccfec6dc0e7ada070e07b5e037e11328f8a96b3"
+    },
+    {
+      "name": "work-necklace-t6.png",
+      "size": 52970,
+      "sha256": "d1a7a967af61fc6aad021d005e1f5925bc5b3af27d3e62f625fdd1a1149b7b08"
+    },
+    {
+      "name": "work-perfume-t1.png",
+      "size": 40263,
+      "sha256": "ec96379ca6d8fe99dac003b67b49cfa8a06c09e570999613f449225b7cb42f6a"
+    },
+    {
+      "name": "work-perfume-t2.png",
+      "size": 43874,
+      "sha256": "c0e4b0568c50acbf8239f8254f7e6aa0d478d90c38d87a52f0d7af09c699e279"
+    },
+    {
+      "name": "work-perfume-t3.png",
+      "size": 48146,
+      "sha256": "b58ee8c18122d005829c4841fad6aaf3b5d8e9fcf9de74d4c15352b8b37576ea"
+    },
+    {
+      "name": "work-perfume-t4.png",
+      "size": 49625,
+      "sha256": "56a93443476b46736cae0e758f2ef27cc4478d82fbd81090479fccddf6d4843a"
+    },
+    {
+      "name": "work-perfume-t5.png",
+      "size": 53162,
+      "sha256": "253e1038bab055fe39cd47c4583b9494d971bf4f5319aaef82f2d6ed7f706bf1"
+    },
+    {
+      "name": "work-perfume-t6.png",
+      "size": 56745,
+      "sha256": "3d0faf27a9e8389aded386aceb85ff85abda03e76023a9f60f3607006919ca12"
+    },
+    {
+      "name": "workbench-shine-background.png",
+      "size": 1539461,
+      "sha256": "ca3a32b282568ee49a5082adb248a0a5657ae2c2da056bfd307f062b9f21c611"
+    },
+    {
+      "name": "workshop-npc/npc-01.png",
+      "size": 114791,
+      "sha256": "c4753d0b8fbd9c41e2ca8f99f596e180169d4330bf1d55b8e318fe99ef7db9dd"
+    },
+    {
+      "name": "workshop-npc/npc-02.png",
+      "size": 102190,
+      "sha256": "2ba8da9dd2631b5587c3d53af8898f41348c21d174a1085f3fefdfeb50f5318e"
+    },
+    {
+      "name": "workshop-npc/npc-03.png",
+      "size": 103580,
+      "sha256": "d44ff2c55453938f55ad0f12b15becd9979805cb8d0fb139149acf95cf96ff56"
+    },
+    {
+      "name": "workshop-npc/npc-06.png",
+      "size": 84721,
+      "sha256": "be1020fb0e136630acdc77c7d98f0be135f49c3562cb8d0fc40ba323cb1c3314"
+    },
+    {
+      "name": "workshop-npc/npc-07.png",
+      "size": 101201,
+      "sha256": "b98f90849593083073f2f5b7aed170227ae76e37646026d07c57073eccea3b16"
+    },
+    {
+      "name": "workshop-npc/npc-08.png",
+      "size": 85472,
+      "sha256": "fc193113850f9d9171c06feaae8d4bf9a25bc3c1c733498fb50e8ad80a118758"
+    },
+    {
+      "name": "workshop-v52/items/accessory/merge_accessory_01.png",
+      "size": 47087,
+      "sha256": "1c4343446fcc3c37a453d8e54ae839046b2b3961d14034ed313937d38a2086cb"
+    },
+    {
+      "name": "workshop-v52/items/accessory/merge_accessory_02.png",
+      "size": 43743,
+      "sha256": "ddea2b48910a8f15b8a6fa81f78ac0465c67fd81b98e2d2d85e50a58bc533d4c"
+    },
+    {
+      "name": "workshop-v52/items/accessory/merge_accessory_03.png",
+      "size": 41213,
+      "sha256": "c343504a52bb2c0460bb4cf6fbec39e86d8a41de9584dca3f75d8d7e7a49b056"
+    },
+    {
+      "name": "workshop-v52/items/accessory/merge_accessory_04.png",
+      "size": 16316,
+      "sha256": "4a44f441b4f012123d350361ccd68c9e045be8cf0a370ba433bc30d17b0b543a"
+    },
+    {
+      "name": "workshop-v52/items/accessory/merge_accessory_05.png",
+      "size": 30254,
+      "sha256": "84af6229fcc31ca0a9f6674305428bbb3e9ca6f3f764b0f45e63119bd528a6d8"
+    },
+    {
+      "name": "workshop-v52/items/accessory/merge_accessory_06.png",
+      "size": 54849,
+      "sha256": "ce6303b6784aa963e705777313ae35decbd4a690270dac7d123772f710f084ef"
+    },
+    {
+      "name": "workshop-v52/items/accessory/merge_accessory_07.png",
+      "size": 44668,
+      "sha256": "f888483eed29b0feb7a2c57cbd3927ec771fd1ed8bca4ca2a267e0ad1ffe7f67"
+    },
+    {
+      "name": "workshop-v52/items/accessory/merge_accessory_08.png",
+      "size": 55203,
+      "sha256": "aa53851b90690108c9eb7c6c72ee9f00bb4c839fa4458a031c94d43c171bfa94"
+    },
+    {
+      "name": "workshop-v52/items/bag/merge_bag_01.png",
+      "size": 47669,
+      "sha256": "668b92e777c673ecbb15cbd30f1750e6c261e47e0caeaa32b191ef627c0635be"
+    },
+    {
+      "name": "workshop-v52/items/bag/merge_bag_02.png",
+      "size": 50537,
+      "sha256": "a4f0b4bff12865ee54e8afdcfce8e255420e358054006b5c951327221899af25"
+    },
+    {
+      "name": "workshop-v52/items/bag/merge_bag_03.png",
+      "size": 48067,
+      "sha256": "ac90a2dfcbb128693b3f7b25727a5d2521d721006ccb9ecf5e1a1a1736b399b8"
+    },
+    {
+      "name": "workshop-v52/items/bag/merge_bag_04.png",
+      "size": 29906,
+      "sha256": "66d0b0709d5e8a9642a505ee2ef61e5e38e32dd476f0b88156340493a69fc575"
+    },
+    {
+      "name": "workshop-v52/items/bag/merge_bag_05.png",
+      "size": 51374,
+      "sha256": "303b5c8c77f6724e640be13ce28ff4b9592969ae9467a5c153473447b9c9d617"
+    },
+    {
+      "name": "workshop-v52/items/bag/merge_bag_06.png",
+      "size": 62120,
+      "sha256": "aae79c1034b583086905dd42c278780a50e01be9cf649a6c27e197b8109ce58a"
+    },
+    {
+      "name": "workshop-v52/items/bag/merge_bag_07.png",
+      "size": 49704,
+      "sha256": "4ed52fe4cea7a6003744833fa5dae8bafb8e137d1c083c9e635caf9123b75eb4"
+    },
+    {
+      "name": "workshop-v52/items/bag/merge_bag_08.png",
+      "size": 49196,
+      "sha256": "220bf71b9d8d6af5838f225f682b3f52cbb07d2f373844f82a03ce60aeea046b"
+    },
+    {
+      "name": "workshop-v52/items/bag/merge_bag_09.png",
+      "size": 56543,
+      "sha256": "2dbec0393726e3ab9b80b34b943c97c5bf188918b5b7f27d0ab58a2574a4e27a"
+    },
+    {
+      "name": "workshop-v52/items/bag/merge_bag_10.png",
+      "size": 29350,
+      "sha256": "f5ba05c625fd49e7c601c786fc12ae737693d3f73d854247b9e9d314d60da8c6"
+    },
+    {
+      "name": "workshop-v52/items/bag/merge_bag_11.png",
+      "size": 57877,
+      "sha256": "6bc38b17786289b85ad6ecd61354db4e975be79b11958e33d8282704e3b60061"
+    },
+    {
+      "name": "workshop-v52/items/bag/merge_bag_12.png",
+      "size": 46890,
+      "sha256": "5b4b08c41f38838c6024c697726dd1342dd8d5ce58c3b22f80f5c3f7d32e1cbc"
+    },
+    {
+      "name": "workshop-v52/items/dress/merge_dress_01.png",
+      "size": 52879,
+      "sha256": "2b6ea2e11fdd6db94406d360e4aa6fbbba815b9fce54cd5c0eea36c289b181df"
+    },
+    {
+      "name": "workshop-v52/items/dress/merge_dress_02.png",
+      "size": 38968,
+      "sha256": "cbf9b695f5b521fa5664dd20e6ff8978996ffd821ce30548437a83711e467b2b"
+    },
+    {
+      "name": "workshop-v52/items/dress/merge_dress_03.png",
+      "size": 27249,
+      "sha256": "a35b905ae28c9f141be759efb729f0c54bf311842e37f7b35745969c4d2182cf"
+    },
+    {
+      "name": "workshop-v52/items/dress/merge_dress_04.png",
+      "size": 42698,
+      "sha256": "0cce62fe649b9a4671aa6d6d6fecba7fc10aeab1977967a5a6ae7095ffa17783"
+    },
+    {
+      "name": "workshop-v52/items/dress/merge_dress_05.png",
+      "size": 33805,
+      "sha256": "e9672cce445f56b04781a6ea17d2fb9ac5e41e05edc567c548cda1fb7d101cf8"
+    },
+    {
+      "name": "workshop-v52/items/dress/merge_dress_06.png",
+      "size": 46025,
+      "sha256": "09057137f1820152b434f7f81ab6c9e26699ddef9bcb8abd47ce89b242a3aab0"
+    },
+    {
+      "name": "workshop-v52/items/dress/merge_dress_07.png",
+      "size": 38450,
+      "sha256": "8641436a10881d83b5dfdcba82e2813132bc9d8c1ff2b1975b18054d8efd3e7d"
+    },
+    {
+      "name": "workshop-v52/items/dress/merge_dress_08.png",
+      "size": 19634,
+      "sha256": "01281fecedf917842b5dd0db867068a780587b5bce23a5ef37a2deb69fae7342"
+    },
+    {
+      "name": "workshop-v52/items/dress/merge_dress_09.png",
+      "size": 31321,
+      "sha256": "779a48aaa758351edb6479a436a157fa0ab40e985e1a86db3126a121038a7022"
+    },
+    {
+      "name": "workshop-v52/items/dress/merge_dress_10.png",
+      "size": 36185,
+      "sha256": "713350a9d18e885996a56d76c6a7213bd37a02223c967ffe02f956f4bc959cf5"
+    },
+    {
+      "name": "workshop-v52/items/dress/merge_dress_11.png",
+      "size": 55556,
+      "sha256": "5d11ccf44d0332e6f8b26ff2c7ce743b57ec7fe99fd2b2f1cb4009d505c3a73a"
+    },
+    {
+      "name": "workshop-v52/items/dress/merge_dress_12.png",
+      "size": 38961,
+      "sha256": "7a0177f72f3d192e5df8463132489cc3a2fc4e94d4e344a5fc1c35772073b5c8"
+    },
+    {
+      "name": "workshop-v52/items/dress/merge_dress_13.png",
+      "size": 51554,
+      "sha256": "8e60fe8f87b265ba69d25bf62186782c307dada60276ba582832ef8c39d259d4"
+    },
+    {
+      "name": "workshop-v52/items/dress/merge_dress_14.png",
+      "size": 35039,
+      "sha256": "e90931cf297985285df6b45a088324394777829c4d5a724ac794b6c747160316"
+    },
+    {
+      "name": "workshop-v52/items/earrings/merge_earrings_01.png",
+      "size": 25336,
+      "sha256": "1dd626b24c2aa8202ad3d9ffd371c387ee25ca85f8f130e0377b791917ff7f6f"
+    },
+    {
+      "name": "workshop-v52/items/earrings/merge_earrings_02.png",
+      "size": 20923,
+      "sha256": "13d9b353155c4f6c7c23daff1152fe744917d1b70ca5f5221841b34fde3175b9"
+    },
+    {
+      "name": "workshop-v52/items/earrings/merge_earrings_03.png",
+      "size": 35829,
+      "sha256": "5b9d396ffe4cf692d9ad74b6698ab0071bcf8caf29e0767b84ed6031809618b3"
+    },
+    {
+      "name": "workshop-v52/items/earrings/merge_earrings_04.png",
+      "size": 35795,
+      "sha256": "b297a624a931320d50ea17c538f117855b2d944a2a36d16a86c356a84e1f91d1"
+    },
+    {
+      "name": "workshop-v52/items/earrings/merge_earrings_05.png",
+      "size": 24583,
+      "sha256": "28cf0981b00e806a05859803c331f601ca55a6e64c5b2b0a6cc2ab044363fdf9"
+    },
+    {
+      "name": "workshop-v52/items/earrings/merge_earrings_06.png",
+      "size": 39133,
+      "sha256": "c2a41598dcd0774210078e113eb07059f1ff0a717032c5a9a333ac2108e265bd"
+    },
+    {
+      "name": "workshop-v52/items/earrings/merge_earrings_07.png",
+      "size": 24703,
+      "sha256": "fbe08c55742eedcb3639f9fcbb83f990849520d9d5f0a17145b4ac3d96cc365c"
+    },
+    {
+      "name": "workshop-v52/items/glasses/merge_glasses_01.png",
+      "size": 21886,
+      "sha256": "464b5896220053e5e71a1da3997ce8d7490ca087db6aa2c5678f579526ba5faf"
+    },
+    {
+      "name": "workshop-v52/items/glasses/merge_glasses_02.png",
+      "size": 21447,
+      "sha256": "0a4fe3218b4b8951fcc548e8e0319cc4a294943ac85608478fa25aeeceb17a16"
+    },
+    {
+      "name": "workshop-v52/items/glasses/merge_glasses_03.png",
+      "size": 11059,
+      "sha256": "0bac3956da14a1b45b12f0f7935d7915e7a8f985f61c7121dd9f5ec72f4f6d68"
+    },
+    {
+      "name": "workshop-v52/items/glasses/merge_glasses_04.png",
+      "size": 26728,
+      "sha256": "8bcaa692c5a2763f5672633fa741a93fb3c385b37d5d7d1fb23fa2db223ee4d4"
+    },
+    {
+      "name": "workshop-v52/items/glasses/merge_glasses_05.png",
+      "size": 21879,
+      "sha256": "3bc9105bd0154fa99f1658a6edb23e9579c50332df8bfcffc4be32695781ee06"
+    },
+    {
+      "name": "workshop-v52/items/glasses/merge_glasses_06.png",
+      "size": 22625,
+      "sha256": "a13a826140b072b890de9b8daddad7583d7aeb5be37f98d320e69c7f87c0ef56"
+    },
+    {
+      "name": "workshop-v52/items/glasses/merge_glasses_07.png",
+      "size": 20978,
+      "sha256": "ba5a54122b418f25024b79ce1619f047b312e88b59b888a532c97fd0d58d71d3"
+    },
+    {
+      "name": "workshop-v52/items/glasses/merge_glasses_08.png",
+      "size": 24331,
+      "sha256": "e79db6cf8cd6c663f22dc1efea32935df47c726a0a2c73c62cfe2df80c7de72d"
+    },
+    {
+      "name": "workshop-v52/items/glasses/merge_glasses_09.png",
+      "size": 15167,
+      "sha256": "28fbe724c24e1d001db6c82ef4d2d16632aee92b49b19c0a4b00e445e9f6a69a"
+    },
+    {
+      "name": "workshop-v52/items/glasses/merge_glasses_10.png",
+      "size": 26560,
+      "sha256": "921858aaa3b94a5357916ec37700eab719c873fe5388092ebee8db8c9f5fa3be"
+    },
+    {
+      "name": "workshop-v52/items/gloves/merge_gloves_01.png",
+      "size": 73572,
+      "sha256": "4cbfc5868ae9168a62721aeaaad6022d028fb98144392fa80d9a24f709e63671"
+    },
+    {
+      "name": "workshop-v52/items/gloves/merge_gloves_02.png",
+      "size": 57904,
+      "sha256": "a12916b8486ee340c0c3f2f9858899a9918d81e1d0b6e934a6ad8a55fb31a7ad"
+    },
+    {
+      "name": "workshop-v52/items/gloves/merge_gloves_03.png",
+      "size": 49743,
+      "sha256": "0695c5e1b12c2156f43341011a8b4f910f39f0fe9042f8297826f3598fa32607"
+    },
+    {
+      "name": "workshop-v52/items/gloves/merge_gloves_04.png",
+      "size": 70689,
+      "sha256": "4ebd6cc10526230e4492a5eb56262c56e39ea18570a6caee068e4a11e0756935"
+    },
+    {
+      "name": "workshop-v52/items/gloves/merge_gloves_05.png",
+      "size": 23439,
+      "sha256": "6852e582a9a85783a01469067cf3a395ce49d2d9c1c29d03aeabe10eda2c5929"
+    },
+    {
+      "name": "workshop-v52/items/gloves/merge_gloves_06.png",
+      "size": 45746,
+      "sha256": "c85d95541b1f552dd09b7aa64e9227c34ed35c0e8f5938291fb85181c0e7c259"
+    },
+    {
+      "name": "workshop-v52/items/gloves/merge_gloves_07.png",
+      "size": 36514,
+      "sha256": "ff3f0aba8843ab641b60d0bc64fc7602cdcc102ef737e5b325c20aaa2d1ae36b"
+    },
+    {
+      "name": "workshop-v52/items/hair/merge_hair_01.png",
+      "size": 19131,
+      "sha256": "9ee7073b78da0967214ae72d8306c30a346746e2539a4e12c67ceedd6fbb26cf"
+    },
+    {
+      "name": "workshop-v52/items/hair/merge_hair_02.png",
+      "size": 67504,
+      "sha256": "05e097d984e10ea4c4e37daa6495e59aadc2311e2bb1878be6d58640c23cfb35"
+    },
+    {
+      "name": "workshop-v52/items/hair/merge_hair_03.png",
+      "size": 41305,
+      "sha256": "8fae7e867c29d7eb4367b5284f24494fcdb2425b69f8c595e412b95bf62c695a"
+    },
+    {
+      "name": "workshop-v52/items/hair/merge_hair_04.png",
+      "size": 39432,
+      "sha256": "c3744eea3b56b85178dd7918518477da23f616228aad6e3e01f3483a20aefd34"
+    },
+    {
+      "name": "workshop-v52/items/hair/merge_hair_05.png",
+      "size": 39887,
+      "sha256": "9189667bf292de6929033cda5ffc141e5f0483f89e087d9cbcbe27a49594f39d"
+    },
+    {
+      "name": "workshop-v52/items/hair/merge_hair_06.png",
+      "size": 48378,
+      "sha256": "5aef0661ea81fa057e6ae0a17a38f2699afb90a6318c45b5cda45f748d432b0f"
+    },
+    {
+      "name": "workshop-v52/items/hair/merge_hair_07.png",
+      "size": 46137,
+      "sha256": "448a63e7d770406ab78f2249b6459ef028c365e41a3a76d83a3b296e4ffcfce2"
+    },
+    {
+      "name": "workshop-v52/items/hair/merge_hair_08.png",
+      "size": 45449,
+      "sha256": "6686db52db9c531c821b1174b8cb1e17431e66cec2ae0b5cd16c08d34e60458e"
+    },
+    {
+      "name": "workshop-v52/items/hair/merge_hair_09.png",
+      "size": 31657,
+      "sha256": "2303e79072de1881f9cbe0c69c660d2ff589da9e624a36317c9a5cb97d779b47"
+    },
+    {
+      "name": "workshop-v52/items/hair/merge_hair_10.png",
+      "size": 55379,
+      "sha256": "afcfbe6fa5dd83ff296ac8faa549b102a24d232a3e6c2b7df0b3ba5348f85d98"
+    },
+    {
+      "name": "workshop-v52/items/hair/merge_hair_11.png",
+      "size": 46549,
+      "sha256": "c32ed311b56d6b9bbde4552945802f9304f386f33b725930be3cfa60ace1f7cb"
+    },
+    {
+      "name": "workshop-v52/items/hair/merge_hair_12.png",
+      "size": 32605,
+      "sha256": "58dbc1ae26517d44b3beac11f50a91f3e80ce5fc4c07dfdf4d999038dc523ed8"
+    },
+    {
+      "name": "workshop-v52/items/handheld/merge_handheld_01.png",
+      "size": 28857,
+      "sha256": "33831f2ca74ce585dc2d2878c0f2f31ca20a6e762a3656db60cafa69f9d6d16a"
+    },
+    {
+      "name": "workshop-v52/items/handheld/merge_handheld_02.png",
+      "size": 25708,
+      "sha256": "e5b4809bce0766729e478a8b1313f40a025a3ab027646867fe4064a93b689382"
+    },
+    {
+      "name": "workshop-v52/items/handheld/merge_handheld_03.png",
+      "size": 41242,
+      "sha256": "87c66f60bfdcfe3251fa587fd338b299e613f8eaed3f89f3a0b596ad083f4ae7"
+    },
+    {
+      "name": "workshop-v52/items/handheld/merge_handheld_04.png",
+      "size": 34703,
+      "sha256": "80182acf44b57702ae6ffceac6f5adc1dc92f880bcc69bb2c6f5a5b5522b58de"
+    },
+    {
+      "name": "workshop-v52/items/handheld/merge_handheld_05.png",
+      "size": 33682,
+      "sha256": "f0b10af73cb1105440218693eba28c5562ae921d6d5070c321680fe0333e6c25"
+    },
+    {
+      "name": "workshop-v52/items/handheld/merge_handheld_06.png",
+      "size": 64438,
+      "sha256": "b31f2a6372a02dabe9cf7104e892dd1a3dac85600e49b3986c5cf3fad0a6b624"
+    },
+    {
+      "name": "workshop-v52/items/handheld/merge_handheld_07.png",
+      "size": 8787,
+      "sha256": "fbc3514dae40216664f1ba7fc8ef40e7abc0451a8233a75d361a535c54427519"
+    },
+    {
+      "name": "workshop-v52/items/handheld/merge_handheld_08.png",
+      "size": 22043,
+      "sha256": "8e531d80131e40ad0c4a1666423b3f66722dabab7afdcb2c68dd10480b7982e7"
+    },
+    {
+      "name": "workshop-v52/items/hat/merge_hat_01.png",
+      "size": 45598,
+      "sha256": "5f586b700bb1a5daef74589b770cffa3df8328b4a9226fb06c284cfe65c15f58"
+    },
+    {
+      "name": "workshop-v52/items/hat/merge_hat_02.png",
+      "size": 41233,
+      "sha256": "8e5f4530a6c08fffe14384989c86e728005f1515f09a005aa36013830177f5f0"
+    },
+    {
+      "name": "workshop-v52/items/hat/merge_hat_03.png",
+      "size": 60623,
+      "sha256": "1539c023121a674675dd3a1d59d4e15fe4686a82015840412acc65e7f237fe85"
+    },
+    {
+      "name": "workshop-v52/items/hat/merge_hat_04.png",
+      "size": 30148,
+      "sha256": "dedb0cef0a5180a9de70f460be459a9b1d19b5315a7bb2f26ee381653c8c7ca6"
+    },
+    {
+      "name": "workshop-v52/items/hat/merge_hat_05.png",
+      "size": 34457,
+      "sha256": "c8a93bd0329d803c94f4e538327dd0b2b0ac639d454016b7454fe9975ed1ca01"
+    },
+    {
+      "name": "workshop-v52/items/hat/merge_hat_06.png",
+      "size": 29879,
+      "sha256": "cea4af97c3ca1b4dbe90498c2b88c06ea965b4660775543bb0887da739aced69"
+    },
+    {
+      "name": "workshop-v52/items/hat/merge_hat_07.png",
+      "size": 30129,
+      "sha256": "e92fe7a570803972b462c4cf413616743fe2ffc97706396ce840379789649979"
+    },
+    {
+      "name": "workshop-v52/items/hat/merge_hat_08.png",
+      "size": 61873,
+      "sha256": "035c9b7709d8b224daa39f918af6efedeec2ec2c3149c70276393a581a5431e6"
+    },
+    {
+      "name": "workshop-v52/items/necklace/merge_necklace_01.png",
+      "size": 23619,
+      "sha256": "ca95def6e1a15837544a9b47231794d59b909b20a5f419f0a27cc36ac1c7184c"
+    },
+    {
+      "name": "workshop-v52/items/necklace/merge_necklace_02.png",
+      "size": 11818,
+      "sha256": "c09fd2e77221756d4f62b733fdca65d611fc9032ac6f063d5dc08dade1ee137a"
+    },
+    {
+      "name": "workshop-v52/items/necklace/merge_necklace_03.png",
+      "size": 17230,
+      "sha256": "adedcad76672524d5d15b2fe51c35eaa296f71e6af5708e0d2585597b8b0ac34"
+    },
+    {
+      "name": "workshop-v52/items/necklace/merge_necklace_04.png",
+      "size": 43359,
+      "sha256": "a5709693d519d886a87670f13029529a0099659e60242c18b450059ae741d359"
+    },
+    {
+      "name": "workshop-v52/items/necklace/merge_necklace_05.png",
+      "size": 34220,
+      "sha256": "e6afcf4d5da6f311be60492b3bb2a868029dfcf0f0eef21c9837677bd518b3c5"
+    },
+    {
+      "name": "workshop-v52/items/necklace/merge_necklace_06.png",
+      "size": 27937,
+      "sha256": "68221276533cd472cd8bd69281727514187a4cda23023a707259700d8d9b4ee9"
+    },
+    {
+      "name": "workshop-v52/items/necklace/merge_necklace_07.png",
+      "size": 30645,
+      "sha256": "4ec52597a9526517439b87ca3c771e33787c78826cef530123593ef3c17e2a0d"
+    },
+    {
+      "name": "workshop-v52/items/necklace/merge_necklace_08.png",
+      "size": 16181,
+      "sha256": "4b983a6eb425e03f2a50f42684300e9c507c2fbd12b2f6ca69347c4ee7b522d7"
+    },
+    {
+      "name": "workshop-v52/items/necklace/merge_necklace_09.png",
+      "size": 36110,
+      "sha256": "dfc5a2f331dca3dd118880241d48f4a445b35b30c51907733ef9a9a4fdd49061"
+    },
+    {
+      "name": "workshop-v52/items/necklace/merge_necklace_10.png",
+      "size": 33005,
+      "sha256": "a5795c8b8b3afb71f71d3f4a2d1c01940e7bd601998167ef2b68b1b0862b3300"
+    },
+    {
+      "name": "workshop-v52/items/pants/merge_pants_01.png",
+      "size": 50110,
+      "sha256": "635f922850cc870b17bff722b2ca33fa61d02ce5ae71b3c7ec74139460889404"
+    },
+    {
+      "name": "workshop-v52/items/pants/merge_pants_02.png",
+      "size": 40978,
+      "sha256": "ca7377a9e458475380dd5cdf92fc79f38b01bc40f38b1d92bc542445438fbf3d"
+    },
+    {
+      "name": "workshop-v52/items/pants/merge_pants_03.png",
+      "size": 50518,
+      "sha256": "c2758767e8c4c7f0dc276148fb596f11b664f99b9b3eb71bfbc15c4d415d8dff"
+    },
+    {
+      "name": "workshop-v52/items/pants/merge_pants_04.png",
+      "size": 18269,
+      "sha256": "392f5b766446045e35293cfbcd55c710852dc3ba94106268ce1b11aad8083ff7"
+    },
+    {
+      "name": "workshop-v52/items/pants/merge_pants_05.png",
+      "size": 31517,
+      "sha256": "77c0fde6293f46dceaaf21fa21ef46718aea92c5ac3e2b37d849c567b38771bb"
+    },
+    {
+      "name": "workshop-v52/items/pants/merge_pants_06.png",
+      "size": 22654,
+      "sha256": "a5b0ec20a64665ca89d2a51ea08e89babf31ef0f6776825f2164d9717ca958de"
+    },
+    {
+      "name": "workshop-v52/items/pants/merge_pants_07.png",
+      "size": 34009,
+      "sha256": "e1081764ab5fda611cd5d89c9c91da9d3981e5d371b39ff17604cb84c5c75c5f"
+    },
+    {
+      "name": "workshop-v52/items/pants/merge_pants_08.png",
+      "size": 31708,
+      "sha256": "7fe884902a08230f7cad012c3bd402441cf5589b48760cd189a82050d0f35a10"
+    },
+    {
+      "name": "workshop-v52/items/pants/merge_pants_09.png",
+      "size": 28870,
+      "sha256": "aee2a15c70fad0f6f21553af830c0edb4666884de9d279af45e08e17d2874d78"
+    },
+    {
+      "name": "workshop-v52/items/pants/merge_pants_10.png",
+      "size": 28379,
+      "sha256": "b193f02cb6467521659d36e37238af88ec2111a66342ab275f4da7e61e7d7580"
+    },
+    {
+      "name": "workshop-v52/items/ring/merge_ring_01.png",
+      "size": 32766,
+      "sha256": "c78ab0232bf1a3ad5044769a04ffdea46a79468680fbd812efc5979d447736cf"
+    },
+    {
+      "name": "workshop-v52/items/ring/merge_ring_02.png",
+      "size": 37859,
+      "sha256": "ee8060454a307ae0257a12c52a5a686285e96e167bb550d01fbd7b89335d1635"
+    },
+    {
+      "name": "workshop-v52/items/ring/merge_ring_03.png",
+      "size": 33035,
+      "sha256": "0eb3de860654f7ff4e18aee1a0b6ea6408a5b320d5038e7f4052fc0d23ba68a5"
+    },
+    {
+      "name": "workshop-v52/items/ring/merge_ring_04.png",
+      "size": 30719,
+      "sha256": "1e9ff02aca1b67af7b2374ca940bf18002601c19a131d39df376c21a908901c8"
+    },
+    {
+      "name": "workshop-v52/items/ring/merge_ring_05.png",
+      "size": 59155,
+      "sha256": "3ba8169c910db46ec999c01703bfa3c7e7940ee467f7ecdc8d72f00e276bba0a"
+    },
+    {
+      "name": "workshop-v52/items/ring/merge_ring_06.png",
+      "size": 61883,
+      "sha256": "77a18f57a0452e12a4a50f9b28b7a80d7fc481109915ffeaf86841a29e2fab56"
+    },
+    {
+      "name": "workshop-v52/items/ring/merge_ring_07.png",
+      "size": 51700,
+      "sha256": "d55310ceecfba7261b3cf97c7149f58e2b779dbf47aaa084c1b37e75186fb172"
+    },
+    {
+      "name": "workshop-v52/items/shoes/merge_shoes_01.png",
+      "size": 60354,
+      "sha256": "deaff01b31ddf9e55a76e16bfb0a6dbb35284cd0055b0a82d47fb486188a4fc5"
+    },
+    {
+      "name": "workshop-v52/items/shoes/merge_shoes_02.png",
+      "size": 40760,
+      "sha256": "ca87c73bb8af626e85ee2821b2fafb4fae754dfc48124d6524e09f4b1a66b91f"
+    },
+    {
+      "name": "workshop-v52/items/shoes/merge_shoes_03.png",
+      "size": 41812,
+      "sha256": "45ae204880b251910c767b52478ebc264bf8838313237afbecf9c37e8af19866"
+    },
+    {
+      "name": "workshop-v52/items/shoes/merge_shoes_04.png",
+      "size": 52547,
+      "sha256": "e37aa6590ddf3a526d549a53086edd8f49cde42bab5a475876fc5b456575e882"
+    },
+    {
+      "name": "workshop-v52/items/shoes/merge_shoes_05.png",
+      "size": 44562,
+      "sha256": "cd2599213554c47110f69666225abd106c04f584996f39d288025ba3e3959d68"
+    },
+    {
+      "name": "workshop-v52/items/shoes/merge_shoes_06.png",
+      "size": 46779,
+      "sha256": "d1c98ca92eb9b6216057395882b85f8c6487cb3b19f33f4b2500877dea50e9f3"
+    },
+    {
+      "name": "workshop-v52/items/shoes/merge_shoes_07.png",
+      "size": 49429,
+      "sha256": "0095311e381a0769de87e500a788a1d98908eac5556e2cb5dc2cd1570860c2e9"
+    },
+    {
+      "name": "workshop-v52/items/shoes/merge_shoes_08.png",
+      "size": 58090,
+      "sha256": "5109a335cd6d47cb248477b2acae7aa481ad4ca40d50a4ee8ef81861b4b8a9c6"
+    },
+    {
+      "name": "workshop-v52/items/shoes/merge_shoes_09.png",
+      "size": 30983,
+      "sha256": "e1eb15ae1329ef96fe74dac13df4cf8524bcad906a135e7f1290f741527b16f2"
+    },
+    {
+      "name": "workshop-v52/items/shoes/merge_shoes_10.png",
+      "size": 52053,
+      "sha256": "47491a28d814d0ff2ac9eadef47c4a173a942e77ae2bbf18d38eb02ec9699ae3"
+    },
+    {
+      "name": "workshop-v52/items/shoes/merge_shoes_11.png",
+      "size": 45457,
+      "sha256": "2a9f5caf5e2136f84f6297a3c8455f495200c3a4764b522a13110e4a9a8b03f0"
+    },
+    {
+      "name": "workshop-v52/items/shoes/merge_shoes_12.png",
+      "size": 48418,
+      "sha256": "c6c29bb62ac86bc08fd64455d72ff2b0a94b4620530f07ac3c9ab9eee76e18a5"
+    },
+    {
+      "name": "workshop-v52/items/top/merge_top_01.png",
+      "size": 54549,
+      "sha256": "144b7b37b90b706c1520b6a7319e0f7c8056e932321fee568bff866ba9d00960"
+    },
+    {
+      "name": "workshop-v52/items/top/merge_top_02.png",
+      "size": 29798,
+      "sha256": "f07ae726300418d568e02bad47d1b7902ba3a8b300030debb3cb971ace86648b"
+    },
+    {
+      "name": "workshop-v52/items/top/merge_top_03.png",
+      "size": 36382,
+      "sha256": "5be9cf3b9365f2618b6f9953410ec6c145442b17c02dce9290e9acbc85b6b0bb"
+    },
+    {
+      "name": "workshop-v52/items/top/merge_top_04.png",
+      "size": 43597,
+      "sha256": "4de11dcec174d8b80c354f25b265dd6bd9223395e8a2ead35e24b7bdb3a03b0a"
+    },
+    {
+      "name": "workshop-v52/items/top/merge_top_05.png",
+      "size": 45397,
+      "sha256": "0f4ea1390e8d634f7a49d153f7d683070fe16d04ea2df14d8f498eea971e0cdb"
+    },
+    {
+      "name": "workshop-v52/items/top/merge_top_06.png",
+      "size": 40575,
+      "sha256": "6a021a33d17a71bda0fbd285aa86594384189f5ca6d036e60eebd62e76f5e767"
+    },
+    {
+      "name": "workshop-v52/items/top/merge_top_07.png",
+      "size": 63634,
+      "sha256": "cb2aaa6abc5d5fe312bc03dd0d1f8edfdfc4c5c9cb8136b1bc00b309dd3965f2"
+    },
+    {
+      "name": "workshop-v52/items/top/merge_top_08.png",
+      "size": 61130,
+      "sha256": "d4104b0cb625142ed475bec2c28f9f09bc7874eecc366cfb8975d47cb1175f54"
+    },
+    {
+      "name": "workshop-v52/items/top/merge_top_09.png",
+      "size": 34561,
+      "sha256": "ca75a8caa15de14522387a23115c2ac0c7239e0dd317968172fb2286679ed067"
+    },
+    {
+      "name": "workshop-v52/items/top/merge_top_10.png",
+      "size": 51275,
+      "sha256": "2cf483b900783d69884eb7a59c6c7c6b78e208326609c38bcc6aca507d45e3e1"
+    },
+    {
+      "name": "workshop-v52/items/top/merge_top_11.png",
+      "size": 28981,
+      "sha256": "b92ca1c641c823dc3fe2a94f6ac7fa2278e077d8c7b6bd76a1793fc202656a64"
+    },
+    {
+      "name": "workshop-v52/items/top/merge_top_12.png",
+      "size": 55945,
+      "sha256": "78aaa4bf008815d26626954d16adf1d7b1124ba030c75a33f33381713ab4e53e"
+    },
+    {
+      "name": "workshop-v52/items/top/merge_top_13.png",
+      "size": 43150,
+      "sha256": "732c1265ba94bfab7a435e7f3c8f754456f13d812b54f50cf910362bf8f16f2c"
+    },
+    {
+      "name": "workshop-v52/items/top/merge_top_14.png",
+      "size": 30167,
+      "sha256": "a3fa768a6e4fa0c0f527b4d50c63df278b52501c49ebc314427a9d5cfb5ec1e8"
+    },
+    {
+      "name": "workshop-v52/items/top/merge_top_15.png",
+      "size": 43654,
+      "sha256": "f1569c0fc4aa56e1ac96ecf94704bfc1dbaeba1c880c0df53bff959e3bd17190"
+    },
+    {
+      "name": "workshop-v52/producers/couture/generator_couture_g01.png",
+      "size": 47736,
+      "sha256": "0e1ed5ef4f5e51db518b3ac5bcabfb74d8e83586050d8300b92c4463a4a48806"
+    },
+    {
+      "name": "workshop-v52/producers/couture/generator_couture_g02.png",
+      "size": 63289,
+      "sha256": "4bf1293fe9359b6d59ccf12e2fe92980e8bc6ae06f38069b56a709b9fbf9d13d"
+    },
+    {
+      "name": "workshop-v52/producers/couture/generator_couture_g03.png",
+      "size": 30038,
+      "sha256": "573ebe21569afabd6245b6406b6bc908eb06d231afe365737e857743eb0bed01"
+    },
+    {
+      "name": "workshop-v52/producers/couture/generator_couture_g04.png",
+      "size": 30296,
+      "sha256": "544f4f3bcf04baad03629f778e3155393830b71bbd395f0bd4b1da0c7a54bcf4"
+    },
+    {
+      "name": "workshop-v52/producers/couture/generator_couture_g05.png",
+      "size": 40983,
+      "sha256": "37979e3ea029e4814101d8366df1cf21b618ab57f739c76be16f37d4fc460b35"
+    },
+    {
+      "name": "workshop-v52/producers/couture/generator_couture_g06.png",
+      "size": 31156,
+      "sha256": "42ea1e65201ea7e4307e3f0667b67bcf30498885eca7a66483298b69487112d9"
+    },
+    {
+      "name": "workshop-v52/producers/couture/generator_couture_g07.png",
+      "size": 50199,
+      "sha256": "69d0b92f8ae6493edce009ddae61034a0bbf4a397861c734870edc56f6c1b86a"
+    },
+    {
+      "name": "workshop-v52/producers/couture/generator_couture_g08.png",
+      "size": 43806,
+      "sha256": "ebe7276e558f6bdc8117b96268b89c52c7a1e5ff204d000c5582300642f15505"
+    },
+    {
+      "name": "workshop-v52/producers/couture/generator_couture_g09.png",
+      "size": 41783,
+      "sha256": "49048df19a10fabdb1db4197e8043be5cc9a1e5bb068936959576f6adf226942"
+    },
+    {
+      "name": "workshop-v52/producers/footwear/generator_footwear_g01.png",
+      "size": 29044,
+      "sha256": "f10912172e739836e9c95b98b2539c167b507ad4caa62c03ecf6ac06a08076db"
+    },
+    {
+      "name": "workshop-v52/producers/footwear/generator_footwear_g02.png",
+      "size": 46797,
+      "sha256": "17ff8b395b33b249a27b0d092c63bee861547e7ce060ae0adfccf37990b1f30a"
+    },
+    {
+      "name": "workshop-v52/producers/footwear/generator_footwear_g03.png",
+      "size": 55691,
+      "sha256": "7117f9c9c391d7d1602def01e331d51b80d790e01f0a34df0f9be8eec7d696d7"
+    },
+    {
+      "name": "workshop-v52/producers/footwear/generator_footwear_g04.png",
+      "size": 32469,
+      "sha256": "4a62d7c042e23ac10012efdfcf698bd0f41939cbfe50afc556a369b74542525b"
+    },
+    {
+      "name": "workshop-v52/producers/footwear/generator_footwear_g05.png",
+      "size": 54414,
+      "sha256": "610d68c3bc2fe8108b9cab23b3083d20f8a44a6a4540b9c279d0c300926ea88c"
+    },
+    {
+      "name": "workshop-v52/producers/footwear/generator_footwear_g06.png",
+      "size": 38191,
+      "sha256": "7ed6661e0a29e6bcf86e7bd5c649524b42db646bb0057ef40d23701024871ed7"
+    },
+    {
+      "name": "workshop-v52/producers/footwear/generator_footwear_g07.png",
+      "size": 58535,
+      "sha256": "8d7323c98eacd6c0b3db82130d20e8b9450744586ddca06df4b92010e603bf19"
+    },
+    {
+      "name": "workshop-v52/producers/footwear/generator_footwear_g08.png",
+      "size": 57770,
+      "sha256": "005613cc38151a0a24fb4c91b938a9c27083f1a890bb5c2c46298ebeabc3e607"
+    },
+    {
+      "name": "workshop-v52/producers/footwear/generator_footwear_g09.png",
+      "size": 48794,
+      "sha256": "d7360c611f527239685af19a82dc00ecc850c9e13dec06e9fb06940b99260fdb"
+    },
+    {
+      "name": "workshop-v52/producers/jewelry/generator_jewelry_g01.png",
+      "size": 26343,
+      "sha256": "25b99dd478933f77df6fed4fd6cce515c2b19b73299b0e566cf37547c8da9b2f"
+    },
+    {
+      "name": "workshop-v52/producers/jewelry/generator_jewelry_g02.png",
+      "size": 54970,
+      "sha256": "efc1f30a99f454b5bac400542075e751fd6b7315b03c1053c2624e4e0e183fe3"
+    },
+    {
+      "name": "workshop-v52/producers/jewelry/generator_jewelry_g03.png",
+      "size": 24740,
+      "sha256": "dbce7cb0b9200ccf1d8819c337b8e02ee53c06d68e89ffaf23fadf14ad11d151"
+    },
+    {
+      "name": "workshop-v52/producers/jewelry/generator_jewelry_g04.png",
+      "size": 27625,
+      "sha256": "a4de626bbda6d78936a149e3f191682ac154c91980f94b2c95174241367a5d6c"
+    },
+    {
+      "name": "workshop-v52/producers/jewelry/generator_jewelry_g05.png",
+      "size": 30568,
+      "sha256": "583ec6ce9fe7fda7543fadddcb72c5ace605d6274f50fb9b420153f250610101"
+    },
+    {
+      "name": "workshop-v52/producers/jewelry/generator_jewelry_g06.png",
+      "size": 44163,
+      "sha256": "a04c863f426ac6792ab0cee4990a75ba8797c132bb32ee75bcac1c01261a7f41"
+    },
+    {
+      "name": "workshop-v52/producers/jewelry/generator_jewelry_g07.png",
+      "size": 52989,
+      "sha256": "e4057b2dfc279380dd674daf91b0fe6dd9a730f129bac4590d85b36e5e9d8886"
+    },
+    {
+      "name": "workshop-v52/producers/jewelry/generator_jewelry_g08.png",
+      "size": 48312,
+      "sha256": "0074dfa29414f62f9037e2bf818da0537463b60731bdec2810b9acbc8c9d142a"
+    },
+    {
+      "name": "workshop-v52/producers/jewelry/generator_jewelry_g09.png",
+      "size": 50375,
+      "sha256": "112bda7fb1f0623796f98eeeb62e747889badfdc2c1e418f334d3dd1dc6517c9"
+    },
+    {
+      "name": "workshop-v52/producers/leather/generator_leather_g01.png",
+      "size": 28747,
+      "sha256": "9177c7d4b3a7d1a3a38d13f1ba8370cf14ebefb23ac13fbb25f7ef7f20687ad6"
+    },
+    {
+      "name": "workshop-v52/producers/leather/generator_leather_g02.png",
+      "size": 61371,
+      "sha256": "68deca73422354fdede13a57e00b68cee40bc35c1bf4b01a44217e2c7a127d98"
+    },
+    {
+      "name": "workshop-v52/producers/leather/generator_leather_g03.png",
+      "size": 49473,
+      "sha256": "471d2e196c2be83053473ec2530127d31c498f4f787172c6e493298da32abf6c"
+    },
+    {
+      "name": "workshop-v52/producers/leather/generator_leather_g04.png",
+      "size": 32222,
+      "sha256": "727e395b9409860cb568c85ed7e6feb0e854bb994f12b116cd211e4792f61020"
+    },
+    {
+      "name": "workshop-v52/producers/leather/generator_leather_g05.png",
+      "size": 42059,
+      "sha256": "c1fd7db70f3e307dae6e0e32799814946c3f5bfdd0264e17973917f5e92c0f61"
+    },
+    {
+      "name": "workshop-v52/producers/leather/generator_leather_g06.png",
+      "size": 51997,
+      "sha256": "501ac3c248584ee1097c47ffee16e08e49c21f316dd8daf7c3a8bb16767f7200"
+    },
+    {
+      "name": "workshop-v52/producers/leather/generator_leather_g07.png",
+      "size": 43198,
+      "sha256": "523230f81e8aff05d1bf363c5379e8eec8a831b545ea1ad50b5b4980673f7ae4"
+    },
+    {
+      "name": "workshop-v52/producers/leather/generator_leather_g08.png",
+      "size": 59587,
+      "sha256": "4f0126e72ffc9a1e2e9c3f521130b695d540c6e0cb26fd9f7676c58d11230a03"
+    },
+    {
+      "name": "workshop-v52/producers/leather/generator_leather_g09.png",
+      "size": 44555,
+      "sha256": "6cd796f63d275fb201e0dbdecc87dc367e24327077f05e3dba15811a642a772f"
+    },
+    {
+      "name": "workshop-v52/producers/precision/generator_precision_g01.png",
+      "size": 17386,
+      "sha256": "fb2ec5917601c8843503e7a035b70dd09a0d7d4ec13653e6595854671643b3dd"
+    },
+    {
+      "name": "workshop-v52/producers/precision/generator_precision_g02.png",
+      "size": 48794,
+      "sha256": "531949e9e23fa1d108f122de5a996a9f4e8c7b745611882f8f7f668651f7a300"
+    },
+    {
+      "name": "workshop-v52/producers/precision/generator_precision_g03.png",
+      "size": 29565,
+      "sha256": "a23520bc9d9b7110e918ff1d611027137aa53f9d39ca272bb04b9e9d714600fb"
+    },
+    {
+      "name": "workshop-v52/producers/precision/generator_precision_g04.png",
+      "size": 36074,
+      "sha256": "f33ecfcc484cefee3cbe045e97ab2fb6ab866924ed702d554c7a84dc664df1a8"
+    },
+    {
+      "name": "workshop-v52/producers/precision/generator_precision_g05.png",
+      "size": 45985,
+      "sha256": "5928545a33132986ad8bb730efae8e2e8386bb74936cd8ba4951e7e6949d7300"
+    },
+    {
+      "name": "workshop-v52/producers/precision/generator_precision_g06.png",
+      "size": 46841,
+      "sha256": "3e1b97ee14b7889789230209bc08194e7e6e9d1fa6f03e401429826292af84b4"
+    },
+    {
+      "name": "workshop-v52/producers/precision/generator_precision_g07.png",
+      "size": 54917,
+      "sha256": "e8bcb8f526b186b03a2b1b91c86a3792b449245aaaea592c6f3dd360195625e0"
+    },
+    {
+      "name": "workshop-v52/producers/precision/generator_precision_g08.png",
+      "size": 49411,
+      "sha256": "86ae05b95a66c8e010971e1c61ac131188669bf791bdb6005e56014079f28da3"
+    },
+    {
+      "name": "workshop-v52/producers/precision/generator_precision_g09.png",
+      "size": 49368,
+      "sha256": "b0697135dfa9ae16de63246a5bb425491070aefd6afda4f69ac3c7bc5d0df22e"
+    },
+    {
+      "name": "workshop-v52/producers/styling/generator_styling_g01.png",
+      "size": 32747,
+      "sha256": "2bae6126dad37ae65b62a77c52cf4ebc6d202f984358b845552de075b2f01f82"
+    },
+    {
+      "name": "workshop-v52/producers/styling/generator_styling_g02.png",
+      "size": 48877,
+      "sha256": "d2c21fc035cf297c0a0cb346f1c74fb8df3ec5c2e6692e21a5050ed9cfa62234"
+    },
+    {
+      "name": "workshop-v52/producers/styling/generator_styling_g03.png",
+      "size": 24790,
+      "sha256": "45a25112d6c5c0416fb3233a4ddf08d49eba174fce18600605863a6b278f2f6a"
+    },
+    {
+      "name": "workshop-v52/producers/styling/generator_styling_g04.png",
+      "size": 33949,
+      "sha256": "af7f2a36c05ee547349fc6e4ca41bd80542a8abe18ecdfb1cda95a7c541a44fd"
+    },
+    {
+      "name": "workshop-v52/producers/styling/generator_styling_g05.png",
+      "size": 32988,
+      "sha256": "d1c95149fd7a5180c5b1afdaf6b04a017f70c56807a82c04773e71d94f0f80b1"
+    },
+    {
+      "name": "workshop-v52/producers/styling/generator_styling_g06.png",
+      "size": 38904,
+      "sha256": "435df8817488a04cef94279156aab44fd1a7da37d5d2a5b9861e0ec3f97a504a"
+    },
+    {
+      "name": "workshop-v52/producers/styling/generator_styling_g07.png",
+      "size": 44162,
+      "sha256": "b4464255dfe6abde63eab0e0f4360c460c9708807b68c6031964376a7d76c2d7"
+    },
+    {
+      "name": "workshop-v52/producers/styling/generator_styling_g08.png",
+      "size": 46895,
+      "sha256": "85cfff2000a64b829b9c743d4d1f2c62472d6689f91a14ee62b5e900dcbfe136"
+    },
+    {
+      "name": "workshop-v52/producers/styling/generator_styling_g09.png",
+      "size": 43793,
+      "sha256": "30588327193831e71dfcd5cc493efc92470f7c644e5525e84930051f4dcee863"
+    },
+    {
+      "name": "workshop-v52/producers/tailoring/generator_tailoring_g01.png",
+      "size": 51679,
+      "sha256": "aeb354ebbced6d578cab46db1541e4fb40d71dd74bbff91114073da9cd3e4b1d"
+    },
+    {
+      "name": "workshop-v52/producers/tailoring/generator_tailoring_g02.png",
+      "size": 56662,
+      "sha256": "e94bd71a93dd7fc61d37786a4384bcdff37ca4e2b5954627a78d9f80a647a4cd"
+    },
+    {
+      "name": "workshop-v52/producers/tailoring/generator_tailoring_g03.png",
+      "size": 56742,
+      "sha256": "ff305a17f2f3523382e8638190b2a0de9b6a8679945cbb1a1f96eb12ff7722f5"
+    },
+    {
+      "name": "workshop-v52/producers/tailoring/generator_tailoring_g04.png",
+      "size": 44398,
+      "sha256": "8eea2331b210c5065a14b48e1bd0b122dece2838ed740924bdd1816d9a6cf832"
+    },
+    {
+      "name": "workshop-v52/producers/tailoring/generator_tailoring_g05.png",
+      "size": 45583,
+      "sha256": "6c3ed057be26491efcb8d9b1a8ce9e365d25b79f3d9ec43d3890ea7fbca39597"
+    },
+    {
+      "name": "workshop-v52/producers/tailoring/generator_tailoring_g06.png",
+      "size": 41749,
+      "sha256": "3c4a05b00208777cb1ab8acf9a1a6bcfbf77ee66b2cbdb3555d39a10e598afb5"
+    },
+    {
+      "name": "workshop-v52/producers/tailoring/generator_tailoring_g07.png",
+      "size": 47660,
+      "sha256": "b4c10f2f95e625f20f2710adb6a9dedef4e0aabca8e3bc1dda9d681085c6977e"
+    },
+    {
+      "name": "workshop-v52/producers/tailoring/generator_tailoring_g08.png",
+      "size": 54552,
+      "sha256": "374df59d2631001a41caec09c92157d50cfd1efb1052c2668d46c051ea143775"
+    },
+    {
+      "name": "workshop-v52/producers/tailoring/generator_tailoring_g09.png",
+      "size": 44676,
+      "sha256": "f8f5ef4fc158740d3a227f39273a0abbea1c7327efd632d15c98a56a2bacf9d2"
+    }
+  ]
+}

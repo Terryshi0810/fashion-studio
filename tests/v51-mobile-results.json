@@ -1,0 +1,206 @@
+{
+  "pass": true,
+  "url": "http://127.0.0.1:8138/fashion-studio-mobile-trial-v51.html",
+  "checks": [
+    {
+      "name": "320×568: first screen, no overlaps, touch production and drag merge",
+      "pass": true,
+      "geometry": {
+        "overlaps": [],
+        "outside": [],
+        "producerOverflow": [],
+        "board": {
+          "x": 47.5,
+          "y": 216.5,
+          "width": 225,
+          "height": 225,
+          "top": 216.5,
+          "right": 272.5,
+          "bottom": 441.5,
+          "left": 47.5
+        },
+        "nav": {
+          "x": 0,
+          "y": 504,
+          "width": 320,
+          "height": 64,
+          "top": 504,
+          "right": 320,
+          "bottom": 568,
+          "left": 0
+        },
+        "horizontalOverflow": false,
+        "scrollY": 0,
+        "oldGenerators": 0,
+        "labels": [
+          "女装材料",
+          "鞋履材料",
+          "配饰材料"
+        ]
+      }
+    },
+    {
+      "name": "360×640: first screen, no overlaps, touch production and drag merge",
+      "pass": true,
+      "geometry": {
+        "overlaps": [],
+        "outside": [],
+        "producerOverflow": [],
+        "board": {
+          "x": 43.5,
+          "y": 234.796875,
+          "width": 273,
+          "height": 273,
+          "top": 234.796875,
+          "right": 316.5,
+          "bottom": 507.796875,
+          "left": 43.5
+        },
+        "nav": {
+          "x": 0,
+          "y": 576,
+          "width": 360,
+          "height": 64,
+          "top": 576,
+          "right": 360,
+          "bottom": 640,
+          "left": 0
+        },
+        "horizontalOverflow": false,
+        "scrollY": 0,
+        "oldGenerators": 0,
+        "labels": [
+          "女装材料",
+          "鞋履材料",
+          "配饰材料"
+        ]
+      }
+    },
+    {
+      "name": "390×844: first screen, no overlaps, touch production and drag merge",
+      "pass": true,
+      "geometry": {
+        "overlaps": [],
+        "outside": [],
+        "producerOverflow": [],
+        "board": {
+          "x": 8,
+          "y": 270.921875,
+          "width": 374,
+          "height": 374,
+          "top": 270.921875,
+          "right": 382,
+          "bottom": 644.921875,
+          "left": 8
+        },
+        "nav": {
+          "x": 0,
+          "y": 772,
+          "width": 390,
+          "height": 72,
+          "top": 772,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "horizontalOverflow": false,
+        "scrollY": 0,
+        "oldGenerators": 0,
+        "labels": [
+          "女装材料",
+          "鞋履材料",
+          "配饰材料"
+        ]
+      }
+    },
+    {
+      "name": "430×932: first screen, no overlaps, touch production and drag merge",
+      "pass": true,
+      "geometry": {
+        "overlaps": [],
+        "outside": [],
+        "producerOverflow": [],
+        "board": {
+          "x": 8,
+          "y": 270.921875,
+          "width": 414,
+          "height": 414,
+          "top": 270.921875,
+          "right": 422,
+          "bottom": 684.921875,
+          "left": 8
+        },
+        "nav": {
+          "x": 0,
+          "y": 860,
+          "width": 430,
+          "height": 72,
+          "top": 860,
+          "right": 430,
+          "bottom": 932,
+          "left": 0
+        },
+        "horizontalOverflow": false,
+        "scrollY": 0,
+        "oldGenerators": 0,
+        "labels": [
+          "女装材料",
+          "鞋履材料",
+          "配饰材料"
+        ]
+      }
+    },
+    {
+      "name": "1080×1920: first screen, no overlaps, touch production and drag merge",
+      "pass": true,
+      "geometry": {
+        "overlaps": [],
+        "outside": [],
+        "producerOverflow": [],
+        "board": {
+          "x": 88.875,
+          "y": 609.359375,
+          "width": 902.25,
+          "height": 902.25,
+          "top": 609.359375,
+          "right": 991.125,
+          "bottom": 1511.609375,
+          "left": 88.875
+        },
+        "nav": {
+          "x": 0,
+          "y": 1758,
+          "width": 1080,
+          "height": 162,
+          "top": 1758,
+          "right": 1080,
+          "bottom": 1920,
+          "left": 0
+        },
+        "horizontalOverflow": false,
+        "scrollY": 0,
+        "oldGenerators": 0,
+        "labels": [
+          "女装材料",
+          "鞋履材料",
+          "配饰材料"
+        ]
+      }
+    },
+    {
+      "name": "Locked feedback, cancelled drag, movable producer, tap merge, sorting, research, order jump, touch order delivery, guide and persistence",
+      "pass": true
+    },
+    {
+      "name": "Insufficient energy/full-board feedback, free tile reuse, recycle confirmation and tray retrieval",
+      "pass": true
+    },
+    {
+      "name": "One-time V50 save migration conserves all 324 materials and leaves V50 save untouched",
+      "pass": true
+    }
+  ],
+  "limitations": [
+    "Chromium touch simulation; no physical Android installation test."
+  ]
+}

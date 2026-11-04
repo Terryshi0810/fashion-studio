@@ -1,0 +1,59 @@
+/* V56: portraits occupy their own row; demand trays never cover faces. */
+.a52-orders .a56-npc-order,
+body[data-view="work"] .a52-orders .a56-npc-order{
+ display:flex;flex-direction:column;padding:0;border:0;background:transparent;box-shadow:none;min-width:0;
+}
+.a56-customer{display:flex;flex-direction:column;min-width:0}
+.a56-portrait-stage{
+ height:66px;position:relative;display:flex;justify-content:center;align-items:flex-end;overflow:hidden;
+ border-radius:30px 30px 0 0;background:radial-gradient(ellipse at 50% 100%,#f4d1e9aa,transparent 70%);
+}
+.a56-portrait-stage .a56-portrait{
+ display:block;width:auto!important;height:100%!important;max-width:100%;object-fit:contain;object-position:center bottom;
+ margin:0;pointer-events:none;user-select:none;filter:drop-shadow(0 2px 2px #a46c9733);
+}
+.a52-order header.a56-name{
+ display:flex;align-items:center;justify-content:center;gap:4px;min-width:0;height:18px;flex:none;
+ margin:0;padding:0 3px;font-size:10px;line-height:18px;color:#82416e;
+}
+.a56-name b{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.a52-order .a56-name small{flex:none;font-size:8px;color:#a36c8d}
+.a56-order-tray{
+ position:relative;min-width:0;flex:1;padding:4px 4px 5px;border:1px solid #ffb5c9;border-radius:12px;
+ background:linear-gradient(140deg,#fffdf8,#fff0ee);box-shadow:inset 0 1px #fff,0 2px 0 #edb2c9,0 4px 6px #d7a3b726;
+}
+.a52-orders .a56-npc-order.is-ready .a56-order-tray{border-color:#f7bf60;background:linear-gradient(#fffced,#fff0d8);box-shadow:inset 0 1px #fff,0 2px 0 #e7b15e,0 4px 6px #dfb56c29}
+.a56-order-tray .a52-needs{padding-bottom:3px;gap:3px;min-height:38px}
+.a56-order-tray .a52-needs>button{isolation:isolate}
+.a56-need-check{
+ position:absolute;left:0;bottom:1px;display:grid;place-items:center;width:13px;height:13px;border-radius:50%;
+ background:linear-gradient(#91dc88,#43ad62);border:1px solid #fff;color:white;font:bold 10px/1 system-ui;font-style:normal;
+ text-shadow:0 1px #327b44;box-shadow:0 1px 2px #3c784e55;pointer-events:none;
+}
+.a56-order-tray .a52-needs>button.is-fulfilled>small{background:#edf8df;color:#41743e}
+.a56-request{font-size:13px;line-height:1.6;margin:0 0 8px;color:#895d77;overflow-wrap:anywhere}
+
+/* Full customer page and modal retain larger portraits and normal scrolling. */
+.a52-orders-full .a56-npc-order{display:grid;grid-template-columns:88px minmax(0,1fr);gap:8px;align-items:start}
+.a52-orders-full .a56-portrait-stage{height:88px}
+.a52-orders-full header.a56-name{height:auto;min-height:22px;line-height:1.4;flex-wrap:wrap;font-size:12px;padding:3px 0}
+.a52-orders-full .a56-name small{font-size:10px}
+.a52-orders-full .a56-order-tray{padding:10px}
+.a52-orders-full .a56-order-tray .a52-needs{gap:10px;margin:6px 0 10px}
+.a52-orders-full .a56-order-tray footer{flex-wrap:wrap}
+.a52-orders-full .a56-need-check{left:0;bottom:2px;width:17px;height:17px;font-size:12px}
+.a52-orders-full .a56-order-tray .a52-needs button{min-width:0;width:100%;padding-right:0}
+.a52-orders-full .a56-order-tray .a52-needs b{min-width:0}
+@media(max-width:350px){
+ .a52-orders-full .a56-npc-order{grid-template-columns:64px minmax(0,1fr);gap:6px}
+ .a52-orders-full .a56-portrait-stage{height:64px}
+ .a52-orders-full .a56-order-tray{padding:7px}
+ .a52-orders-full .a56-order-tray .a52-needs button>span{width:42px;height:42px}
+ .a52-orders-full .a56-order-tray .a52-needs small{left:24px}
+}
+@media(max-height:700px){
+ .a52-orders:not(.a52-orders-full) .a56-portrait-stage{height:44px}
+ .a52-orders:not(.a52-orders-full) header.a56-name{height:15px;line-height:15px;font-size:9px}
+ .a52-orders:not(.a52-orders-full) .a56-order-tray{padding:3px 3px 4px;border-radius:9px}
+ .a52-orders:not(.a52-orders-full) .a56-order-tray .a52-needs{min-height:31px;padding-bottom:2px}
+}

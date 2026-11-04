@@ -1,0 +1,78 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const root=path.resolve(__dirname,'..'),read=f=>JSON.parse(fs.readFileSync(path.join(root,f),'utf8'));
+const core=read('tests/v54-core-results.json'),ui=read('tests/v54-ui-results.json'),plan=read('design/v54-workshop-plan.json'),manifest=read('fashion-studio-mobile-trial-v54-manifest.json');
+if(!core.pass||!ui.pass||!ui.checks.some(c=>c.name.includes('签名 APK')))throw Error('Final core and packed UI regression must pass before reporting.');
+const hashes={};for(const f of ['artifacts/FashionStudio-V54-1080x1920.apk','artifacts/FashionStudio-V54-MobileWeb.zip','fashion-studio-mobile-trial-v54-runtime.js','design/v54-workshop-plan.json'])hashes[f]=crypto.createHash('sha256').update(fs.readFileSync(path.join(root,f))).digest('hex');
+for(const [f,expected] of Object.entries({'artifacts/FashionStudio-V53-1080x1920.apk':'2dcbef8325f3195d7731bfbe7b9f57515a998cf81be579d7f154b73712d87a5e','artifacts/FashionStudio-V53-MobileWeb.zip':'d677992165f416a98f9755ab763dee8e9dbff41bf949db12fb559077828d4cb2'})){
+ const actual=crypto.createHash('sha256').update(fs.readFileSync(path.join(root,f))).digest('hex');if(actual!==expected)throw Error('V53 rollback artifact changed: '+f);
+}
+const route=core.checks.find(c=>c.name==='Actual newcomer route statistics');
+let md=`# 时尚街区 V54：生产器锁定状态与解锁节奏验收报告
+
+交付日期：2026-11-04。V54 为独立试玩版本；V53/V52/V51 文件和旧存档保留。V53 APK 与离线包 SHA256 校验确认未改动。
+
+## 本次实现
+
+- 新档棋盘有 1 台可工作的裁缝台和 6 台真实锁定生产器，使用现有生产器美术、灰色外观、锁图标与等级标签。
+- 三态完整：未解锁 → 条件达成（金色“解锁”）→ 点击原格启用 G4。详情面板显示章节、生产图谱、各项条件与当前进度，并可跳到顾客委托或系列上新。
+- 取消达到等级后自动塞入奖励箱的首台 G4。解锁不消耗金币和体力，满棋盘也能完成，重复点击不重复发放。
+- 锁定生产器不能移动、被其他物品换位、出料、存仓、回收或被道具使用；不参与充能、普通订单来源或零件补给。
+- 对应生产器启用且有实际生产能力后，才开放图谱订单。G5/G6 副产物仍需通过原有零件奖励和二合升级获得。
+- 修复手机点击锁定格打开弹窗后，后续合成点击事件误触遮罩导致弹窗立即关闭的问题；关闭按钮保持立即可用。
+
+## 解锁路线
+
+下表是本 Demo 的服装教学与经营映射，不是已核实的原作内部逐级表。1–10 级内集中学习四个生产家族；后面三个家族作为长线扩展。
+
+| 生产器 | 工坊等级 | 开店委托 | 累计交付 | 系列上新 | 前置生产器 | 主产物 / 副产物 |
+|---|---:|---:|---:|---:|---|---|
+`;
+for(const p of plan.producers){const g=p.unlock,chain=id=>plan.chains.find(c=>c.id===id).name;md+=`| ${p.name} | ${g.level===1?'初始提供':'Lv.'+g.level} | ${g.tutorial?'完成第'+g.tutorial+'份':'—'} | ${g.deliveries||'—'} | ${g.collections||'—'} | ${g.previous?plan.producers.find(p=>p.id===g.previous).name:'—'} | ${chain(p.primary)} / ${chain(p.secondary)}（G${p.secondaryAt}） |\n`;}
+md+=`
+新手测试实际解锁节点：${route.unlocks.map(x=>`${plan.producers.find(p=>p.id===x.family).name}：工坊 Lv.${x.level}、第 ${x.tutorial} 份开店委托后`).join('；')}。
+
+## 旧存档保护
+
+- 使用独立键 \`fashion.loop.mobile.v54\`，首次读取顺序为 V54 → V53 → V52 → V51 → 旧版 v6，旧键不回写。
+- 工坊 schema 由 1 迁移到 2，增加 \`producerUnlocks\` 与棋盘上的 \`lockedProducer\`。此前已经拥有的生产器（包含奖励箱中的可用 G4）不回锁，不重复发放。
+- 旧订单、物品 UID、生产器充能、仓库、衣橱、商场、剧情和已交付记录保留。
+- 新锁格若占用了旧物品位置，优先移到其它空格；满盘时移入奖励箱，不覆盖物品、不挤爆 8 格仓库。满盘 35 件 + 满仓 8 件的迁移回归通过。
+- 因此旧档不一定显示全部六台锁定生产器；新档会展示完整路线。
+
+## 自测与验收
+
+- 核心检查：${core.checks.length} 项通过；包括锁定保护、提前解锁拒绝、免费/满盘/重复解锁、订单来源、全 7 家族、14 条图谱、生产器等级、副产物升级、存档迁移和经营联动。
+- 新手流程：${route.actions} 次实际生产/二合/领奖/解锁/交付操作，按顺序完成全部 10 份教学委托并到达工坊 10 级；无缺失生产来源或循环解锁依赖。测试使用可控时间与补充体力验证可达性，不代表原作真实耗时或付费节奏。
+- 界面与触控：${ui.checks.length} 项通过，覆盖 320×568、360×640、360×780、390×844、430×932、1080×1920。棋盘 63 格、底部工具在首屏；主要布局无重叠、横向不溢出；详情弹窗不越过视口、可关闭。
+- 触控使用 Chromium CDP \`touchStart / touchMove / touchEnd\` 验证真实触摸事件路径；出料扣体力、二合、向锁格拖动拒绝、解锁后出料和刷新保存通过。
+- 商场、社区、背包、换装、排行榜、顾客和工坊入口冒烟检查通过：页面可打开、图片无缺失、无脚本异常。入口检查不等于所有二级业务完整验收。
+- APK：版本 0.54 / versionCode 56，v1/v2/v3 签名校验通过；包内 ${manifest.assets.length} 项美术/视频/音频资源逐文件比较大小与 SHA256。已从最终签名 APK 解包后再次运行启动、锁定交互和图片加载测试。
+- 尚未完成实体 Android 手机安装验证；当前证据为移动视口与触摸模拟、包体校验。测试环境 adb 无法建立可用的设备测试会话。
+
+## 原作对照边界
+
+用户指定“最新 App Store 版本、新手 1–10 级”。目前未取得同地区、同版本的新手实测记录，不能核实每台生产器的精确解锁等级、订单门槛、概率及奖励。V53 中记录的版本号未在本次重新核实为最新版本，V54 将其降为历史备注。
+
+本版可验收：生产器可见的锁定/达标/启用状态、章节推进后的新品类开放、真实来源接单、二合生产与经营联动。以上解锁表及后期扩展属于项目可玩映射，不能标为浪漫餐厅原版数值 1:1。
+
+## 交付
+
+- [安卓安装包](../artifacts/FashionStudio-V54-1080x1920.apk)
+- [完整离线试玩包](../artifacts/FashionStudio-V54-MobileWeb.zip)
+- [本地直接试玩](../fashion-studio-mobile-trial-v54.html)
+- [解锁配置](v54-workshop-plan.json)
+- [核心检查结果](../tests/v54-core-results.json)
+- [界面与触摸检查结果](../tests/v54-ui-results.json)
+- [390×844 工作台](../tests/v54-screenshots/390x844-work.png)
+- [1080×1920 工作台](../tests/v54-screenshots/1080x1920-work.png)
+
+### SHA256
+
+| 文件 | SHA256 |
+|---|---|
+`;
+for(const [f,hash] of Object.entries(hashes))md+=`| ${path.basename(f)} | \`${hash}\` |\n`;
+fs.writeFileSync(path.join(root,'design/V54-生产器解锁与自测报告.md'),md);
+fs.writeFileSync(path.join(root,'tests/v54-release-results.json'),JSON.stringify({pass:true,date:plan.date,coreChecks:core.checks.length,uiChecks:ui.checks.length,assets:manifest.assets.length,oldV53Unchanged:true,hashes,deviceInstallTest:false,originalExactUnlockThresholdsVerified:false},null,2));
+console.log('Wrote V54 release report after final packed regression; V53 artifacts unchanged.');
