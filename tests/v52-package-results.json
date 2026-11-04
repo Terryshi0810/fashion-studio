@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-04",
+  "pass": true,
+  "verification": "pack-v52.py assertions passed for signed APK: canonical archive paths, all manifest asset sizes and SHA256, exact HTML/CSS/JS/manifest equality",
+  "assetCount": 390,
+  "signaturesVerifiedByBuild": [
+    "v1",
+    "v2",
+    "v3"
+  ],
+  "physicalAndroidTest": false,
+  "files": [
+    {
+      "name": "FashionStudio-V52-1080x1920.apk",
+      "bytes": 104735767,
+      "sha256": "5cce7db3100cc7b9d994536e6216112a0e4c25233bb3cedcbc860e55082b93e3"
+    },
+    {
+      "name": "FashionStudio-V52-MobileWeb.zip",
+      "bytes": 103778542,
+      "sha256": "dbb47b095e033b08f596fbc3da8ec24b88f2d7a95a023ae2258efbbf78edecd0"
+    },
+    {
+      "name": "FashionStudio-V52-Art-203.zip",
+      "bytes": 472820944,
+      "sha256": "87a4438e937a074b187fe331858e6ccadfb367919c35b0cc0463d96971e08c3f"
+    }
+  ]
+}

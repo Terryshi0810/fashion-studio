@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#fff4f7"><link rel="icon" href="data:,"><title>时尚街区 · 手游试玩 V0.55 · 动态服装排行榜</title><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes">
+
+
+<style id="v50-critical-boot">
+/* V44: circular loading progress around the title mark. */
+.boot-brand{width:min(86vw,430px);aspect-ratio:1;display:grid;place-items:center;padding:0}
+.boot-progress-ring{position:absolute;inset:0;z-index:0;display:grid;place-items:center;pointer-events:none}
+.boot-progress-ring svg{width:100%;height:100%;overflow:visible;transform:rotate(-90deg)}
+.boot-ring-track,.boot-ring-progress{fill:none;stroke-width:1.5}
+.boot-ring-track{stroke:rgba(255,227,239,.16)}
+.boot-ring-progress{stroke:#f2b9d2;stroke-width:3;stroke-linecap:round;stroke-dasharray:100;stroke-dashoffset:100;filter:drop-shadow(0 0 5px rgba(255,193,221,.68));transition:stroke-dashoffset .16s ease-out}
+.boot-progress-content{position:relative;z-index:1;width:100%;text-align:center;padding:0 30px}
+.boot-progress-meta{display:flex;align-items:center;justify-content:center;gap:9px;margin-top:14px;color:rgba(255,231,241,.78);font:10px/1.2 "Microsoft YaHei",system-ui,sans-serif;letter-spacing:.12em}
+.boot-progress-meta b{min-width:35px;color:#ffe4ee;font:700 12px Georgia,serif;letter-spacing:.04em}
+.boot-progress-meta span{font-size:9px;letter-spacing:.18em}
+@media(max-width:355px){.boot-brand{width:88vw}.boot-progress-content{padding:0 22px}.boot-progress-meta{margin-top:10px}}
+@media(prefers-reduced-motion:reduce){.boot-ring-progress{transition:none}}
+
+
+
+html,body{margin:0;background:#20132d}html:not([data-app-ready="true"]) .app,html:not([data-app-ready="true"]) #login-screen,html:not([data-app-ready="true"]) #mobile-nav{visibility:hidden!important}#boot-retry{margin:12px auto 0;padding:10px 22px;border:1px solid #f8c5de;border-radius:24px;background:#a65e89;color:#fff;font-size:14px}#boot-retry[hidden]{display:none}.boot-failed .boot-progress-meta{flex-direction:column;line-height:1.7}.boot-failed #boot-status{font-size:12px;letter-spacing:0;overflow-wrap:anywhere}.boot-failed .boot-progress-live{animation:none}.boot-progress-live{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from -90deg,transparent 0 24deg,#ffd7e8 42deg,#f2a9c9 92deg,transparent 118deg 360deg);-webkit-mask:radial-gradient(circle,transparent 0 87%,#000 88% 91%,transparent 92%);mask:radial-gradient(circle,transparent 0 87%,#000 88% 91%,transparent 92%);animation:boot-live-spin 1.15s linear infinite;will-change:transform}@keyframes boot-live-spin{to{transform:rotate(360deg)}}</style><link id="fashion-styles" rel="stylesheet" href="fashion-studio-mobile-trial-v55.css" media="print" onload="this.media='all';this.dataset.loaded='true'" onerror="this.dataset.failed='true'"></head><body>
+<div id="boot-splash" role="status" aria-label="时尚街区正在加载"><div class="boot-brand"><div class="boot-progress-ring" aria-hidden="true"><div class="boot-progress-live" aria-hidden="true"></div><svg viewBox="0 0 220 220" focusable="false"><circle class="boot-ring-track" cx="110" cy="110" r="94" pathLength="100"></circle><circle id="boot-progress-stroke" class="boot-ring-progress" cx="110" cy="110" r="94" pathLength="100" style="stroke-dashoffset:99"></circle></svg></div><div class="boot-progress-content"><h1 class="boot-logo-cn">时尚街区</h1><p class="boot-logo-en">FASHION DISTRICT</p><div class="boot-progress-meta"><b id="boot-progress-value">1%</b><span id="boot-status">正在读取游戏</span></div><div class="boot-divider" aria-hidden="true"></div><p class="boot-caption">STYLE · STORY · CITY</p><button id="boot-retry" type="button" hidden>重新加载</button></div></div></div>
+<script id="v50-boot-preloader">(function () {
+  'use strict';
+  const splash = document.getElementById('boot-splash');
+  const label = document.getElementById('boot-progress-value');
+  const stroke = document.getElementById('boot-progress-stroke');
+  const status = document.getElementById('boot-status');
+  const started = performance.now();
+  const state = {value: 1, target: 4, phase: '正在读取游戏', complete: false, error: null};
+  let last = started, finishAt = 0;
+  function fail(message) {
+    if (state.complete || state.error) return;
+    state.error = String(message);
+    splash.classList.add('boot-failed');
+    status.textContent = state.error;
+    document.getElementById('boot-retry').hidden = false;
+  }
+  function paint(now) {
+    if (!splash.isConnected) return;
+    const dt = Math.min(80, now - last); last = now;
+    // Percentages follow completed work. The independent sweep keeps indicating
+    // activity during decoding; no fixed timer dismisses an unfinished screen.
+    if (!state.error) {
+      state.value = Math.min(state.target, state.value + Math.max(.018 * dt, (state.target - state.value) * dt / 220));
+      const percent = Math.min(100, Math.floor(state.value));
+      label.textContent = percent + '%';
+      stroke.style.strokeDashoffset = String(100 - state.value);
+      if (finishAt && now >= finishAt && percent >= 100) {
+        state.complete = true;
+        document.documentElement.dataset.appReady = 'true';
+        splash.classList.add('is-ready');
+        setTimeout(() => splash.remove(), 380);
+        return;
+      }
+    }
+    requestAnimationFrame(paint);
+  }
+  const cssReady = new Promise((resolve, reject) => {
+    const link = document.getElementById('fashion-styles');
+    if (link.dataset.loaded === 'true') return resolve();
+    if (link.dataset.failed === 'true') return reject(new Error('界面样式读取失败，请解压完整试玩包后重试。'));
+    link.addEventListener('load', () => resolve(), {once:true});
+    link.addEventListener('error', () => reject(new Error('界面样式读取失败，请解压完整试玩包后重试。')), {once:true});
+  });
+  // Attach a handler immediately so a missing stylesheet never produces an
+  // unhandled rejection before the deferred runtime starts.
+  cssReady.catch(e => fail(e.message));
+  window.FashionBoot = {
+    state, fail,
+    async ready(assets, afterLoad) {
+      try {
+        status.textContent = state.phase = '正在读取场景与角色';
+        let completed = 0;
+        await Promise.all([cssReady, ...assets.map(src => new Promise((resolve, reject) => {
+          const img = new Image();
+          const timer = setTimeout(() => reject(new Error('资源读取超时：' + src)), 15000);
+          img.onload = () => {
+            clearTimeout(timer);
+            completed++;
+            state.target = 12 + completed / assets.length * 76;
+            status.textContent = state.phase = `正在读取场景与角色 ${completed}/${assets.length}`;
+            resolve();
+          };
+          img.onerror = () => {clearTimeout(timer);reject(new Error('找不到游戏资源：' + src + '。请使用完整试玩包或新版 APK。'));};
+          img.src = src;
+        }))]);
+        // Scene/camera measurements must use the loaded stylesheet, including
+        // when mobile networks deliver the runtime ahead of the CSS file.
+        afterLoad?.();
+        await new Promise(resolve => requestAnimationFrame(resolve));
+        state.target = 96;
+        status.textContent = state.phase = '准备进入时尚街区';
+        await new Promise(resolve => setTimeout(resolve, Math.max(0, 1050 - (performance.now() - started))));
+        state.target = 100;
+        finishAt = performance.now() + 320;
+      } catch (e) {fail(e.message);}
+    }
+  };
+  // Existing runtime calls are bridged, but readiness is controlled above.
+  window.__bootProgressV45 = true;
+  window.__bootProgressV44 = {paint() {}, complete() {}};
+  document.getElementById('boot-retry').addEventListener('click', () => location.reload());
+  window.addEventListener('error', e => {
+    if (e.target?.tagName === 'SCRIPT' && e.target.src.includes('v50-runtime')) fail('游戏脚本读取失败，请解压完整试玩包后重试。');
+    else if (e.error && !window.loopApp) fail('游戏初始化失败，请重新加载。');
+  }, true);
+  setTimeout(() => {if (!window.loopApp && !state.error) fail('游戏启动超时，请检查试玩文件是否完整后重试。');}, 18000);
+  requestAnimationFrame(paint);
+})();
+</script>
+<svg class="svg-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="i-store" viewBox="0 0 24 24"><path d="M4 10v11h16V10M3 4h18l1 6c-1 3-4 3-5 0-1 3-4 3-5 0-1 3-4 3-5 0-1 3-4 3-5 0l1-6zM9 21v-7h6v7"/></symbol>
+<symbol id="i-work" viewBox="0 0 24 24"><path d="m5 4 14 16M5 20 19 4"/><circle cx="5" cy="18" r="3"/><circle cx="5" cy="6" r="3"/></symbol>
+<symbol id="i-hanger" viewBox="0 0 24 24"><path d="M9 6a3 3 0 1 1 5 2l-2 2v2L2 18v2h20v-2l-10-6"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5C9 3 5 3 2 4v15c4-1 7-1 10 1 3-2 6-2 10-1V4c-3-1-7-1-10 1v15"/></symbol>
+<symbol id="i-cup" viewBox="0 0 24 24"><path d="M7 3h10v5a5 5 0 0 1-10 0V3zm0 2H3v3a4 4 0 0 0 5 4m9-7h4v3a4 4 0 0 1-5 4m-4 1v5m-4 3h8m-6-3h4l2 3H8l2-3z"/></symbol>
+<symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M13 7h-2v10m-3-7h8m-8 4h8"/></symbol>
+<symbol id="i-energy" viewBox="0 0 24 24"><path d="m14 2-10 12h7l-1 8 10-12h-7l1-8z"/></symbol>
+<symbol id="i-ticket" viewBox="0 0 24 24"><path d="M3 5h18v5a2 2 0 0 0 0 4v5H3v-5a2 2 0 0 0 0-4V5zm12 0v3m0 3v2m0 3v3"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6z"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+<symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/></symbol>
+<symbol id="i-flower" viewBox="0 0 24 24"><path d="M12 8C5-1 2 8 8 11c-11 1-4 10 2 5-3 11 8 11 6 0 8 6 13-5 2-5 7-7-2-12-6-3z"/></symbol>
+</defs></svg>
+<svg class="svg-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+<linearGradient id="gg-gold" x2=".2" y2="1"><stop stop-color="#fff3bc"/><stop offset=".45" stop-color="#e5bd62"/><stop offset="1" stop-color="#bd873c"/></linearGradient>
+<linearGradient id="gg-paper" x2=".15" y2="1"><stop stop-color="#fffff7"/><stop offset="1" stop-color="#efe0bb"/></linearGradient>
+<linearGradient id="gg-pink" x2=".2" y2="1"><stop stop-color="#fff1f2"/><stop offset=".45" stop-color="#f4c5d0"/><stop offset="1" stop-color="#d68da4"/></linearGradient>
+<linearGradient id="gg-blue" x2=".2" y2="1"><stop stop-color="#eafaff"/><stop offset="1" stop-color="#82b8d1"/></linearGradient>
+<linearGradient id="gg-mint" x2=".2" y2="1"><stop stop-color="#ecf4d4"/><stop offset="1" stop-color="#9bba80"/></linearGradient>
+<symbol id="g-store" viewBox="0 0 64 64"><g stroke="#b99560" stroke-width="1.15" stroke-linejoin="round"><ellipse cx="32" cy="58" rx="27" ry="4" fill="#8d7147" opacity=".18" stroke="none"/><path d="M9 58V17l23-9 23 9v41z" fill="url(#gg-paper)"/><path d="M32 8v50h23V17z" fill="#ead7aa"/><path d="M6 19 32 7l26 12-4 4-22-9-22 9z" fill="url(#gg-gold)"/><path d="M14 27h15v9H14zm0 16h15v9H14z" fill="url(#gg-blue)"/><path d="M36 25h14v9H36zm0 15h14v9H36z" fill="#e2eddd"/><path d="M10 38h21m3-2h20M11 54h20m3-2h20" stroke="#cca76c" stroke-width="2.5"/><path d="M14 29h15M21 27v9m22-11v9M14 45h15m-8-2v9m22-12v9" stroke="#fff8e2"/><path d="M19 58v-6h8v6" fill="#bb936b"/><path d="M35 50h16l4 6H33z" fill="url(#gg-pink)"/><path d="M8 56h49v4H8z" fill="url(#gg-gold)"/></g><path d="m51 4 1.5 4L57 9l-4.5 1.5L51 15l-1.5-4.5L45 9l4.5-1z" fill="#fff7d0"/></symbol>
+<symbol id="g-work" viewBox="0 0 64 64"><g stroke="#ae8661" stroke-width="1.2" stroke-linejoin="round"><ellipse cx="32" cy="58" rx="26" ry="4" fill="#8c6846" opacity=".16" stroke="none"/><path d="M28 9c0-6 10-6 10 0l-5 5v5" fill="none" stroke="#c5a46c" stroke-width="2.5"/><path d="m25 17-12 8 6 10 5-3-4 23h29l-5-23 5 3 5-10-12-8-9 5z" fill="url(#gg-pink)"/><path d="M25 17q8 14 17 0M24 32h20M25 47l4-12m10 0 3 12" fill="none" stroke="#fff0e5"/><path d="M6 39h9v17H6z" fill="url(#gg-mint)"/><path d="M4 38h13v4H4zm0 16h13v4H4z" fill="url(#gg-gold)"/><path d="m27 46 27-20m-22 31 20-31" stroke="#bc9249" stroke-width="3"/><circle cx="25" cy="47" r="5" fill="none" stroke="#d7b56a" stroke-width="3"/><circle cx="30" cy="57" r="5" fill="none" stroke="#d7b56a" stroke-width="3"/><circle cx="38" cy="40" r="1.3" fill="#faf3d9"/></g></symbol>
+<symbol id="g-book" viewBox="0 0 64 64"><g stroke="#ac9669" stroke-width="1.2" stroke-linejoin="round"><ellipse cx="32" cy="58" rx="27" ry="4" fill="#8d7147" opacity=".18" stroke="none"/><path d="M12 58V13h41v45z" fill="url(#gg-paper)"/><path d="M15 18h33v37H15z" fill="#e3e6e9"/><path d="M16 18v37h14V18z" fill="#f3d4db"/><path d="m31 24 7-4 7 4-3 7-2-1 5 19H31l5-19-2 1z" fill="url(#gg-blue)"/><path d="M38 20v-3m-7 8h14" fill="none" stroke="#b79c65"/><path d="M17 27h10m-10 10h10m-10 10h10" stroke="#fff5e8"/><path d="M8 10h48v7H8zm2 47h44v4H10z" fill="url(#gg-gold)"/><circle cx="49" cy="35" r="1.5" fill="#c79552"/><path d="M8 7h48" stroke="#fff2c5" stroke-width="2"/></g></symbol>
+<symbol id="g-cup" viewBox="0 0 64 64"><g stroke="#b48c42" stroke-width="1.3" stroke-linejoin="round"><ellipse cx="32" cy="58" rx="25" ry="4" fill="#9d824e" opacity=".2" stroke="none"/><path d="M19 16H9v8q0 13 15 14m21-22h10v8q0 13-15 14" fill="none" stroke="#d6ae5c" stroke-width="5"/><path d="M19 10h26v17q0 16-13 16T19 27z" fill="url(#gg-gold)"/><path d="M26 40h12v11H26zm-8 13h28v7H18z" fill="url(#gg-gold)"/><path d="M23 11v16q0 10 6 12" fill="none" stroke="#fff4c7" stroke-width="2"/><path d="m32 17 3 6 7 1-5 4 1 7-6-3-6 3 1-7-5-4 7-1z" fill="#fff7d2"/><path d="m12 43 9-4 4 10-7 1-1 8z" fill="#e6a0aa"/><path d="m53 43-9-4-4 10 7 1 1 8z" fill="#a4c7e0"/></g></symbol>
+<symbol id="g-orders" viewBox="0 0 64 64"><g stroke="#b39264" stroke-width="1.2" stroke-linejoin="round"><ellipse cx="32" cy="58" rx="26" ry="4" fill="#8d7147" opacity=".18" stroke="none"/><path d="M12 12h36v47H12z" fill="url(#gg-gold)"/><path d="M16 16h28v39H16z" fill="url(#gg-paper)"/><path d="M23 8h15v12H23z" fill="url(#gg-gold)"/><path d="m22 29 5-4 6 2 5-2 6 4-4 6-2-1 3 17H24l3-17-2 1z" fill="url(#gg-pink)"/><path d="M28 26q4 9 10 0m-10 12h10" fill="none" stroke="#fff3ea"/><path d="m47 30 4-4 7 6-13 23-6 1 1-6z" fill="url(#gg-blue)"/><path d="m39 56 6-1-5-5z" fill="#b79062"/><path d="m49 35 5 3" stroke="#f2faf8"/></g></symbol>
+<symbol id="g-gift" viewBox="0 0 64 64"><g stroke="#b99463" stroke-width="1.2" stroke-linejoin="round"><ellipse cx="32" cy="58" rx="26" ry="4" fill="#8d7147" opacity=".16" stroke="none"/><path d="M13 29h38v28H13z" fill="url(#gg-pink)"/><path d="M9 23h46v11H9z" fill="url(#gg-paper)"/><path d="M28 24h9v34h-9z" fill="url(#gg-gold)"/><path d="M31 23Q8 20 15 11q11-5 17 12m0 0q6-18 17-12 8 11-16 12" fill="url(#gg-gold)"/><path d="M17 36v17m22-14h8" stroke="#fff6eb"/><path d="m51 4 1 4 5 1-4 2-2 5-1-5-5-2 5-1z" fill="#fff5c9" stroke="none"/></g></symbol>
+<symbol id="g-coin" viewBox="0 0 64 64"><ellipse cx="32" cy="57" rx="25" ry="4" fill="#806339" opacity=".15"/><g stroke="#be8c3e" stroke-width="2"><ellipse cx="25" cy="42" rx="19" ry="11" fill="url(#gg-gold)"/><ellipse cx="25" cy="37" rx="19" ry="11" fill="#fce3a0"/><ellipse cx="37" cy="25" rx="20" ry="20" fill="url(#gg-gold)"/><ellipse cx="36" cy="24" rx="14" ry="14" fill="#fbe3a4"/></g><path d="M38 14h-3v22m-7-15h15m-15 8h15" fill="none" stroke="#c99946" stroke-width="3"/></symbol>
+<symbol id="g-energy" viewBox="0 0 64 64"><path d="M32 55S8 40 8 23C8 12 21 8 28 19c7-11 20-7 20 4 0 17-16 29-16 32z" fill="url(#gg-pink)" stroke="#c37891" stroke-width="2"/><path d="M17 20c3-5 8-6 12-2" fill="none" stroke="#fff7fb" stroke-width="3" stroke-linecap="round"/></symbol>
+<symbol id="g-ticket" viewBox="0 0 64 64"><g stroke="#6e99bf" stroke-width="1.5" stroke-linejoin="round"><path d="m32 4 23 19-23 37L9 23z" fill="url(#gg-blue)"/><path d="m32 4 9 20-9 36-9-36z" fill="#d9f5ff"/><path d="m9 23 23 1 23-1M23 24h18" fill="none" stroke="#fff" stroke-width="2"/></g></symbol>
+<symbol id="g-star" viewBox="0 0 64 64"><path d="m21 34-8 22 12-4 6 10 7-26m4-3 10 22-12-4-6 11-5-26" fill="#b3c5de" stroke="#8b9ec2" stroke-width="1"/><circle cx="32" cy="25" r="21" fill="url(#gg-gold)" stroke="#cba052" stroke-width="2"/><circle cx="32" cy="25" r="16" fill="#fff0c1" stroke="#dfbd7a"/><path d="m32 12 4 9 10 1-8 7 3 10-9-5-9 5 2-10-7-7 10-1z" fill="url(#gg-gold)"/></symbol>
+</defs></svg>
+
+<div class="app"><aside class="sidebar" aria-hidden="true"><a class="brand" href="#map"><span class="brand-mark">✳</span><span>时光百货<small>FASHION ATELIER</small></span></a><p class="brand-note">把灵感，穿成喜欢的生活。</p><nav id="desktop-nav" aria-label="主导航"></nav><div class="sidebar-bottom"><div class="season"><span>01</span><div>花开正好<small>设计闭环 · 可玩原型</small></div></div><button class="quiet" data-action="settings"><svg class="icon"><use href="#i-settings"/></svg>试玩与存档</button><small id="save-status">进度自动保存</small></div></aside>
+<div class="main"><header class="topbar"><button class="player" data-action="profile" aria-label="打开个人信息"><span class="avatar">♛</span><span class="player-copy"><b>艾米的设计事务所</b><small id="level-label">LV 1 · 见习设计师</small></span><span class="player-status" aria-label="角色等级和设计师段位"><small id="character-level">LV 1</small><small id="designer-rank" title="见习设计师">见习</small></span></button><div class="resources" aria-label="货币栏"><button class="resource energy" data-action="currency-tip" data-currency="energy" aria-label="查看体力说明" title="体力说明"><svg class="icon"><use href="#g-energy"/></svg><b id="hud-energy">100</b><small>/100</small><span class="resource-plus" aria-hidden="true">+</span><span class="notice-dot" data-notice-key="daily" hidden aria-hidden="true"></span><span class="sr-only notice-copy" data-notice-copy="daily" hidden>每日补给可领取</span></button><button class="resource cash" data-action="currency-tip" data-currency="coins" aria-label="查看经营资金说明" title="经营资金说明"><svg class="icon"><use href="#g-coin"/></svg><b id="hud-cash">1,800</b><span class="resource-plus" aria-hidden="true">+</span></button><button class="resource vouchers" data-action="currency-tip" data-currency="vouchers" aria-label="查看服饰券说明" title="服饰券说明"><svg class="icon"><use href="#g-ticket"/></svg><b id="hud-vouchers">25</b><span class="resource-plus" aria-hidden="true">+</span></button><button class="resource seal" data-action="currency-tip" data-currency="seals" aria-label="查看评选印章说明" title="评选印章说明"><svg class="icon"><use href="#g-star"/></svg><b id="hud-seals">0</b><span class="resource-plus" aria-hidden="true">+</span></button></div><button class="audio-toggle" data-action="toggle-audio" type="button" aria-pressed="true" aria-label="关闭背景音乐" title="背景音乐开关"><span aria-hidden="true">♫</span><small>音乐</small></button></header>
+<div id="storage-warning" hidden></div><div id="guide"></div><main id="view" tabindex="-1"></main><footer class="demo-note">V0.55 我的家 · 独立存档 · 本地UGC · 未接入真实多人服务</footer></div></div>
+<section id="login-screen" aria-label="时尚街区登录界面"></section><nav id="mobile-nav" aria-label="底部导航"></nav><dialog id="modal" aria-label="游戏详情"></dialog><div id="toast" role="status" aria-live="polite"></div><input id="import-file" type="file" accept="application/json,.json" hidden>
+<script src="fashion-studio-mobile-trial-v55-runtime.js" defer></script></body></html>
+
+
+

@@ -1,0 +1,1306 @@
+{
+  "pass": true,
+  "url": "http://127.0.0.1:8141/fashion-studio-mobile-trial-v55.html",
+  "checks": [
+    {
+      "name": "320×568: 六台锁定生产器清晰可见，工作台与货币栏无重叠、无溢出，底部操作同屏",
+      "pass": true,
+      "geometry": {
+        "children": [
+          {
+            "className": "a52-orders ",
+            "rect": {
+              "x": 13,
+              "y": 58,
+              "width": 294,
+              "height": 77,
+              "top": 58,
+              "right": 307,
+              "bottom": 135,
+              "left": 13
+            }
+          },
+          {
+            "className": "a52-board-head",
+            "rect": {
+              "x": 13,
+              "y": 138,
+              "width": 294,
+              "height": 23,
+              "top": 138,
+              "right": 307,
+              "bottom": 161,
+              "left": 13
+            }
+          },
+          {
+            "className": "a52-board",
+            "rect": {
+              "x": 59.671875,
+              "y": 164,
+              "width": 200.65625,
+              "height": 258,
+              "top": 164,
+              "right": 260.328125,
+              "bottom": 422,
+              "left": 59.671875
+            }
+          },
+          {
+            "className": "a52-selection",
+            "rect": {
+              "x": 13,
+              "y": 425,
+              "width": 294,
+              "height": 35,
+              "top": 425,
+              "right": 307,
+              "bottom": 460,
+              "left": 13
+            }
+          },
+          {
+            "className": "a52-tools",
+            "rect": {
+              "x": 13,
+              "y": 463,
+              "width": 294,
+              "height": 35,
+              "top": 463,
+              "right": 307,
+              "bottom": 498,
+              "left": 13
+            }
+          }
+        ],
+        "overlap": [],
+        "outside": [],
+        "broken": [],
+        "nav": {
+          "x": 0,
+          "y": 514,
+          "width": 320,
+          "height": 54,
+          "top": 514,
+          "right": 320,
+          "bottom": 568,
+          "left": 0
+        },
+        "work": {
+          "x": 8,
+          "y": 53,
+          "width": 304,
+          "height": 450,
+          "top": 53,
+          "right": 312,
+          "bottom": 503,
+          "left": 8
+        },
+        "board": {
+          "x": 59.671875,
+          "y": 164,
+          "width": 200.65625,
+          "height": 258,
+          "top": 164,
+          "right": 260.328125,
+          "bottom": 422,
+          "left": 59.671875
+        },
+        "cells": 63,
+        "documentWidth": 320,
+        "viewportWidth": 320
+      },
+      "header": {
+        "rows": [
+          {
+            "label": "打开艾米的个人信息，角色LV 1，见习设计师",
+            "rect": {
+              "x": 6,
+              "y": 1,
+              "width": 44,
+              "height": 46,
+              "top": 1,
+              "right": 50,
+              "bottom": 47,
+              "left": 6
+            }
+          },
+          {
+            "label": "查看体力说明",
+            "rect": {
+              "x": 56,
+              "y": 6,
+              "width": 67.328125,
+              "height": 36,
+              "top": 6,
+              "right": 123.328125,
+              "bottom": 42,
+              "left": 56
+            }
+          },
+          {
+            "label": "查看经营资金说明",
+            "rect": {
+              "x": 128.328125,
+              "y": 6,
+              "width": 67.328125,
+              "height": 36,
+              "top": 6,
+              "right": 195.65625,
+              "bottom": 42,
+              "left": 128.328125
+            }
+          },
+          {
+            "label": "查看服饰券说明",
+            "rect": {
+              "x": 200.65625,
+              "y": 6,
+              "width": 67.34375,
+              "height": 36,
+              "top": 6,
+              "right": 268,
+              "bottom": 42,
+              "left": 200.65625
+            }
+          },
+          {
+            "label": "关闭背景音乐",
+            "rect": {
+              "x": 274,
+              "y": 4,
+              "width": 40,
+              "height": 40,
+              "top": 4,
+              "right": 314,
+              "bottom": 44,
+              "left": 274
+            }
+          }
+        ],
+        "collisions": [],
+        "overflow": []
+      }
+    },
+    {
+      "name": "320×568: 锁定条件弹窗适配，不能提前解锁，可以关闭",
+      "pass": true,
+      "modal": {
+        "left": 6,
+        "right": 314,
+        "top": 68.171875,
+        "bottom": 568,
+        "width": 320,
+        "height": 568,
+        "overflow": false,
+        "close": true
+      }
+    },
+    {
+      "name": "360×640: 六台锁定生产器清晰可见，工作台与货币栏无重叠、无溢出，底部操作同屏",
+      "pass": true,
+      "geometry": {
+        "children": [
+          {
+            "className": "a52-orders ",
+            "rect": {
+              "x": 13,
+              "y": 58,
+              "width": 334,
+              "height": 77,
+              "top": 58,
+              "right": 347,
+              "bottom": 135,
+              "left": 13
+            }
+          },
+          {
+            "className": "a52-board-head",
+            "rect": {
+              "x": 13,
+              "y": 138,
+              "width": 334,
+              "height": 23,
+              "top": 138,
+              "right": 347,
+              "bottom": 161,
+              "left": 13
+            }
+          },
+          {
+            "className": "a52-board",
+            "rect": {
+              "x": 51.671875,
+              "y": 164,
+              "width": 256.65625,
+              "height": 330,
+              "top": 164,
+              "right": 308.328125,
+              "bottom": 494,
+              "left": 51.671875
+            }
+          },
+          {
+            "className": "a52-selection",
+            "rect": {
+              "x": 13,
+              "y": 497,
+              "width": 334,
+              "height": 35,
+              "top": 497,
+              "right": 347,
+              "bottom": 532,
+              "left": 13
+            }
+          },
+          {
+            "className": "a52-tools",
+            "rect": {
+              "x": 13,
+              "y": 535,
+              "width": 334,
+              "height": 35,
+              "top": 535,
+              "right": 347,
+              "bottom": 570,
+              "left": 13
+            }
+          }
+        ],
+        "overlap": [],
+        "outside": [],
+        "broken": [],
+        "nav": {
+          "x": 0,
+          "y": 586,
+          "width": 360,
+          "height": 54,
+          "top": 586,
+          "right": 360,
+          "bottom": 640,
+          "left": 0
+        },
+        "work": {
+          "x": 8,
+          "y": 53,
+          "width": 344,
+          "height": 522,
+          "top": 53,
+          "right": 352,
+          "bottom": 575,
+          "left": 8
+        },
+        "board": {
+          "x": 51.671875,
+          "y": 164,
+          "width": 256.65625,
+          "height": 330,
+          "top": 164,
+          "right": 308.328125,
+          "bottom": 494,
+          "left": 51.671875
+        },
+        "cells": 63,
+        "documentWidth": 360,
+        "viewportWidth": 360
+      },
+      "header": {
+        "rows": [
+          {
+            "label": "打开艾米的个人信息，角色LV 1，见习设计师",
+            "rect": {
+              "x": 6,
+              "y": 1,
+              "width": 44,
+              "height": 46,
+              "top": 1,
+              "right": 50,
+              "bottom": 47,
+              "left": 6
+            }
+          },
+          {
+            "label": "查看体力说明",
+            "rect": {
+              "x": 56,
+              "y": 6,
+              "width": 80.65625,
+              "height": 36,
+              "top": 6,
+              "right": 136.65625,
+              "bottom": 42,
+              "left": 56
+            }
+          },
+          {
+            "label": "查看经营资金说明",
+            "rect": {
+              "x": 141.65625,
+              "y": 6,
+              "width": 80.671875,
+              "height": 36,
+              "top": 6,
+              "right": 222.328125,
+              "bottom": 42,
+              "left": 141.65625
+            }
+          },
+          {
+            "label": "查看服饰券说明",
+            "rect": {
+              "x": 227.328125,
+              "y": 6,
+              "width": 80.65625,
+              "height": 36,
+              "top": 6,
+              "right": 307.984375,
+              "bottom": 42,
+              "left": 227.328125
+            }
+          },
+          {
+            "label": "关闭背景音乐",
+            "rect": {
+              "x": 314,
+              "y": 4,
+              "width": 40,
+              "height": 40,
+              "top": 4,
+              "right": 354,
+              "bottom": 44,
+              "left": 314
+            }
+          }
+        ],
+        "collisions": [],
+        "overflow": []
+      }
+    },
+    {
+      "name": "360×640: 锁定条件弹窗适配，不能提前解锁，可以关闭",
+      "pass": true,
+      "modal": {
+        "left": 6,
+        "right": 354,
+        "top": 76.8125,
+        "bottom": 640,
+        "width": 360,
+        "height": 640,
+        "overflow": false,
+        "close": true
+      }
+    },
+    {
+      "name": "360×780: 六台锁定生产器清晰可见，工作台与货币栏无重叠、无溢出，底部操作同屏",
+      "pass": true,
+      "geometry": {
+        "children": [
+          {
+            "className": "a52-heading",
+            "rect": {
+              "x": 15,
+              "y": 79,
+              "width": 330,
+              "height": 28,
+              "top": 79,
+              "right": 345,
+              "bottom": 107,
+              "left": 15
+            }
+          },
+          {
+            "className": "a52-orders ",
+            "rect": {
+              "x": 15,
+              "y": 112,
+              "width": 330,
+              "height": 90,
+              "top": 112,
+              "right": 345,
+              "bottom": 202,
+              "left": 15
+            }
+          },
+          {
+            "className": "a52-board-head",
+            "rect": {
+              "x": 15,
+              "y": 207,
+              "width": 330,
+              "height": 26,
+              "top": 207,
+              "right": 345,
+              "bottom": 233,
+              "left": 15
+            }
+          },
+          {
+            "className": "a52-board",
+            "rect": {
+              "x": 36.5,
+              "y": 238,
+              "width": 287,
+              "height": 369,
+              "top": 238,
+              "right": 323.5,
+              "bottom": 607,
+              "left": 36.5
+            }
+          },
+          {
+            "className": "a52-selection",
+            "rect": {
+              "x": 15,
+              "y": 612,
+              "width": 330,
+              "height": 41,
+              "top": 612,
+              "right": 345,
+              "bottom": 653,
+              "left": 15
+            }
+          },
+          {
+            "className": "a52-tools",
+            "rect": {
+              "x": 15,
+              "y": 658,
+              "width": 330,
+              "height": 35,
+              "top": 658,
+              "right": 345,
+              "bottom": 693,
+              "left": 15
+            }
+          }
+        ],
+        "overlap": [],
+        "outside": [],
+        "broken": [],
+        "nav": {
+          "x": 0,
+          "y": 708,
+          "width": 360,
+          "height": 72,
+          "top": 708,
+          "right": 360,
+          "bottom": 780,
+          "left": 0
+        },
+        "work": {
+          "x": 8,
+          "y": 72,
+          "width": 344,
+          "height": 628,
+          "top": 72,
+          "right": 352,
+          "bottom": 700,
+          "left": 8
+        },
+        "board": {
+          "x": 36.5,
+          "y": 238,
+          "width": 287,
+          "height": 369,
+          "top": 238,
+          "right": 323.5,
+          "bottom": 607,
+          "left": 36.5
+        },
+        "cells": 63,
+        "documentWidth": 360,
+        "viewportWidth": 360
+      },
+      "header": {
+        "rows": [
+          {
+            "label": "打开艾米的个人信息，角色LV 1，见习设计师",
+            "rect": {
+              "x": 8,
+              "y": 10,
+              "width": 44,
+              "height": 46,
+              "top": 10,
+              "right": 52,
+              "bottom": 56,
+              "left": 8
+            }
+          },
+          {
+            "label": "查看体力说明",
+            "rect": {
+              "x": 58,
+              "y": 15,
+              "width": 79.328125,
+              "height": 36,
+              "top": 15,
+              "right": 137.328125,
+              "bottom": 51,
+              "left": 58
+            }
+          },
+          {
+            "label": "查看经营资金说明",
+            "rect": {
+              "x": 142.328125,
+              "y": 15,
+              "width": 79.328125,
+              "height": 36,
+              "top": 15,
+              "right": 221.65625,
+              "bottom": 51,
+              "left": 142.328125
+            }
+          },
+          {
+            "label": "查看服饰券说明",
+            "rect": {
+              "x": 226.65625,
+              "y": 15,
+              "width": 79.34375,
+              "height": 36,
+              "top": 15,
+              "right": 306,
+              "bottom": 51,
+              "left": 226.65625
+            }
+          },
+          {
+            "label": "关闭背景音乐",
+            "rect": {
+              "x": 312,
+              "y": 13,
+              "width": 40,
+              "height": 40,
+              "top": 13,
+              "right": 352,
+              "bottom": 53,
+              "left": 312
+            }
+          }
+        ],
+        "collisions": [],
+        "overflow": []
+      }
+    },
+    {
+      "name": "360×780: 锁定条件弹窗适配，不能提前解锁，可以关闭",
+      "pass": true,
+      "modal": {
+        "left": 6,
+        "right": 354,
+        "top": 121.21875,
+        "bottom": 780,
+        "width": 360,
+        "height": 780,
+        "overflow": false,
+        "close": true
+      }
+    },
+    {
+      "name": "390×844: 六台锁定生产器清晰可见，工作台与货币栏无重叠、无溢出，底部操作同屏",
+      "pass": true,
+      "geometry": {
+        "children": [
+          {
+            "className": "a52-heading",
+            "rect": {
+              "x": 15,
+              "y": 79,
+              "width": 360,
+              "height": 28,
+              "top": 79,
+              "right": 375,
+              "bottom": 107,
+              "left": 15
+            }
+          },
+          {
+            "className": "a52-orders ",
+            "rect": {
+              "x": 15,
+              "y": 112,
+              "width": 360,
+              "height": 90,
+              "top": 112,
+              "right": 375,
+              "bottom": 202,
+              "left": 15
+            }
+          },
+          {
+            "className": "a52-board-head",
+            "rect": {
+              "x": 15,
+              "y": 207,
+              "width": 360,
+              "height": 26,
+              "top": 207,
+              "right": 375,
+              "bottom": 233,
+              "left": 15
+            }
+          },
+          {
+            "className": "a52-board",
+            "rect": {
+              "x": 26.609375,
+              "y": 238,
+              "width": 336.765625,
+              "height": 433,
+              "top": 238,
+              "right": 363.375,
+              "bottom": 671,
+              "left": 26.609375
+            }
+          },
+          {
+            "className": "a52-selection",
+            "rect": {
+              "x": 15,
+              "y": 676,
+              "width": 360,
+              "height": 41,
+              "top": 676,
+              "right": 375,
+              "bottom": 717,
+              "left": 15
+            }
+          },
+          {
+            "className": "a52-tools",
+            "rect": {
+              "x": 15,
+              "y": 722,
+              "width": 360,
+              "height": 35,
+              "top": 722,
+              "right": 375,
+              "bottom": 757,
+              "left": 15
+            }
+          }
+        ],
+        "overlap": [],
+        "outside": [],
+        "broken": [],
+        "nav": {
+          "x": 0,
+          "y": 772,
+          "width": 390,
+          "height": 72,
+          "top": 772,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "work": {
+          "x": 8,
+          "y": 72,
+          "width": 374,
+          "height": 692,
+          "top": 72,
+          "right": 382,
+          "bottom": 764,
+          "left": 8
+        },
+        "board": {
+          "x": 26.609375,
+          "y": 238,
+          "width": 336.765625,
+          "height": 433,
+          "top": 238,
+          "right": 363.375,
+          "bottom": 671,
+          "left": 26.609375
+        },
+        "cells": 63,
+        "documentWidth": 390,
+        "viewportWidth": 390
+      },
+      "header": {
+        "rows": [
+          {
+            "label": "打开艾米的个人信息，角色LV 1，见习设计师",
+            "rect": {
+              "x": 8,
+              "y": 10,
+              "width": 44,
+              "height": 46,
+              "top": 10,
+              "right": 52,
+              "bottom": 56,
+              "left": 8
+            }
+          },
+          {
+            "label": "查看体力说明",
+            "rect": {
+              "x": 58,
+              "y": 15,
+              "width": 66.5,
+              "height": 36,
+              "top": 15,
+              "right": 124.5,
+              "bottom": 51,
+              "left": 58
+            }
+          },
+          {
+            "label": "查看经营资金说明",
+            "rect": {
+              "x": 128.5,
+              "y": 15,
+              "width": 66.5,
+              "height": 36,
+              "top": 15,
+              "right": 195,
+              "bottom": 51,
+              "left": 128.5
+            }
+          },
+          {
+            "label": "查看服饰券说明",
+            "rect": {
+              "x": 199,
+              "y": 15,
+              "width": 66.5,
+              "height": 36,
+              "top": 15,
+              "right": 265.5,
+              "bottom": 51,
+              "left": 199
+            }
+          },
+          {
+            "label": "查看评选印章说明",
+            "rect": {
+              "x": 269.5,
+              "y": 15,
+              "width": 66.5,
+              "height": 36,
+              "top": 15,
+              "right": 336,
+              "bottom": 51,
+              "left": 269.5
+            }
+          },
+          {
+            "label": "关闭背景音乐",
+            "rect": {
+              "x": 342,
+              "y": 13,
+              "width": 40,
+              "height": 40,
+              "top": 13,
+              "right": 382,
+              "bottom": 53,
+              "left": 342
+            }
+          }
+        ],
+        "collisions": [],
+        "overflow": []
+      }
+    },
+    {
+      "name": "390×844: 锁定条件弹窗适配，不能提前解锁，可以关闭",
+      "pass": true,
+      "modal": {
+        "left": 6,
+        "right": 384,
+        "top": 185.21875,
+        "bottom": 844,
+        "width": 390,
+        "height": 844,
+        "overflow": false,
+        "close": true
+      }
+    },
+    {
+      "name": "真实触控点击生产器出料，扣除1体力",
+      "pass": true
+    },
+    {
+      "name": "CDP touchStart/move/end 触摸拖动完成二合",
+      "pass": true
+    },
+    {
+      "name": "真实触摸拖入锁定格不能交换或丢失服装",
+      "pass": true
+    },
+    {
+      "name": "锁定条件中的行动指引可以跳到顾客委托",
+      "pass": true
+    },
+    {
+      "name": "430×932: 六台锁定生产器清晰可见，工作台与货币栏无重叠、无溢出，底部操作同屏",
+      "pass": true,
+      "geometry": {
+        "children": [
+          {
+            "className": "a52-heading",
+            "rect": {
+              "x": 15,
+              "y": 79,
+              "width": 400,
+              "height": 28,
+              "top": 79,
+              "right": 415,
+              "bottom": 107,
+              "left": 15
+            }
+          },
+          {
+            "className": "a52-orders ",
+            "rect": {
+              "x": 15,
+              "y": 112,
+              "width": 400,
+              "height": 90,
+              "top": 112,
+              "right": 415,
+              "bottom": 202,
+              "left": 15
+            }
+          },
+          {
+            "className": "a52-board-head",
+            "rect": {
+              "x": 15,
+              "y": 207,
+              "width": 400,
+              "height": 26,
+              "top": 207,
+              "right": 415,
+              "bottom": 233,
+              "left": 15
+            }
+          },
+          {
+            "className": "a52-board",
+            "rect": {
+              "x": 15,
+              "y": 238,
+              "width": 400,
+              "height": 514.28125,
+              "top": 238,
+              "right": 415,
+              "bottom": 752.28125,
+              "left": 15
+            }
+          },
+          {
+            "className": "a52-selection",
+            "rect": {
+              "x": 15,
+              "y": 757.28125,
+              "width": 400,
+              "height": 41,
+              "top": 757.28125,
+              "right": 415,
+              "bottom": 798.28125,
+              "left": 15
+            }
+          },
+          {
+            "className": "a52-tools",
+            "rect": {
+              "x": 15,
+              "y": 803.28125,
+              "width": 400,
+              "height": 35,
+              "top": 803.28125,
+              "right": 415,
+              "bottom": 838.28125,
+              "left": 15
+            }
+          }
+        ],
+        "overlap": [],
+        "outside": [],
+        "broken": [],
+        "nav": {
+          "x": 0,
+          "y": 860,
+          "width": 430,
+          "height": 72,
+          "top": 860,
+          "right": 430,
+          "bottom": 932,
+          "left": 0
+        },
+        "work": {
+          "x": 8,
+          "y": 72,
+          "width": 414,
+          "height": 773.28125,
+          "top": 72,
+          "right": 422,
+          "bottom": 845.28125,
+          "left": 8
+        },
+        "board": {
+          "x": 15,
+          "y": 238,
+          "width": 400,
+          "height": 514.28125,
+          "top": 238,
+          "right": 415,
+          "bottom": 752.28125,
+          "left": 15
+        },
+        "cells": 63,
+        "documentWidth": 430,
+        "viewportWidth": 430
+      },
+      "header": {
+        "rows": [
+          {
+            "label": "打开艾米的个人信息，角色LV 1，见习设计师",
+            "rect": {
+              "x": 8,
+              "y": 10,
+              "width": 44,
+              "height": 46,
+              "top": 10,
+              "right": 52,
+              "bottom": 56,
+              "left": 8
+            }
+          },
+          {
+            "label": "查看体力说明",
+            "rect": {
+              "x": 58,
+              "y": 15,
+              "width": 76.5,
+              "height": 36,
+              "top": 15,
+              "right": 134.5,
+              "bottom": 51,
+              "left": 58
+            }
+          },
+          {
+            "label": "查看经营资金说明",
+            "rect": {
+              "x": 138.5,
+              "y": 15,
+              "width": 76.5,
+              "height": 36,
+              "top": 15,
+              "right": 215,
+              "bottom": 51,
+              "left": 138.5
+            }
+          },
+          {
+            "label": "查看服饰券说明",
+            "rect": {
+              "x": 219,
+              "y": 15,
+              "width": 76.5,
+              "height": 36,
+              "top": 15,
+              "right": 295.5,
+              "bottom": 51,
+              "left": 219
+            }
+          },
+          {
+            "label": "查看评选印章说明",
+            "rect": {
+              "x": 299.5,
+              "y": 15,
+              "width": 76.5,
+              "height": 36,
+              "top": 15,
+              "right": 376,
+              "bottom": 51,
+              "left": 299.5
+            }
+          },
+          {
+            "label": "关闭背景音乐",
+            "rect": {
+              "x": 382,
+              "y": 13,
+              "width": 40,
+              "height": 40,
+              "top": 13,
+              "right": 422,
+              "bottom": 53,
+              "left": 382
+            }
+          }
+        ],
+        "collisions": [],
+        "overflow": []
+      }
+    },
+    {
+      "name": "430×932: 锁定条件弹窗适配，不能提前解锁，可以关闭",
+      "pass": true,
+      "modal": {
+        "left": 6,
+        "right": 424,
+        "top": 273.21875,
+        "bottom": 932,
+        "width": 430,
+        "height": 932,
+        "overflow": false,
+        "close": true
+      }
+    },
+    {
+      "name": "1080×1920: 六台锁定生产器清晰可见，工作台与货币栏无重叠、无溢出，底部操作同屏",
+      "pass": true,
+      "geometry": {
+        "children": [
+          {
+            "className": "a52-heading",
+            "rect": {
+              "x": 35.5,
+              "y": 177.5,
+              "width": 1009,
+              "height": 63,
+              "top": 177.5,
+              "right": 1044.5,
+              "bottom": 240.5,
+              "left": 35.5
+            }
+          },
+          {
+            "className": "a52-orders ",
+            "rect": {
+              "x": 35.5,
+              "y": 251.75,
+              "width": 1009,
+              "height": 201.5,
+              "top": 251.75,
+              "right": 1044.5,
+              "bottom": 453.25,
+              "left": 35.5
+            }
+          },
+          {
+            "className": "a52-board-head",
+            "rect": {
+              "x": 35.5,
+              "y": 464.5,
+              "width": 1009,
+              "height": 58.5,
+              "top": 464.5,
+              "right": 1044.5,
+              "bottom": 523,
+              "left": 35.5
+            }
+          },
+          {
+            "className": "a52-board",
+            "rect": {
+              "x": 148.5,
+              "y": 534.25,
+              "width": 783,
+              "height": 1006.71875,
+              "top": 534.25,
+              "right": 931.5,
+              "bottom": 1540.96875,
+              "left": 148.5
+            }
+          },
+          {
+            "className": "a52-selection",
+            "rect": {
+              "x": 35.5,
+              "y": 1552.21875,
+              "width": 1009,
+              "height": 91.75,
+              "top": 1552.21875,
+              "right": 1044.5,
+              "bottom": 1643.96875,
+              "left": 35.5
+            }
+          },
+          {
+            "className": "a52-tools",
+            "rect": {
+              "x": 35.5,
+              "y": 1655.21875,
+              "width": 1009,
+              "height": 78.75,
+              "top": 1655.21875,
+              "right": 1044.5,
+              "bottom": 1733.96875,
+              "left": 35.5
+            }
+          }
+        ],
+        "overlap": [],
+        "outside": [],
+        "broken": [],
+        "nav": {
+          "x": 0,
+          "y": 1758,
+          "width": 1080,
+          "height": 162,
+          "top": 1758,
+          "right": 1080,
+          "bottom": 1920,
+          "left": 0
+        },
+        "work": {
+          "x": 20,
+          "y": 162,
+          "width": 1040,
+          "height": 1587.46875,
+          "top": 162,
+          "right": 1060,
+          "bottom": 1749.46875,
+          "left": 20
+        },
+        "board": {
+          "x": 148.5,
+          "y": 534.25,
+          "width": 783,
+          "height": 1006.71875,
+          "top": 534.25,
+          "right": 931.5,
+          "bottom": 1540.96875,
+          "left": 148.5
+        },
+        "cells": 63,
+        "documentWidth": 1080,
+        "viewportWidth": 1080
+      },
+      "header": {
+        "rows": [
+          {
+            "label": "打开艾米的个人信息，角色LV 1，见习设计师",
+            "rect": {
+              "x": 20,
+              "y": 22.625,
+              "width": 99,
+              "height": 103.5,
+              "top": 22.625,
+              "right": 119,
+              "bottom": 126.125,
+              "left": 20
+            }
+          },
+          {
+            "label": "查看体力说明",
+            "rect": {
+              "x": 132.5,
+              "y": 33.875,
+              "width": 199.25,
+              "height": 81,
+              "top": 33.875,
+              "right": 331.75,
+              "bottom": 114.875,
+              "left": 132.5
+            }
+          },
+          {
+            "label": "查看经营资金说明",
+            "rect": {
+              "x": 340.75,
+              "y": 33.875,
+              "width": 199.25,
+              "height": 81,
+              "top": 33.875,
+              "right": 540,
+              "bottom": 114.875,
+              "left": 340.75
+            }
+          },
+          {
+            "label": "查看服饰券说明",
+            "rect": {
+              "x": 549,
+              "y": 33.875,
+              "width": 199.25,
+              "height": 81,
+              "top": 33.875,
+              "right": 748.25,
+              "bottom": 114.875,
+              "left": 549
+            }
+          },
+          {
+            "label": "查看评选印章说明",
+            "rect": {
+              "x": 757.25,
+              "y": 33.875,
+              "width": 199.25,
+              "height": 81,
+              "top": 33.875,
+              "right": 956.5,
+              "bottom": 114.875,
+              "left": 757.25
+            }
+          },
+          {
+            "label": "关闭背景音乐",
+            "rect": {
+              "x": 970,
+              "y": 29.375,
+              "width": 90,
+              "height": 90,
+              "top": 29.375,
+              "right": 1060,
+              "bottom": 119.375,
+              "left": 970
+            }
+          }
+        ],
+        "collisions": [],
+        "overflow": []
+      }
+    },
+    {
+      "name": "1080×1920: 锁定条件弹窗适配，不能提前解锁，可以关闭",
+      "pass": true,
+      "modal": {
+        "left": 306,
+        "right": 774,
+        "top": 1261.21875,
+        "bottom": 1920,
+        "width": 1080,
+        "height": 1920,
+        "overflow": false,
+        "close": true
+      }
+    },
+    {
+      "name": "tutorial4: 达标状态可见，点击原地免费解锁、立即出料、刷新后状态保留",
+      "pass": true
+    },
+    {
+      "name": "tutorial7: 达标状态可见，点击原地免费解锁、立即出料、刷新后状态保留",
+      "pass": true
+    },
+    {
+      "name": "tutorial9: 达标状态可见，点击原地免费解锁、立即出料、刷新后状态保留",
+      "pass": true
+    },
+    {
+      "name": "浏览器按 V53→V55 迁移满盘旧存档，旧键完整保留，挤出物品可领取",
+      "pass": true
+    },
+    {
+      "name": "V54→V55 保存教学节点、订单和已解锁生产器，V54存档不回写",
+      "pass": true
+    },
+    {
+      "name": "商场、社区、背包、换装、排行榜、顾客和工坊入口均能打开，图像无缺失、无脚本异常",
+      "pass": true
+    },
+    {
+      "name": "签名 APK 解包网页启动、锁定逻辑和全部工作台图像加载正常",
+      "pass": true
+    }
+  ],
+  "limitation": "Chromium mobile emulation and trusted CDP touch events; no physical Android install test."
+}

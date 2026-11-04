@@ -1,0 +1,597 @@
+{
+  "version": "V50",
+  "pass": true,
+  "checks": [
+    {
+      "name": "First-paint logo and animated loading while runtime is delayed",
+      "pass": true
+    },
+    {
+      "name": "Slow stylesheet still keeps the loader visible and initializes scene layout correctly",
+      "pass": true
+    },
+    {
+      "name": "Missing script produces visible recovery screen",
+      "pass": true
+    },
+    {
+      "name": "Missing scene produces visible recovery screen",
+      "pass": true
+    },
+    {
+      "name": "Video MIME type and byte-range streaming",
+      "pass": true
+    },
+    {
+      "name": "Mobile 320x568 file: login video, sign-in bounds/close, nine views",
+      "pass": true,
+      "geometry": {
+        "bounds": {
+          "x": 12,
+          "y": 62,
+          "width": 296,
+          "height": 444,
+          "top": 62,
+          "right": 308,
+          "bottom": 506,
+          "left": 12
+        },
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "scroll": false,
+        "outside": [],
+        "textOverlap": [],
+        "close": {
+          "x": 243.1875,
+          "y": 455.609375,
+          "width": 44,
+          "height": 44,
+          "top": 455.609375,
+          "right": 287.1875,
+          "bottom": 499.609375,
+          "left": 243.1875
+        }
+      },
+      "views": [
+        {
+          "view": "map",
+          "images": 5,
+          "backgrounds": 3
+        },
+        {
+          "view": "work",
+          "images": 12,
+          "backgrounds": 2
+        },
+        {
+          "view": "customer",
+          "images": 6,
+          "backgrounds": 1
+        },
+        {
+          "view": "catalog",
+          "images": 34,
+          "backgrounds": 1
+        },
+        {
+          "view": "contest",
+          "images": 11,
+          "backgrounds": 1
+        },
+        {
+          "view": "profile",
+          "images": 6,
+          "backgrounds": 1
+        },
+        {
+          "view": "community",
+          "images": 3,
+          "backgrounds": 1
+        },
+        {
+          "view": "home",
+          "images": 10,
+          "backgrounds": 2
+        },
+        {
+          "view": "ranking",
+          "images": 3,
+          "backgrounds": 1
+        }
+      ]
+    },
+    {
+      "name": "Mobile 360x640 file: login video, sign-in bounds/close, nine views",
+      "pass": true,
+      "geometry": {
+        "bounds": {
+          "x": 12,
+          "y": 68,
+          "width": 336,
+          "height": 504,
+          "top": 68,
+          "right": 348,
+          "bottom": 572,
+          "left": 12
+        },
+        "viewport": {
+          "width": 360,
+          "height": 640
+        },
+        "scroll": false,
+        "outside": [],
+        "textOverlap": [],
+        "close": {
+          "x": 281.015625,
+          "y": 518.140625,
+          "width": 44,
+          "height": 44,
+          "top": 518.140625,
+          "right": 325.015625,
+          "bottom": 562.140625,
+          "left": 281.015625
+        }
+      },
+      "views": [
+        {
+          "view": "map",
+          "images": 5,
+          "backgrounds": 3
+        },
+        {
+          "view": "work",
+          "images": 12,
+          "backgrounds": 2
+        },
+        {
+          "view": "customer",
+          "images": 6,
+          "backgrounds": 1
+        },
+        {
+          "view": "catalog",
+          "images": 34,
+          "backgrounds": 1
+        },
+        {
+          "view": "contest",
+          "images": 11,
+          "backgrounds": 1
+        },
+        {
+          "view": "profile",
+          "images": 6,
+          "backgrounds": 1
+        },
+        {
+          "view": "community",
+          "images": 3,
+          "backgrounds": 1
+        },
+        {
+          "view": "home",
+          "images": 10,
+          "backgrounds": 2
+        },
+        {
+          "view": "ranking",
+          "images": 3,
+          "backgrounds": 1
+        }
+      ]
+    },
+    {
+      "name": "Mobile 390x844 file: login video, sign-in bounds/close, nine views",
+      "pass": true,
+      "geometry": {
+        "bounds": {
+          "x": 12,
+          "y": 147.5,
+          "width": 366,
+          "height": 549,
+          "top": 147.5,
+          "right": 378,
+          "bottom": 696.5,
+          "left": 12
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "scroll": false,
+        "outside": [],
+        "textOverlap": [],
+        "close": {
+          "x": 309.421875,
+          "y": 640.0625,
+          "width": 44,
+          "height": 44,
+          "top": 640.0625,
+          "right": 353.421875,
+          "bottom": 684.0625,
+          "left": 309.421875
+        }
+      },
+      "views": [
+        {
+          "view": "map",
+          "images": 5,
+          "backgrounds": 3
+        },
+        {
+          "view": "work",
+          "images": 12,
+          "backgrounds": 2
+        },
+        {
+          "view": "customer",
+          "images": 6,
+          "backgrounds": 1
+        },
+        {
+          "view": "catalog",
+          "images": 34,
+          "backgrounds": 1
+        },
+        {
+          "view": "contest",
+          "images": 11,
+          "backgrounds": 1
+        },
+        {
+          "view": "profile",
+          "images": 6,
+          "backgrounds": 1
+        },
+        {
+          "view": "community",
+          "images": 3,
+          "backgrounds": 1
+        },
+        {
+          "view": "home",
+          "images": 10,
+          "backgrounds": 2
+        },
+        {
+          "view": "ranking",
+          "images": 3,
+          "backgrounds": 1
+        }
+      ]
+    },
+    {
+      "name": "Mobile 430x932 file: login video, sign-in bounds/close, nine views",
+      "pass": true,
+      "geometry": {
+        "bounds": {
+          "x": 12,
+          "y": 161.5,
+          "width": 406,
+          "height": 609,
+          "top": 161.5,
+          "right": 418,
+          "bottom": 770.5,
+          "left": 12
+        },
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "scroll": false,
+        "outside": [],
+        "textOverlap": [],
+        "close": {
+          "x": 347.265625,
+          "y": 710.578125,
+          "width": 44,
+          "height": 44,
+          "top": 710.578125,
+          "right": 391.265625,
+          "bottom": 754.578125,
+          "left": 347.265625
+        }
+      },
+      "views": [
+        {
+          "view": "map",
+          "images": 5,
+          "backgrounds": 3
+        },
+        {
+          "view": "work",
+          "images": 12,
+          "backgrounds": 2
+        },
+        {
+          "view": "customer",
+          "images": 6,
+          "backgrounds": 1
+        },
+        {
+          "view": "catalog",
+          "images": 34,
+          "backgrounds": 1
+        },
+        {
+          "view": "contest",
+          "images": 11,
+          "backgrounds": 1
+        },
+        {
+          "view": "profile",
+          "images": 6,
+          "backgrounds": 1
+        },
+        {
+          "view": "community",
+          "images": 3,
+          "backgrounds": 1
+        },
+        {
+          "view": "home",
+          "images": 10,
+          "backgrounds": 2
+        },
+        {
+          "view": "ranking",
+          "images": 3,
+          "backgrounds": 1
+        }
+      ]
+    },
+    {
+      "name": "Mobile 1080x1920 file: login video, sign-in bounds/close, nine views",
+      "pass": true,
+      "geometry": {
+        "bounds": {
+          "x": 200,
+          "y": 450,
+          "width": 680,
+          "height": 1020,
+          "top": 450,
+          "right": 880,
+          "bottom": 1470,
+          "left": 200
+        },
+        "viewport": {
+          "width": 1080,
+          "height": 1920
+        },
+        "scroll": false,
+        "outside": [],
+        "textOverlap": [],
+        "close": {
+          "x": 766.890625,
+          "y": 1372.546875,
+          "width": 71.640625,
+          "height": 71.640625,
+          "top": 1372.546875,
+          "right": 838.53125,
+          "bottom": 1444.1875,
+          "left": 766.890625
+        }
+      },
+      "views": [
+        {
+          "view": "map",
+          "images": 5,
+          "backgrounds": 3
+        },
+        {
+          "view": "work",
+          "images": 12,
+          "backgrounds": 2
+        },
+        {
+          "view": "customer",
+          "images": 6,
+          "backgrounds": 1
+        },
+        {
+          "view": "catalog",
+          "images": 34,
+          "backgrounds": 1
+        },
+        {
+          "view": "contest",
+          "images": 11,
+          "backgrounds": 1
+        },
+        {
+          "view": "profile",
+          "images": 6,
+          "backgrounds": 1
+        },
+        {
+          "view": "community",
+          "images": 3,
+          "backgrounds": 1
+        },
+        {
+          "view": "home",
+          "images": 10,
+          "backgrounds": 2
+        },
+        {
+          "view": "ranking",
+          "images": 3,
+          "backgrounds": 1
+        }
+      ]
+    },
+    {
+      "name": "Mobile 390x844 HTTP: login video, sign-in bounds/close, nine views",
+      "pass": true,
+      "geometry": {
+        "bounds": {
+          "x": 12,
+          "y": 147.5,
+          "width": 366,
+          "height": 549,
+          "top": 147.5,
+          "right": 378,
+          "bottom": 696.5,
+          "left": 12
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "scroll": false,
+        "outside": [],
+        "textOverlap": [],
+        "close": {
+          "x": 309.421875,
+          "y": 640.0625,
+          "width": 44,
+          "height": 44,
+          "top": 640.0625,
+          "right": 353.421875,
+          "bottom": 684.0625,
+          "left": 309.421875
+        }
+      },
+      "views": [
+        {
+          "view": "map",
+          "images": 5,
+          "backgrounds": 3
+        },
+        {
+          "view": "work",
+          "images": 12,
+          "backgrounds": 2
+        },
+        {
+          "view": "customer",
+          "images": 6,
+          "backgrounds": 1
+        },
+        {
+          "view": "catalog",
+          "images": 34,
+          "backgrounds": 1
+        },
+        {
+          "view": "contest",
+          "images": 11,
+          "backgrounds": 1
+        },
+        {
+          "view": "profile",
+          "images": 6,
+          "backgrounds": 1
+        },
+        {
+          "view": "community",
+          "images": 3,
+          "backgrounds": 1
+        },
+        {
+          "view": "home",
+          "images": 10,
+          "backgrounds": 2
+        },
+        {
+          "view": "ranking",
+          "images": 3,
+          "backgrounds": 1
+        }
+      ]
+    },
+    {
+      "name": "Six-week month, correct weekday alignment, future disabled, auto sign-in once, makeup reward, history reward once, persistence and month rollover",
+      "pass": true
+    },
+    {
+      "name": "All 187 assets present; 182 raster files decoded successfully",
+      "pass": true
+    },
+    {
+      "name": "Mobile 360x640 file: login video, sign-in bounds/close, nine views",
+      "pass": true,
+      "geometry": {
+        "bounds": {
+          "x": 12,
+          "y": 68,
+          "width": 336,
+          "height": 504,
+          "top": 68,
+          "right": 348,
+          "bottom": 572,
+          "left": 12
+        },
+        "viewport": {
+          "width": 360,
+          "height": 640
+        },
+        "scroll": false,
+        "outside": [],
+        "textOverlap": [],
+        "close": {
+          "x": 281.015625,
+          "y": 518.140625,
+          "width": 44,
+          "height": 44,
+          "top": 518.140625,
+          "right": 325.015625,
+          "bottom": 562.140625,
+          "left": 281.015625
+        }
+      },
+      "views": [
+        {
+          "view": "map",
+          "images": 5,
+          "backgrounds": 3
+        },
+        {
+          "view": "work",
+          "images": 12,
+          "backgrounds": 2
+        },
+        {
+          "view": "customer",
+          "images": 6,
+          "backgrounds": 1
+        },
+        {
+          "view": "catalog",
+          "images": 34,
+          "backgrounds": 1
+        },
+        {
+          "view": "contest",
+          "images": 11,
+          "backgrounds": 1
+        },
+        {
+          "view": "profile",
+          "images": 6,
+          "backgrounds": 1
+        },
+        {
+          "view": "community",
+          "images": 3,
+          "backgrounds": 1
+        },
+        {
+          "view": "home",
+          "images": 10,
+          "backgrounds": 2
+        },
+        {
+          "view": "ranking",
+          "images": 3,
+          "backgrounds": 1
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Chromium touch emulation and extracted APK resource regression; no physical Android installation test performed."
+  ]
+}

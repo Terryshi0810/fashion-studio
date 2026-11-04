@@ -1,0 +1,15 @@
+{
+  "pass": true,
+  "coreChecks": 23,
+  "uiChecks": 23,
+  "assets": 390,
+  "workshopMechanicsUnchanged": true,
+  "v54RollbackUnchanged": true,
+  "deviceInstallTest": false,
+  "hashes": {
+    "artifacts/FashionStudio-V55-1080x1920.apk": "4d4665f481816d45b15b4fd2fbce538347ec89ad552f24293be02c63583d83dc",
+    "artifacts/FashionStudio-V55-MobileWeb.zip": "96e638a65a5fc54b18c375222d32b7df9688c4505fba403f575b9835a64185f3",
+    "fashion-studio-mobile-trial-v55-runtime.js": "566e852941d2e9e60bdecff6c555772d8d8b5053958dd8ec579ca801ec72f435",
+    "fashion-studio-mobile-trial-v55.css": "dc15178a6888c6e4c69b70b5d9ea3b2265247dd0daa7946aca97a1ef5ddddb26"
+  }
+}

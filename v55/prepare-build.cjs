@@ -1,0 +1,21 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path');
+const root=path.resolve(__dirname,'..'),read=f=>fs.readFileSync(path.join(root,f),'utf8'),write=(f,s)=>fs.writeFileSync(path.join(root,f),s);
+function once(s,a,b){if(s.split(a).length!==2)throw Error('Expected one occurrence: '+a);return s.replace(a,b);}
+const plan=JSON.parse(read('design/v54-workshop-plan.json'));
+plan.version='V55-pastel-workshop-1';plan.title='时尚街区：奶油粉紫立体服装工坊';plan.status='implemented_independent_v55';
+plan.migration={...plan.migration,branch:'V55 visual iteration; preserve V54/V53',saveKey:'fashion.loop.mobile.v55',oldKey:'fashion.loop.mobile.v54'};
+plan.presentation={reference:'User-provided cbd9aebd-3e29-4584-8c3b-040cc00dc0d4.png',palette:['#fffaf1','#ffd5d5','#f78eb7','#d8b7eb','#ffb326','#82416e'],gameplayChanged:false};
+write('design/v55-workshop-plan.json',JSON.stringify(plan,null,2)+'\n');
+let build=read('make-v54.js').replaceAll('v54','v55').replaceAll('V54','V55').replaceAll('0.54','0.55');
+build=once(build,'||localStorage.getItem("fashion.loop.mobile.v53")','||localStorage.getItem("fashion.loop.mobile.v54")||localStorage.getItem("fashion.loop.mobile.v53")');
+build=once(build,"read('v55/workshop.css'))","read('v55/workshop.css')+'\\n'+read('v55/workshop-theme.css'))");
+build=build.replace('V53/V52/V51 retained.','V54/V53/V52/V51 retained.');
+write('make-v55.js',build);
+let pack=read('pack-v54.py').replaceAll('v54','v55').replaceAll('V54','V55');
+pack=pack.replace('V53/V52/V51 保留','V54/V53/V52/V51 保留').replace('V53→V52→V51','V54→V53→V52→V51');
+write('pack-v55.py',pack);
+write('android-apk/build-apk-v55.ps1',read('android-apk/build-apk-v54.ps1').replaceAll('v54','v55').replaceAll('V54','V55').replace('--version-code 56 --version-name 0.54','--version-code 57 --version-name 0.55'));
+write('tests/v55-core.cjs',read('tests/v54-core.cjs').replaceAll('v54','v55').replaceAll('V54','V55').replace('load(54)','load(55)'));
+write('tests/v55-ui.cjs',read('tests/v54-ui.cjs').replaceAll('v54','v55').replaceAll('V54','V55').replace('const port=8140','const port=8141'));
+console.log('Prepared V55 independent visual version; V54 core mechanics and rollback files retained.');

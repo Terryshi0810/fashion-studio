@@ -1,0 +1,3274 @@
+{
+  "version": "V54-locked-producers-1",
+  "status": "implemented_independent_v54",
+  "date": "2026-11-04",
+  "title": "时尚街区：可见目标与分阶段解锁的服装二合工坊",
+  "provenance": {
+    "mechanics": "Reference public Gossip Harbor gameplay; fashion mapping and tuning are our proposal.",
+    "hiddenEconomy": "Unverified. Do not describe proposed probabilities, counts or rewards as exact original values.",
+    "sources": [
+      {
+        "id": "official_cn",
+        "type": "publisher_listing",
+        "url": "https://www.taptap.cn/app/472491",
+        "fact": "制作、顾客需求、修复经营与情节联动"
+      },
+      {
+        "id": "official_global",
+        "type": "publisher_listing",
+        "url": "https://apps.apple.com/us/app/gossip-harbor-merge-story/id1623318294",
+        "fact": "合成、顾客、修复及人物剧情"
+      },
+      {
+        "id": "wiki_generator",
+        "type": "community_observation",
+        "url": "https://gossip-harbor.fandom.com/wiki/Coffee/Tea_Generators",
+        "fact": "G1–3零件、G4主产出、G5第二品类；不能推断所有家族同级数"
+      },
+      {
+        "id": "wiki_bread",
+        "type": "community_observation",
+        "url": "https://gossip-harbor.fandom.com/wiki/Bread",
+        "fact": "玩家图谱列至L15；L12后注明测试差异"
+      },
+      {
+        "id": "wiki_tea",
+        "type": "community_observation",
+        "url": "https://gossip-harbor.fandom.com/wiki/Tea",
+        "fact": "玩家图谱茶链7级"
+      },
+      {
+        "id": "wiki_boost",
+        "type": "community_observation",
+        "url": "https://gossip-harbor.fandom.com/wiki/Generator_Booster",
+        "fact": "1x/2x/4x；8x存在条件/版本差异，首版不照搬"
+      }
+    ]
+  },
+  "board": {
+    "columns": 7,
+    "rows": 9,
+    "totalTiles": 63,
+    "initialOpenTiles": 35,
+    "openingPolicy": "blocked tiles open through chapter objectives; retain at least 8 empty tiles after initial rewards",
+    "maxFunctionalProducersOnBoard": 7,
+    "inventorySlots": 8,
+    "shortScreenMode": "smaller cells plus tap-to-merge; never hide last row",
+    "allNumbers": "project_proposal"
+  },
+  "rules": {
+    "mergeInputs": 2,
+    "maxTierMerge": false,
+    "normalDropEnergy": 1,
+    "boosts": [
+      {
+        "factor": 1,
+        "energy": 1,
+        "tierOffset": 0
+      },
+      {
+        "factor": 2,
+        "energy": 2,
+        "tierOffset": 1,
+        "unlockPlayerLevel": 8
+      },
+      {
+        "factor": 4,
+        "energy": 4,
+        "tierOffset": 2,
+        "unlockPlayerLevel": 15
+      }
+    ],
+    "energyCap": 100,
+    "energyRegenSeconds": 120,
+    "boostUsesCapacityPerTap": 1,
+    "boostNeverRaisesPastChainMax": true,
+    "chargeRecovery": "one token each rechargeSeconds/capacity seconds, fractional progress persists",
+    "unlockGrant": "Persistent locked board token -> requirements complete -> explicit unlock in the same cell. No automatic inbox G4 grant."
+  },
+  "growth": {
+    "levelXpNeeds": [
+      30,
+      45,
+      65,
+      90,
+      120,
+      150,
+      180,
+      220,
+      260,
+      300
+    ],
+    "laterLevelXp": "300 + 50 * (level - 10)",
+    "origin": "new branch proposal; do not inherit V51 curve 200+120*(level-1)",
+    "tutorial": "十份固定委托对应新手 1–10 级，每份交付后进入下一阶段；数值为本分支验收配置，不冒充原作内部奖励。"
+  },
+  "stages": [
+    {
+      "id": "raw",
+      "name": "材料与基础胚",
+      "min": 1,
+      "max": 2
+    },
+    {
+      "id": "daily",
+      "name": "日常成品",
+      "min": 3,
+      "max": 5
+    },
+    {
+      "id": "fashion",
+      "name": "潮流精品",
+      "min": 6,
+      "max": 8
+    },
+    {
+      "id": "runway",
+      "name": "秀场设计",
+      "min": 9,
+      "max": 11
+    },
+    {
+      "id": "couture",
+      "name": "高定典藏",
+      "min": 12,
+      "max": 15
+    }
+  ],
+  "producers": [
+    {
+      "id": "tailoring",
+      "name": "裁缝台",
+      "primary": "top",
+      "secondary": "pants",
+      "unlockPlayerLevel": 1,
+      "secondaryAt": 5,
+      "maxLevel": 9,
+      "firstFunctionalLevel": 4,
+      "initialGrantLevel": 4,
+      "upgrade": "two_same_family_same_level",
+      "protectLastFunctionalProducer": true,
+      "primaryWeight": 0.75,
+      "secondaryWeight": 0.25,
+      "unlock": {
+        "slot": 28,
+        "level": 1,
+        "tutorial": 0,
+        "deliveries": 0,
+        "collections": 0,
+        "previous": null,
+        "chapter": "重开工作室"
+      }
+    },
+    {
+      "id": "styling",
+      "name": "造型台",
+      "primary": "hair",
+      "secondary": "hat",
+      "unlockPlayerLevel": 4,
+      "secondaryAt": 5,
+      "maxLevel": 9,
+      "firstFunctionalLevel": 4,
+      "initialGrantLevel": 4,
+      "upgrade": "two_same_family_same_level",
+      "protectLastFunctionalProducer": true,
+      "primaryWeight": 0.75,
+      "secondaryWeight": 0.25,
+      "unlock": {
+        "slot": 6,
+        "level": 4,
+        "tutorial": 4,
+        "deliveries": 4,
+        "collections": 0,
+        "previous": "tailoring",
+        "chapter": "第一套通勤装"
+      }
+    },
+    {
+      "id": "footwear",
+      "name": "制鞋台",
+      "primary": "shoes",
+      "secondary": "gloves",
+      "unlockPlayerLevel": 7,
+      "secondaryAt": 5,
+      "maxLevel": 9,
+      "firstFunctionalLevel": 4,
+      "initialGrantLevel": 4,
+      "upgrade": "two_same_family_same_level",
+      "protectLastFunctionalProducer": true,
+      "primaryWeight": 0.75,
+      "secondaryWeight": 0.25,
+      "unlock": {
+        "slot": 13,
+        "level": 7,
+        "tutorial": 7,
+        "deliveries": 7,
+        "collections": 0,
+        "previous": "styling",
+        "chapter": "买手的造型课"
+      }
+    },
+    {
+      "id": "leather",
+      "name": "皮具配饰台",
+      "primary": "bag",
+      "secondary": "accessory",
+      "unlockPlayerLevel": 9,
+      "secondaryAt": 5,
+      "maxLevel": 9,
+      "firstFunctionalLevel": 4,
+      "initialGrantLevel": 4,
+      "upgrade": "two_same_family_same_level",
+      "protectLastFunctionalProducer": true,
+      "primaryWeight": 0.75,
+      "secondaryWeight": 0.25,
+      "unlock": {
+        "slot": 20,
+        "level": 9,
+        "tutorial": 9,
+        "deliveries": 9,
+        "collections": 0,
+        "previous": "footwear",
+        "chapter": "街区全套造型"
+      }
+    },
+    {
+      "id": "jewelry",
+      "name": "珠宝台",
+      "primary": "necklace",
+      "secondary": "earrings",
+      "unlockPlayerLevel": 12,
+      "secondaryAt": 5,
+      "maxLevel": 9,
+      "firstFunctionalLevel": 4,
+      "initialGrantLevel": 4,
+      "upgrade": "two_same_family_same_level",
+      "protectLastFunctionalProducer": true,
+      "primaryWeight": 0.75,
+      "secondaryWeight": 0.25,
+      "unlock": {
+        "slot": 27,
+        "level": 12,
+        "tutorial": 10,
+        "deliveries": 14,
+        "collections": 2,
+        "previous": "leather",
+        "chapter": "配饰系列上新"
+      }
+    },
+    {
+      "id": "couture",
+      "name": "高定台",
+      "primary": "dress",
+      "secondary": "handheld",
+      "unlockPlayerLevel": 16,
+      "secondaryAt": 6,
+      "maxLevel": 9,
+      "firstFunctionalLevel": 4,
+      "initialGrantLevel": 4,
+      "upgrade": "two_same_family_same_level",
+      "protectLastFunctionalProducer": true,
+      "primaryWeight": 0.75,
+      "secondaryWeight": 0.25,
+      "unlock": {
+        "slot": 34,
+        "level": 16,
+        "tutorial": 10,
+        "deliveries": 22,
+        "collections": 3,
+        "previous": "jewelry",
+        "chapter": "秀场高定邀请"
+      }
+    },
+    {
+      "id": "precision",
+      "name": "精工台",
+      "primary": "glasses",
+      "secondary": "ring",
+      "unlockPlayerLevel": 21,
+      "secondaryAt": 5,
+      "maxLevel": 9,
+      "firstFunctionalLevel": 4,
+      "initialGrantLevel": 4,
+      "upgrade": "two_same_family_same_level",
+      "protectLastFunctionalProducer": true,
+      "primaryWeight": 0.75,
+      "secondaryWeight": 0.25,
+      "unlock": {
+        "slot": 0,
+        "level": 21,
+        "tutorial": 10,
+        "deliveries": 32,
+        "collections": 4,
+        "previous": "couture",
+        "chapter": "品牌细节工艺"
+      }
+    }
+  ],
+  "producerLevels": [
+    {
+      "level": 1,
+      "kind": "part",
+      "capacity": 0,
+      "rechargeSeconds": 0,
+      "primaryLevels": [],
+      "secondaryLevels": []
+    },
+    {
+      "level": 2,
+      "kind": "part",
+      "capacity": 0,
+      "rechargeSeconds": 0,
+      "primaryLevels": [],
+      "secondaryLevels": []
+    },
+    {
+      "level": 3,
+      "kind": "part",
+      "capacity": 0,
+      "rechargeSeconds": 0,
+      "primaryLevels": [],
+      "secondaryLevels": []
+    },
+    {
+      "level": 4,
+      "kind": "functional",
+      "capacity": 24,
+      "rechargeSeconds": 300,
+      "primaryLevels": [
+        [
+          1,
+          1
+        ]
+      ],
+      "secondaryLevels": []
+    },
+    {
+      "level": 5,
+      "kind": "functional",
+      "capacity": 30,
+      "rechargeSeconds": 240,
+      "primaryLevels": [
+        [
+          1,
+          0.8
+        ],
+        [
+          2,
+          0.2
+        ]
+      ],
+      "secondaryLevels": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "level": 6,
+      "kind": "functional",
+      "capacity": 36,
+      "rechargeSeconds": 210,
+      "primaryLevels": [
+        [
+          1,
+          0.65
+        ],
+        [
+          2,
+          0.3
+        ],
+        [
+          3,
+          0.05
+        ]
+      ],
+      "secondaryLevels": [
+        [
+          1,
+          0.9
+        ],
+        [
+          2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "level": 7,
+      "kind": "functional",
+      "capacity": 42,
+      "rechargeSeconds": 180,
+      "primaryLevels": [
+        [
+          1,
+          0.5
+        ],
+        [
+          2,
+          0.38
+        ],
+        [
+          3,
+          0.12
+        ]
+      ],
+      "secondaryLevels": [
+        [
+          1,
+          0.8
+        ],
+        [
+          2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "level": 8,
+      "kind": "functional",
+      "capacity": 48,
+      "rechargeSeconds": 150,
+      "primaryLevels": [
+        [
+          1,
+          0.35
+        ],
+        [
+          2,
+          0.45
+        ],
+        [
+          3,
+          0.2
+        ]
+      ],
+      "secondaryLevels": [
+        [
+          1,
+          0.65
+        ],
+        [
+          2,
+          0.3
+        ],
+        [
+          3,
+          0.05
+        ]
+      ]
+    },
+    {
+      "level": 9,
+      "kind": "functional",
+      "capacity": 60,
+      "rechargeSeconds": 120,
+      "primaryLevels": [
+        [
+          1,
+          0.2
+        ],
+        [
+          2,
+          0.5
+        ],
+        [
+          3,
+          0.3
+        ]
+      ],
+      "secondaryLevels": [
+        [
+          1,
+          0.5
+        ],
+        [
+          2,
+          0.35
+        ],
+        [
+          3,
+          0.15
+        ]
+      ]
+    }
+  ],
+  "chains": [
+    {
+      "id": "hair",
+      "name": "头发",
+      "producerId": "styling",
+      "unlockPlayerLevel": 3,
+      "orderMinLevel": 3,
+      "maxLevel": 12,
+      "ordinaryOrderMaxLevel": 11,
+      "items": [
+        {
+          "id": "hair_01",
+          "chainId": "hair",
+          "level": 1,
+          "name": "发丝束",
+          "stageId": "raw",
+          "baseUnits": 1,
+          "mergeTo": "hair_02",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/hair/merge_hair_01.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "hair_02",
+          "chainId": "hair",
+          "level": 2,
+          "name": "假发胚",
+          "stageId": "raw",
+          "baseUnits": 2,
+          "mergeTo": "hair_03",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/hair/merge_hair_02.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "hair_03",
+          "chainId": "hair",
+          "level": 3,
+          "name": "清爽短发",
+          "stageId": "daily",
+          "baseUnits": 4,
+          "mergeTo": "hair_04",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/hair/merge_hair_03.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "hair_04",
+          "chainId": "hair",
+          "level": 4,
+          "name": "柔顺中发",
+          "stageId": "daily",
+          "baseUnits": 8,
+          "mergeTo": "hair_05",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/hair/merge_hair_04.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "hair_05",
+          "chainId": "hair",
+          "level": 5,
+          "name": "空气刘海",
+          "stageId": "daily",
+          "baseUnits": 16,
+          "mergeTo": "hair_06",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/hair/merge_hair_05.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "hair_06",
+          "chainId": "hair",
+          "level": 6,
+          "name": "微卷长发",
+          "stageId": "fashion",
+          "baseUnits": 32,
+          "mergeTo": "hair_07",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/hair/merge_hair_06.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "hair_07",
+          "chainId": "hair",
+          "level": 7,
+          "name": "法式波浪",
+          "stageId": "fashion",
+          "baseUnits": 64,
+          "mergeTo": "hair_08",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/hair/merge_hair_07.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "hair_08",
+          "chainId": "hair",
+          "level": 8,
+          "name": "编发半披",
+          "stageId": "fashion",
+          "baseUnits": 128,
+          "mergeTo": "hair_09",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/hair/merge_hair_08.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "hair_09",
+          "chainId": "hair",
+          "level": 9,
+          "name": "丝带盘发",
+          "stageId": "runway",
+          "baseUnits": 256,
+          "mergeTo": "hair_10",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/hair/merge_hair_09.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "hair_10",
+          "chainId": "hair",
+          "level": 10,
+          "name": "花冠编发",
+          "stageId": "runway",
+          "baseUnits": 512,
+          "mergeTo": "hair_11",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/hair/merge_hair_10.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "hair_11",
+          "chainId": "hair",
+          "level": 11,
+          "name": "舞台公主发",
+          "stageId": "runway",
+          "baseUnits": 1024,
+          "mergeTo": "hair_12",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/hair/merge_hair_11.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "hair_12",
+          "chainId": "hair",
+          "level": 12,
+          "name": "星光高定发",
+          "stageId": "couture",
+          "baseUnits": 2048,
+          "mergeTo": null,
+          "orderable": true,
+          "longTermOnly": true,
+          "asset": "workshop-v52/items/hair/merge_hair_12.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        }
+      ]
+    },
+    {
+      "id": "top",
+      "name": "上衣",
+      "producerId": "tailoring",
+      "unlockPlayerLevel": 1,
+      "orderMinLevel": 3,
+      "maxLevel": 15,
+      "ordinaryOrderMaxLevel": 11,
+      "items": [
+        {
+          "id": "top_01",
+          "chainId": "top",
+          "level": 1,
+          "name": "棉布卷",
+          "stageId": "raw",
+          "baseUnits": 1,
+          "mergeTo": "top_02",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/top/merge_top_01.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "top_02",
+          "chainId": "top",
+          "level": 2,
+          "name": "上衣裁片",
+          "stageId": "raw",
+          "baseUnits": 2,
+          "mergeTo": "top_03",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/top/merge_top_02.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "top_03",
+          "chainId": "top",
+          "level": 3,
+          "name": "基础白T",
+          "stageId": "daily",
+          "baseUnits": 4,
+          "mergeTo": "top_04",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/top/merge_top_03.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "top_04",
+          "chainId": "top",
+          "level": 4,
+          "name": "条纹短袖",
+          "stageId": "daily",
+          "baseUnits": 8,
+          "mergeTo": "top_05",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/top/merge_top_04.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "top_05",
+          "chainId": "top",
+          "level": 5,
+          "name": "雪纺衬衫",
+          "stageId": "daily",
+          "baseUnits": 16,
+          "mergeTo": "top_06",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/top/merge_top_05.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "top_06",
+          "chainId": "top",
+          "level": 6,
+          "name": "荷叶边上衣",
+          "stageId": "fashion",
+          "baseUnits": 32,
+          "mergeTo": "top_07",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/top/merge_top_06.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "top_07",
+          "chainId": "top",
+          "level": 7,
+          "name": "针织开衫",
+          "stageId": "fashion",
+          "baseUnits": 64,
+          "mergeTo": "top_08",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/top/merge_top_07.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "top_08",
+          "chainId": "top",
+          "level": 8,
+          "name": "缎面衬衫",
+          "stageId": "fashion",
+          "baseUnits": 128,
+          "mergeTo": "top_09",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/top/merge_top_08.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "top_09",
+          "chainId": "top",
+          "level": 9,
+          "name": "丝绒短上衣",
+          "stageId": "runway",
+          "baseUnits": 256,
+          "mergeTo": "top_10",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/top/merge_top_09.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "top_10",
+          "chainId": "top",
+          "level": 10,
+          "name": "珠绣罩衫",
+          "stageId": "runway",
+          "baseUnits": 512,
+          "mergeTo": "top_11",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/top/merge_top_10.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "top_11",
+          "chainId": "top",
+          "level": 11,
+          "name": "花边披肩",
+          "stageId": "runway",
+          "baseUnits": 1024,
+          "mergeTo": "top_12",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/top/merge_top_11.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "top_12",
+          "chainId": "top",
+          "level": 12,
+          "name": "玫瑰礼服上装",
+          "stageId": "couture",
+          "baseUnits": 2048,
+          "mergeTo": "top_13",
+          "orderable": true,
+          "longTermOnly": true,
+          "asset": "workshop-v52/items/top/merge_top_12.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "top_13",
+          "chainId": "top",
+          "level": 13,
+          "name": "星钻披肩",
+          "stageId": "couture",
+          "baseUnits": 4096,
+          "mergeTo": "top_14",
+          "orderable": true,
+          "longTermOnly": true,
+          "asset": "workshop-v52/items/top/merge_top_13.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "top_14",
+          "chainId": "top",
+          "level": 14,
+          "name": "月光高定上装",
+          "stageId": "couture",
+          "baseUnits": 8192,
+          "mergeTo": "top_15",
+          "orderable": true,
+          "longTermOnly": true,
+          "asset": "workshop-v52/items/top/merge_top_14.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "top_15",
+          "chainId": "top",
+          "level": 15,
+          "name": "典藏秀场上装",
+          "stageId": "couture",
+          "baseUnits": 16384,
+          "mergeTo": null,
+          "orderable": true,
+          "longTermOnly": true,
+          "asset": "workshop-v52/items/top/merge_top_15.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        }
+      ]
+    },
+    {
+      "id": "pants",
+      "name": "裤子",
+      "producerId": "tailoring",
+      "unlockPlayerLevel": 1,
+      "orderMinLevel": 3,
+      "maxLevel": 10,
+      "ordinaryOrderMaxLevel": 10,
+      "items": [
+        {
+          "id": "pants_01",
+          "chainId": "pants",
+          "level": 1,
+          "name": "丹宁布料",
+          "stageId": "raw",
+          "baseUnits": 1,
+          "mergeTo": "pants_02",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/pants/merge_pants_01.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "pants_02",
+          "chainId": "pants",
+          "level": 2,
+          "name": "裤装裁片",
+          "stageId": "raw",
+          "baseUnits": 2,
+          "mergeTo": "pants_03",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/pants/merge_pants_02.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "pants_03",
+          "chainId": "pants",
+          "level": 3,
+          "name": "日常短裤",
+          "stageId": "daily",
+          "baseUnits": 4,
+          "mergeTo": "pants_04",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/pants/merge_pants_03.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "pants_04",
+          "chainId": "pants",
+          "level": 4,
+          "name": "直筒长裤",
+          "stageId": "daily",
+          "baseUnits": 8,
+          "mergeTo": "pants_05",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/pants/merge_pants_04.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "pants_05",
+          "chainId": "pants",
+          "level": 5,
+          "name": "阔腿牛仔裤",
+          "stageId": "daily",
+          "baseUnits": 16,
+          "mergeTo": "pants_06",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/pants/merge_pants_05.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "pants_06",
+          "chainId": "pants",
+          "level": 6,
+          "name": "高腰西裤",
+          "stageId": "fashion",
+          "baseUnits": 32,
+          "mergeTo": "pants_07",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/pants/merge_pants_06.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "pants_07",
+          "chainId": "pants",
+          "level": 7,
+          "name": "缎面阔腿裤",
+          "stageId": "fashion",
+          "baseUnits": 64,
+          "mergeTo": "pants_08",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/pants/merge_pants_07.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "pants_08",
+          "chainId": "pants",
+          "level": 8,
+          "name": "刺绣喇叭裤",
+          "stageId": "fashion",
+          "baseUnits": 128,
+          "mergeTo": "pants_09",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/pants/merge_pants_08.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "pants_09",
+          "chainId": "pants",
+          "level": 9,
+          "name": "星砂舞台裤",
+          "stageId": "runway",
+          "baseUnits": 256,
+          "mergeTo": "pants_10",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/pants/merge_pants_09.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "pants_10",
+          "chainId": "pants",
+          "level": 10,
+          "name": "典藏高定裤",
+          "stageId": "runway",
+          "baseUnits": 512,
+          "mergeTo": null,
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/pants/merge_pants_10.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        }
+      ]
+    },
+    {
+      "id": "shoes",
+      "name": "鞋子",
+      "producerId": "footwear",
+      "unlockPlayerLevel": 6,
+      "orderMinLevel": 3,
+      "maxLevel": 12,
+      "ordinaryOrderMaxLevel": 11,
+      "items": [
+        {
+          "id": "shoes_01",
+          "chainId": "shoes",
+          "level": 1,
+          "name": "鞋材包",
+          "stageId": "raw",
+          "baseUnits": 1,
+          "mergeTo": "shoes_02",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/shoes/merge_shoes_01.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "shoes_02",
+          "chainId": "shoes",
+          "level": 2,
+          "name": "鞋面胚",
+          "stageId": "raw",
+          "baseUnits": 2,
+          "mergeTo": "shoes_03",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/shoes/merge_shoes_02.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "shoes_03",
+          "chainId": "shoes",
+          "level": 3,
+          "name": "帆布鞋",
+          "stageId": "daily",
+          "baseUnits": 4,
+          "mergeTo": "shoes_04",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/shoes/merge_shoes_03.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "shoes_04",
+          "chainId": "shoes",
+          "level": 4,
+          "name": "系带短靴",
+          "stageId": "daily",
+          "baseUnits": 8,
+          "mergeTo": "shoes_05",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/shoes/merge_shoes_04.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "shoes_05",
+          "chainId": "shoes",
+          "level": 5,
+          "name": "小皮鞋",
+          "stageId": "daily",
+          "baseUnits": 16,
+          "mergeTo": "shoes_06",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/shoes/merge_shoes_05.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "shoes_06",
+          "chainId": "shoes",
+          "level": 6,
+          "name": "蝴蝶结单鞋",
+          "stageId": "fashion",
+          "baseUnits": 32,
+          "mergeTo": "shoes_07",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/shoes/merge_shoes_06.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "shoes_07",
+          "chainId": "shoes",
+          "level": 7,
+          "name": "漆皮高跟鞋",
+          "stageId": "fashion",
+          "baseUnits": 64,
+          "mergeTo": "shoes_08",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/shoes/merge_shoes_07.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "shoes_08",
+          "chainId": "shoes",
+          "level": 8,
+          "name": "缎带舞鞋",
+          "stageId": "fashion",
+          "baseUnits": 128,
+          "mergeTo": "shoes_09",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/shoes/merge_shoes_08.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "shoes_09",
+          "chainId": "shoes",
+          "level": 9,
+          "name": "珠光长靴",
+          "stageId": "runway",
+          "baseUnits": 256,
+          "mergeTo": "shoes_10",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/shoes/merge_shoes_09.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "shoes_10",
+          "chainId": "shoes",
+          "level": 10,
+          "name": "水晶礼鞋",
+          "stageId": "runway",
+          "baseUnits": 512,
+          "mergeTo": "shoes_11",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/shoes/merge_shoes_10.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "shoes_11",
+          "chainId": "shoes",
+          "level": 11,
+          "name": "玫瑰高定鞋",
+          "stageId": "runway",
+          "baseUnits": 1024,
+          "mergeTo": "shoes_12",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/shoes/merge_shoes_11.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "shoes_12",
+          "chainId": "shoes",
+          "level": 12,
+          "name": "星耀典藏鞋",
+          "stageId": "couture",
+          "baseUnits": 2048,
+          "mergeTo": null,
+          "orderable": true,
+          "longTermOnly": true,
+          "asset": "workshop-v52/items/shoes/merge_shoes_12.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        }
+      ]
+    },
+    {
+      "id": "dress",
+      "name": "连衣裙",
+      "producerId": "couture",
+      "unlockPlayerLevel": 16,
+      "orderMinLevel": 3,
+      "maxLevel": 14,
+      "ordinaryOrderMaxLevel": 11,
+      "items": [
+        {
+          "id": "dress_01",
+          "chainId": "dress",
+          "level": 1,
+          "name": "裙装丝料",
+          "stageId": "raw",
+          "baseUnits": 1,
+          "mergeTo": "dress_02",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/dress/merge_dress_01.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "dress_02",
+          "chainId": "dress",
+          "level": 2,
+          "name": "裙装裁片",
+          "stageId": "raw",
+          "baseUnits": 2,
+          "mergeTo": "dress_03",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/dress/merge_dress_02.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "dress_03",
+          "chainId": "dress",
+          "level": 3,
+          "name": "日常吊带裙",
+          "stageId": "daily",
+          "baseUnits": 4,
+          "mergeTo": "dress_04",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/dress/merge_dress_03.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "dress_04",
+          "chainId": "dress",
+          "level": 4,
+          "name": "碎花短裙",
+          "stageId": "daily",
+          "baseUnits": 8,
+          "mergeTo": "dress_05",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/dress/merge_dress_04.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "dress_05",
+          "chainId": "dress",
+          "level": 5,
+          "name": "学院百褶裙",
+          "stageId": "daily",
+          "baseUnits": 16,
+          "mergeTo": "dress_06",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/dress/merge_dress_05.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "dress_06",
+          "chainId": "dress",
+          "level": 6,
+          "name": "轻纱连衣裙",
+          "stageId": "fashion",
+          "baseUnits": 32,
+          "mergeTo": "dress_07",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/dress/merge_dress_06.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "dress_07",
+          "chainId": "dress",
+          "level": 7,
+          "name": "法式茶歇裙",
+          "stageId": "fashion",
+          "baseUnits": 64,
+          "mergeTo": "dress_08",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/dress/merge_dress_07.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "dress_08",
+          "chainId": "dress",
+          "level": 8,
+          "name": "缎面长裙",
+          "stageId": "fashion",
+          "baseUnits": 128,
+          "mergeTo": "dress_09",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/dress/merge_dress_08.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "dress_09",
+          "chainId": "dress",
+          "level": 9,
+          "name": "蕾丝晚礼裙",
+          "stageId": "runway",
+          "baseUnits": 256,
+          "mergeTo": "dress_10",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/dress/merge_dress_09.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "dress_10",
+          "chainId": "dress",
+          "level": 10,
+          "name": "流光鱼尾裙",
+          "stageId": "runway",
+          "baseUnits": 512,
+          "mergeTo": "dress_11",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/dress/merge_dress_10.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "dress_11",
+          "chainId": "dress",
+          "level": 11,
+          "name": "玫瑰舞会裙",
+          "stageId": "runway",
+          "baseUnits": 1024,
+          "mergeTo": "dress_12",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/dress/merge_dress_11.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "dress_12",
+          "chainId": "dress",
+          "level": 12,
+          "name": "星河高定裙",
+          "stageId": "couture",
+          "baseUnits": 2048,
+          "mergeTo": "dress_13",
+          "orderable": true,
+          "longTermOnly": true,
+          "asset": "workshop-v52/items/dress/merge_dress_12.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "dress_13",
+          "chainId": "dress",
+          "level": 13,
+          "name": "王冠典藏裙",
+          "stageId": "couture",
+          "baseUnits": 4096,
+          "mergeTo": "dress_14",
+          "orderable": true,
+          "longTermOnly": true,
+          "asset": "workshop-v52/items/dress/merge_dress_13.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "dress_14",
+          "chainId": "dress",
+          "level": 14,
+          "name": "终章秀场礼服",
+          "stageId": "couture",
+          "baseUnits": 8192,
+          "mergeTo": null,
+          "orderable": true,
+          "longTermOnly": true,
+          "asset": "workshop-v52/items/dress/merge_dress_14.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        }
+      ]
+    },
+    {
+      "id": "accessory",
+      "name": "饰品",
+      "producerId": "leather",
+      "unlockPlayerLevel": 9,
+      "orderMinLevel": 3,
+      "maxLevel": 8,
+      "ordinaryOrderMaxLevel": 8,
+      "items": [
+        {
+          "id": "accessory_01",
+          "chainId": "accessory",
+          "level": 1,
+          "name": "饰品零件",
+          "stageId": "raw",
+          "baseUnits": 1,
+          "mergeTo": "accessory_02",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/accessory/merge_accessory_01.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "accessory_02",
+          "chainId": "accessory",
+          "level": 2,
+          "name": "缎带结",
+          "stageId": "raw",
+          "baseUnits": 2,
+          "mergeTo": "accessory_03",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/accessory/merge_accessory_02.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "accessory_03",
+          "chainId": "accessory",
+          "level": 3,
+          "name": "蝴蝶结胸针",
+          "stageId": "daily",
+          "baseUnits": 4,
+          "mergeTo": "accessory_04",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/accessory/merge_accessory_03.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "accessory_04",
+          "chainId": "accessory",
+          "level": 4,
+          "name": "珍珠发夹",
+          "stageId": "daily",
+          "baseUnits": 8,
+          "mergeTo": "accessory_05",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/accessory/merge_accessory_04.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "accessory_05",
+          "chainId": "accessory",
+          "level": 5,
+          "name": "花语腰饰",
+          "stageId": "daily",
+          "baseUnits": 16,
+          "mergeTo": "accessory_06",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/accessory/merge_accessory_05.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "accessory_06",
+          "chainId": "accessory",
+          "level": 6,
+          "name": "羽毛肩饰",
+          "stageId": "fashion",
+          "baseUnits": 32,
+          "mergeTo": "accessory_07",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/accessory/merge_accessory_06.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "accessory_07",
+          "chainId": "accessory",
+          "level": 7,
+          "name": "水晶胸针",
+          "stageId": "fashion",
+          "baseUnits": 64,
+          "mergeTo": "accessory_08",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/accessory/merge_accessory_07.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "accessory_08",
+          "chainId": "accessory",
+          "level": 8,
+          "name": "典藏珠宝胸饰",
+          "stageId": "fashion",
+          "baseUnits": 128,
+          "mergeTo": null,
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/accessory/merge_accessory_08.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        }
+      ]
+    },
+    {
+      "id": "hat",
+      "name": "帽子",
+      "producerId": "styling",
+      "unlockPlayerLevel": 3,
+      "orderMinLevel": 3,
+      "maxLevel": 8,
+      "ordinaryOrderMaxLevel": 8,
+      "items": [
+        {
+          "id": "hat_01",
+          "chainId": "hat",
+          "level": 1,
+          "name": "帽饰布片",
+          "stageId": "raw",
+          "baseUnits": 1,
+          "mergeTo": "hat_02",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/hat/merge_hat_01.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "hat_02",
+          "chainId": "hat",
+          "level": 2,
+          "name": "帽胚",
+          "stageId": "raw",
+          "baseUnits": 2,
+          "mergeTo": "hat_03",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/hat/merge_hat_02.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "hat_03",
+          "chainId": "hat",
+          "level": 3,
+          "name": "针织帽",
+          "stageId": "daily",
+          "baseUnits": 4,
+          "mergeTo": "hat_04",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/hat/merge_hat_03.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "hat_04",
+          "chainId": "hat",
+          "level": 4,
+          "name": "贝雷帽",
+          "stageId": "daily",
+          "baseUnits": 8,
+          "mergeTo": "hat_05",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/hat/merge_hat_04.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "hat_05",
+          "chainId": "hat",
+          "level": 5,
+          "name": "缎带礼帽",
+          "stageId": "daily",
+          "baseUnits": 16,
+          "mergeTo": "hat_06",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/hat/merge_hat_05.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "hat_06",
+          "chainId": "hat",
+          "level": 6,
+          "name": "花饰宽檐帽",
+          "stageId": "fashion",
+          "baseUnits": 32,
+          "mergeTo": "hat_07",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/hat/merge_hat_06.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "hat_07",
+          "chainId": "hat",
+          "level": 7,
+          "name": "羽饰小礼帽",
+          "stageId": "fashion",
+          "baseUnits": 64,
+          "mergeTo": "hat_08",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/hat/merge_hat_07.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "hat_08",
+          "chainId": "hat",
+          "level": 8,
+          "name": "典藏冠帽",
+          "stageId": "fashion",
+          "baseUnits": 128,
+          "mergeTo": null,
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/hat/merge_hat_08.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        }
+      ]
+    },
+    {
+      "id": "bag",
+      "name": "包包",
+      "producerId": "leather",
+      "unlockPlayerLevel": 9,
+      "orderMinLevel": 3,
+      "maxLevel": 12,
+      "ordinaryOrderMaxLevel": 11,
+      "items": [
+        {
+          "id": "bag_01",
+          "chainId": "bag",
+          "level": 1,
+          "name": "皮料包",
+          "stageId": "raw",
+          "baseUnits": 1,
+          "mergeTo": "bag_02",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/bag/merge_bag_01.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "bag_02",
+          "chainId": "bag",
+          "level": 2,
+          "name": "包袋胚",
+          "stageId": "raw",
+          "baseUnits": 2,
+          "mergeTo": "bag_03",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/bag/merge_bag_02.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "bag_03",
+          "chainId": "bag",
+          "level": 3,
+          "name": "帆布托特包",
+          "stageId": "daily",
+          "baseUnits": 4,
+          "mergeTo": "bag_04",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/bag/merge_bag_03.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "bag_04",
+          "chainId": "bag",
+          "level": 4,
+          "name": "迷你斜挎包",
+          "stageId": "daily",
+          "baseUnits": 8,
+          "mergeTo": "bag_05",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/bag/merge_bag_04.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "bag_05",
+          "chainId": "bag",
+          "level": 5,
+          "name": "学院双肩包",
+          "stageId": "daily",
+          "baseUnits": 16,
+          "mergeTo": "bag_06",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/bag/merge_bag_05.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "bag_06",
+          "chainId": "bag",
+          "level": 6,
+          "name": "链条手袋",
+          "stageId": "fashion",
+          "baseUnits": 32,
+          "mergeTo": "bag_07",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/bag/merge_bag_06.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "bag_07",
+          "chainId": "bag",
+          "level": 7,
+          "name": "蝴蝶结提包",
+          "stageId": "fashion",
+          "baseUnits": 64,
+          "mergeTo": "bag_08",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/bag/merge_bag_07.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "bag_08",
+          "chainId": "bag",
+          "level": 8,
+          "name": "珠光晚宴包",
+          "stageId": "fashion",
+          "baseUnits": 128,
+          "mergeTo": "bag_09",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/bag/merge_bag_08.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "bag_09",
+          "chainId": "bag",
+          "level": 9,
+          "name": "刺绣方包",
+          "stageId": "runway",
+          "baseUnits": 256,
+          "mergeTo": "bag_10",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/bag/merge_bag_09.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "bag_10",
+          "chainId": "bag",
+          "level": 10,
+          "name": "水晶手拿包",
+          "stageId": "runway",
+          "baseUnits": 512,
+          "mergeTo": "bag_11",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/bag/merge_bag_10.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "bag_11",
+          "chainId": "bag",
+          "level": 11,
+          "name": "玫瑰高定包",
+          "stageId": "runway",
+          "baseUnits": 1024,
+          "mergeTo": "bag_12",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/bag/merge_bag_11.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "bag_12",
+          "chainId": "bag",
+          "level": 12,
+          "name": "典藏艺术包",
+          "stageId": "couture",
+          "baseUnits": 2048,
+          "mergeTo": null,
+          "orderable": true,
+          "longTermOnly": true,
+          "asset": "workshop-v52/items/bag/merge_bag_12.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        }
+      ]
+    },
+    {
+      "id": "handheld",
+      "name": "手持",
+      "producerId": "couture",
+      "unlockPlayerLevel": 16,
+      "orderMinLevel": 2,
+      "maxLevel": 8,
+      "ordinaryOrderMaxLevel": 8,
+      "items": [
+        {
+          "id": "handheld_01",
+          "chainId": "handheld",
+          "level": 1,
+          "name": "花艺素材",
+          "stageId": "raw",
+          "baseUnits": 1,
+          "mergeTo": "handheld_02",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/handheld/merge_handheld_01.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "handheld_02",
+          "chainId": "handheld",
+          "level": 2,
+          "name": "单枝玫瑰",
+          "stageId": "raw",
+          "baseUnits": 2,
+          "mergeTo": "handheld_03",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/handheld/merge_handheld_02.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "handheld_03",
+          "chainId": "handheld",
+          "level": 3,
+          "name": "丝带花束",
+          "stageId": "daily",
+          "baseUnits": 4,
+          "mergeTo": "handheld_04",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/handheld/merge_handheld_03.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "handheld_04",
+          "chainId": "handheld",
+          "level": 4,
+          "name": "折扇",
+          "stageId": "daily",
+          "baseUnits": 8,
+          "mergeTo": "handheld_05",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/handheld/merge_handheld_04.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "handheld_05",
+          "chainId": "handheld",
+          "level": 5,
+          "name": "蕾丝洋伞",
+          "stageId": "daily",
+          "baseUnits": 16,
+          "mergeTo": "handheld_06",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/handheld/merge_handheld_05.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "handheld_06",
+          "chainId": "handheld",
+          "level": 6,
+          "name": "珠光捧花",
+          "stageId": "fashion",
+          "baseUnits": 32,
+          "mergeTo": "handheld_07",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/handheld/merge_handheld_06.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "handheld_07",
+          "chainId": "handheld",
+          "level": 7,
+          "name": "星光手杖",
+          "stageId": "fashion",
+          "baseUnits": 64,
+          "mergeTo": "handheld_08",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/handheld/merge_handheld_07.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "handheld_08",
+          "chainId": "handheld",
+          "level": 8,
+          "name": "典藏舞会权杖",
+          "stageId": "fashion",
+          "baseUnits": 128,
+          "mergeTo": null,
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/handheld/merge_handheld_08.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        }
+      ]
+    },
+    {
+      "id": "earrings",
+      "name": "耳坠",
+      "producerId": "jewelry",
+      "unlockPlayerLevel": 12,
+      "orderMinLevel": 2,
+      "maxLevel": 7,
+      "ordinaryOrderMaxLevel": 7,
+      "items": [
+        {
+          "id": "earrings_01",
+          "chainId": "earrings",
+          "level": 1,
+          "name": "耳饰零件",
+          "stageId": "raw",
+          "baseUnits": 1,
+          "mergeTo": "earrings_02",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/earrings/merge_earrings_01.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "earrings_02",
+          "chainId": "earrings",
+          "level": 2,
+          "name": "银色耳钉",
+          "stageId": "raw",
+          "baseUnits": 2,
+          "mergeTo": "earrings_03",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/earrings/merge_earrings_02.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "earrings_03",
+          "chainId": "earrings",
+          "level": 3,
+          "name": "珍珠耳坠",
+          "stageId": "daily",
+          "baseUnits": 4,
+          "mergeTo": "earrings_04",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/earrings/merge_earrings_03.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "earrings_04",
+          "chainId": "earrings",
+          "level": 4,
+          "name": "花瓣耳饰",
+          "stageId": "daily",
+          "baseUnits": 8,
+          "mergeTo": "earrings_05",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/earrings/merge_earrings_04.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "earrings_05",
+          "chainId": "earrings",
+          "level": 5,
+          "name": "流苏长耳坠",
+          "stageId": "daily",
+          "baseUnits": 16,
+          "mergeTo": "earrings_06",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/earrings/merge_earrings_05.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "earrings_06",
+          "chainId": "earrings",
+          "level": 6,
+          "name": "星钻耳环",
+          "stageId": "fashion",
+          "baseUnits": 32,
+          "mergeTo": "earrings_07",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/earrings/merge_earrings_06.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "earrings_07",
+          "chainId": "earrings",
+          "level": 7,
+          "name": "典藏水晶耳坠",
+          "stageId": "fashion",
+          "baseUnits": 64,
+          "mergeTo": null,
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/earrings/merge_earrings_07.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        }
+      ]
+    },
+    {
+      "id": "necklace",
+      "name": "项链",
+      "producerId": "jewelry",
+      "unlockPlayerLevel": 12,
+      "orderMinLevel": 2,
+      "maxLevel": 10,
+      "ordinaryOrderMaxLevel": 10,
+      "items": [
+        {
+          "id": "necklace_01",
+          "chainId": "necklace",
+          "level": 1,
+          "name": "金属链",
+          "stageId": "raw",
+          "baseUnits": 1,
+          "mergeTo": "necklace_02",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/necklace/merge_necklace_01.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "necklace_02",
+          "chainId": "necklace",
+          "level": 2,
+          "name": "细链项链",
+          "stageId": "raw",
+          "baseUnits": 2,
+          "mergeTo": "necklace_03",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/necklace/merge_necklace_02.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "necklace_03",
+          "chainId": "necklace",
+          "level": 3,
+          "name": "爱心吊坠",
+          "stageId": "daily",
+          "baseUnits": 4,
+          "mergeTo": "necklace_04",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/necklace/merge_necklace_03.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "necklace_04",
+          "chainId": "necklace",
+          "level": 4,
+          "name": "珍珠项链",
+          "stageId": "daily",
+          "baseUnits": 8,
+          "mergeTo": "necklace_05",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/necklace/merge_necklace_04.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "necklace_05",
+          "chainId": "necklace",
+          "level": 5,
+          "name": "缎带颈饰",
+          "stageId": "daily",
+          "baseUnits": 16,
+          "mergeTo": "necklace_06",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/necklace/merge_necklace_05.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "necklace_06",
+          "chainId": "necklace",
+          "level": 6,
+          "name": "花语宝石链",
+          "stageId": "fashion",
+          "baseUnits": 32,
+          "mergeTo": "necklace_07",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/necklace/merge_necklace_06.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "necklace_07",
+          "chainId": "necklace",
+          "level": 7,
+          "name": "层叠珠链",
+          "stageId": "fashion",
+          "baseUnits": 64,
+          "mergeTo": "necklace_08",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/necklace/merge_necklace_07.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "necklace_08",
+          "chainId": "necklace",
+          "level": 8,
+          "name": "星光锁骨链",
+          "stageId": "fashion",
+          "baseUnits": 128,
+          "mergeTo": "necklace_09",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/necklace/merge_necklace_08.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "necklace_09",
+          "chainId": "necklace",
+          "level": 9,
+          "name": "玫瑰高定项链",
+          "stageId": "runway",
+          "baseUnits": 256,
+          "mergeTo": "necklace_10",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/necklace/merge_necklace_09.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "necklace_10",
+          "chainId": "necklace",
+          "level": 10,
+          "name": "典藏钻石项链",
+          "stageId": "runway",
+          "baseUnits": 512,
+          "mergeTo": null,
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/necklace/merge_necklace_10.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        }
+      ]
+    },
+    {
+      "id": "glasses",
+      "name": "眼镜",
+      "producerId": "precision",
+      "unlockPlayerLevel": 21,
+      "orderMinLevel": 2,
+      "maxLevel": 10,
+      "ordinaryOrderMaxLevel": 10,
+      "items": [
+        {
+          "id": "glasses_01",
+          "chainId": "glasses",
+          "level": 1,
+          "name": "镜架零件",
+          "stageId": "raw",
+          "baseUnits": 1,
+          "mergeTo": "glasses_02",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/glasses/merge_glasses_01.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "glasses_02",
+          "chainId": "glasses",
+          "level": 2,
+          "name": "圆框眼镜",
+          "stageId": "raw",
+          "baseUnits": 2,
+          "mergeTo": "glasses_03",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/glasses/merge_glasses_02.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "glasses_03",
+          "chainId": "glasses",
+          "level": 3,
+          "name": "细框眼镜",
+          "stageId": "daily",
+          "baseUnits": 4,
+          "mergeTo": "glasses_04",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/glasses/merge_glasses_03.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "glasses_04",
+          "chainId": "glasses",
+          "level": 4,
+          "name": "复古方框镜",
+          "stageId": "daily",
+          "baseUnits": 8,
+          "mergeTo": "glasses_05",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/glasses/merge_glasses_04.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "glasses_05",
+          "chainId": "glasses",
+          "level": 5,
+          "name": "猫眼眼镜",
+          "stageId": "daily",
+          "baseUnits": 16,
+          "mergeTo": "glasses_06",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/glasses/merge_glasses_05.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "glasses_06",
+          "chainId": "glasses",
+          "level": 6,
+          "name": "浅色墨镜",
+          "stageId": "fashion",
+          "baseUnits": 32,
+          "mergeTo": "glasses_07",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/glasses/merge_glasses_06.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "glasses_07",
+          "chainId": "glasses",
+          "level": 7,
+          "name": "金边墨镜",
+          "stageId": "fashion",
+          "baseUnits": 64,
+          "mergeTo": "glasses_08",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/glasses/merge_glasses_07.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "glasses_08",
+          "chainId": "glasses",
+          "level": 8,
+          "name": "蝶翼装饰镜",
+          "stageId": "fashion",
+          "baseUnits": 128,
+          "mergeTo": "glasses_09",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/glasses/merge_glasses_08.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "glasses_09",
+          "chainId": "glasses",
+          "level": 9,
+          "name": "星钻秀场镜",
+          "stageId": "runway",
+          "baseUnits": 256,
+          "mergeTo": "glasses_10",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/glasses/merge_glasses_09.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "glasses_10",
+          "chainId": "glasses",
+          "level": 10,
+          "name": "典藏艺术眼镜",
+          "stageId": "runway",
+          "baseUnits": 512,
+          "mergeTo": null,
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/glasses/merge_glasses_10.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        }
+      ]
+    },
+    {
+      "id": "gloves",
+      "name": "手套",
+      "producerId": "footwear",
+      "unlockPlayerLevel": 6,
+      "orderMinLevel": 3,
+      "maxLevel": 7,
+      "ordinaryOrderMaxLevel": 7,
+      "items": [
+        {
+          "id": "gloves_01",
+          "chainId": "gloves",
+          "level": 1,
+          "name": "针织线",
+          "stageId": "raw",
+          "baseUnits": 1,
+          "mergeTo": "gloves_02",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/gloves/merge_gloves_01.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "gloves_02",
+          "chainId": "gloves",
+          "level": 2,
+          "name": "手套胚",
+          "stageId": "raw",
+          "baseUnits": 2,
+          "mergeTo": "gloves_03",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/gloves/merge_gloves_02.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "gloves_03",
+          "chainId": "gloves",
+          "level": 3,
+          "name": "日常针织手套",
+          "stageId": "daily",
+          "baseUnits": 4,
+          "mergeTo": "gloves_04",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/gloves/merge_gloves_03.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "gloves_04",
+          "chainId": "gloves",
+          "level": 4,
+          "name": "蕾丝短手套",
+          "stageId": "daily",
+          "baseUnits": 8,
+          "mergeTo": "gloves_05",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/gloves/merge_gloves_04.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "gloves_05",
+          "chainId": "gloves",
+          "level": 5,
+          "name": "缎面长手套",
+          "stageId": "daily",
+          "baseUnits": 16,
+          "mergeTo": "gloves_06",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/gloves/merge_gloves_05.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "gloves_06",
+          "chainId": "gloves",
+          "level": 6,
+          "name": "珠绣礼服手套",
+          "stageId": "fashion",
+          "baseUnits": 32,
+          "mergeTo": "gloves_07",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/gloves/merge_gloves_06.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "gloves_07",
+          "chainId": "gloves",
+          "level": 7,
+          "name": "典藏丝绒手套",
+          "stageId": "fashion",
+          "baseUnits": 64,
+          "mergeTo": null,
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/gloves/merge_gloves_07.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        }
+      ]
+    },
+    {
+      "id": "ring",
+      "name": "戒指",
+      "producerId": "precision",
+      "unlockPlayerLevel": 21,
+      "orderMinLevel": 2,
+      "maxLevel": 7,
+      "ordinaryOrderMaxLevel": 7,
+      "items": [
+        {
+          "id": "ring_01",
+          "chainId": "ring",
+          "level": 1,
+          "name": "戒托零件",
+          "stageId": "raw",
+          "baseUnits": 1,
+          "mergeTo": "ring_02",
+          "orderable": false,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/ring/merge_ring_01.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "ring_02",
+          "chainId": "ring",
+          "level": 2,
+          "name": "素银戒指",
+          "stageId": "raw",
+          "baseUnits": 2,
+          "mergeTo": "ring_03",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/ring/merge_ring_02.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "ring_03",
+          "chainId": "ring",
+          "level": 3,
+          "name": "爱心戒指",
+          "stageId": "daily",
+          "baseUnits": 4,
+          "mergeTo": "ring_04",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/ring/merge_ring_03.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "ring_04",
+          "chainId": "ring",
+          "level": 4,
+          "name": "珍珠戒指",
+          "stageId": "daily",
+          "baseUnits": 8,
+          "mergeTo": "ring_05",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/ring/merge_ring_04.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "ring_05",
+          "chainId": "ring",
+          "level": 5,
+          "name": "宝石花戒",
+          "stageId": "daily",
+          "baseUnits": 16,
+          "mergeTo": "ring_06",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/ring/merge_ring_05.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "ring_06",
+          "chainId": "ring",
+          "level": 6,
+          "name": "星钻戒指",
+          "stageId": "fashion",
+          "baseUnits": 32,
+          "mergeTo": "ring_07",
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/ring/merge_ring_06.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        },
+        {
+          "id": "ring_07",
+          "chainId": "ring",
+          "level": 7,
+          "name": "典藏皇冠戒指",
+          "stageId": "fashion",
+          "baseUnits": 64,
+          "mergeTo": null,
+          "orderable": true,
+          "longTermOnly": false,
+          "asset": "workshop-v52/items/ring/merge_ring_07.png",
+          "assetStatus": "delivered_lovart_v2",
+          "wardrobeUnlockId": null
+        }
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": 1,
+      "name": "重开工作室",
+      "playerLevels": [
+        1,
+        5
+      ],
+      "producers": [
+        "tailoring",
+        "styling"
+      ],
+      "normalTierCap": 5,
+      "costRanges": {
+        "fast": [
+          2,
+          8
+        ],
+        "medium": [
+          8,
+          20
+        ],
+        "long": [
+          20,
+          40
+        ]
+      },
+      "plot": "前搭档卷走样衣；完成邻居的开业订单，找回第一位造型买手。"
+    },
+    {
+      "id": 2,
+      "name": "街区上新",
+      "playerLevels": [
+        6,
+        10
+      ],
+      "producers": [
+        "footwear",
+        "leather"
+      ],
+      "normalTierCap": 7,
+      "costRanges": {
+        "fast": [
+          4,
+          12
+        ],
+        "medium": [
+          12,
+          30
+        ],
+        "long": [
+          30,
+          80
+        ]
+      },
+      "plot": "原料商临时涨价；用通勤套装订单证明自己的供应能力。"
+    },
+    {
+      "id": 3,
+      "name": "第一位品牌买手",
+      "playerLevels": [
+        11,
+        15
+      ],
+      "producers": [
+        "jewelry"
+      ],
+      "normalTierCap": 8,
+      "costRanges": {
+        "fast": [
+          6,
+          16
+        ],
+        "medium": [
+          16,
+          45
+        ],
+        "long": [
+          45,
+          120
+        ]
+      },
+      "plot": "对手买通博主嘲笑你的配饰；完成买手审查订单，争取橱窗位置。"
+    },
+    {
+      "id": 4,
+      "name": "被调包的秀场",
+      "playerLevels": [
+        16,
+        20
+      ],
+      "producers": [
+        "couture"
+      ],
+      "normalTierCap": 9,
+      "costRanges": {
+        "fast": [
+          8,
+          20
+        ],
+        "medium": [
+          20,
+          60
+        ],
+        "long": [
+          60,
+          160
+        ]
+      },
+      "plot": "秀场礼服临时被调包；从客户订单和材料线索找出泄密者。"
+    },
+    {
+      "id": 5,
+      "name": "时尚街区首秀",
+      "playerLevels": [
+        21,
+        30
+      ],
+      "producers": [
+        "precision"
+      ],
+      "normalTierCap": 11,
+      "costRanges": {
+        "fast": [
+          8,
+          24
+        ],
+        "medium": [
+          24,
+          80
+        ],
+        "long": [
+          80,
+          240
+        ]
+      },
+      "plot": "用独立设计系列赢回主场；完整造型揭晓供应链背后的利益关系。"
+    }
+  ],
+  "tutorial": [
+    {
+      "id": "intro_01",
+      "customer": "小悠",
+      "needs": [
+        {
+          "itemId": "top_03",
+          "quantity": 1
+        }
+      ],
+      "text": "面试可以紧张，白T不能皱。",
+      "grant": [
+        {
+          "kind": "energy",
+          "amount": 10
+        }
+      ],
+      "index": 1,
+      "minimumPlayerLevel": 1,
+      "autoGenerate": false,
+      "completion": "all_items_atomic",
+      "rewardProfile": "tutorial",
+      "xp": 15,
+      "producerPrerequisites": [],
+      "grantDeduplicationKey": "tutorial_1"
+    },
+    {
+      "id": "intro_02",
+      "customer": "阿澈",
+      "needs": [
+        {
+          "itemId": "top_04",
+          "quantity": 1
+        }
+      ],
+      "text": "第一次见买手，我想穿得像有备而来。",
+      "grant": [
+        {
+          "kind": "producer_part",
+          "family": "tailoring",
+          "level": 3,
+          "amount": 2
+        }
+      ],
+      "index": 2,
+      "minimumPlayerLevel": 1,
+      "autoGenerate": false,
+      "completion": "all_items_atomic",
+      "rewardProfile": "tutorial",
+      "xp": 15,
+      "producerPrerequisites": [],
+      "grantDeduplicationKey": "tutorial_2"
+    },
+    {
+      "id": "intro_03",
+      "customer": "林夕",
+      "needs": [
+        {
+          "itemId": "pants_03",
+          "quantity": 1
+        }
+      ],
+      "text": "老板让我气场两米，我先从裤子开始。",
+      "grant": [
+        {
+          "kind": "energy",
+          "amount": 15
+        }
+      ],
+      "index": 3,
+      "minimumPlayerLevel": 1,
+      "autoGenerate": false,
+      "completion": "all_items_atomic",
+      "rewardProfile": "tutorial",
+      "xp": 45,
+      "producerPrerequisites": [
+        {
+          "id": "tailoring",
+          "minLevel": 5
+        }
+      ],
+      "grantDeduplicationKey": "tutorial_3"
+    },
+    {
+      "id": "intro_04",
+      "customer": "小悠",
+      "needs": [
+        {
+          "itemId": "top_03",
+          "quantity": 1
+        },
+        {
+          "itemId": "pants_03",
+          "quantity": 1
+        }
+      ],
+      "text": "上衣和裤子都齐了，勇气我自己搭。",
+      "grant": [
+        {
+          "kind": "energy",
+          "amount": 15
+        }
+      ],
+      "index": 4,
+      "minimumPlayerLevel": 3,
+      "autoGenerate": false,
+      "completion": "all_items_atomic",
+      "rewardProfile": "tutorial",
+      "xp": 65,
+      "producerPrerequisites": [],
+      "grantDeduplicationKey": "tutorial_4",
+      "unlockHint": "造型台条件达成，在棋盘点击锁定生产器启用。"
+    },
+    {
+      "id": "intro_05",
+      "customer": "米娅",
+      "needs": [
+        {
+          "itemId": "hair_03",
+          "quantity": 1
+        }
+      ],
+      "text": "开店可以熬夜，发型不能替我承认。",
+      "grant": [
+        {
+          "kind": "energy",
+          "amount": 10
+        }
+      ],
+      "index": 5,
+      "minimumPlayerLevel": 4,
+      "autoGenerate": false,
+      "completion": "all_items_atomic",
+      "rewardProfile": "tutorial",
+      "xp": 90,
+      "producerPrerequisites": [
+        {
+          "id": "styling",
+          "minLevel": 4
+        }
+      ],
+      "grantDeduplicationKey": "tutorial_5"
+    },
+    {
+      "id": "intro_06",
+      "customer": "林夕",
+      "needs": [
+        {
+          "itemId": "hair_04",
+          "quantity": 1
+        },
+        {
+          "itemId": "top_04",
+          "quantity": 1
+        }
+      ],
+      "text": "今天见前搭档，状态必须像已经翻篇。",
+      "grant": [
+        {
+          "kind": "producer_part",
+          "family": "styling",
+          "level": 3,
+          "amount": 2
+        }
+      ],
+      "index": 6,
+      "minimumPlayerLevel": 5,
+      "autoGenerate": false,
+      "completion": "all_items_atomic",
+      "rewardProfile": "tutorial",
+      "xp": 120,
+      "producerPrerequisites": [
+        {
+          "id": "styling",
+          "minLevel": 4
+        }
+      ],
+      "grantDeduplicationKey": "tutorial_6"
+    },
+    {
+      "id": "intro_07",
+      "customer": "阿澈",
+      "needs": [
+        {
+          "itemId": "hat_03",
+          "quantity": 1
+        }
+      ],
+      "text": "买手说我没记忆点，这顶帽子应该有。",
+      "grant": [
+        {
+          "kind": "energy",
+          "amount": 15
+        }
+      ],
+      "index": 7,
+      "minimumPlayerLevel": 6,
+      "autoGenerate": false,
+      "completion": "all_items_atomic",
+      "rewardProfile": "tutorial",
+      "xp": 150,
+      "producerPrerequisites": [
+        {
+          "id": "styling",
+          "minLevel": 5
+        }
+      ],
+      "grantDeduplicationKey": "tutorial_7",
+      "unlockHint": "制鞋台条件达成，在棋盘点击锁定生产器启用。"
+    },
+    {
+      "id": "intro_08",
+      "customer": "小悠",
+      "needs": [
+        {
+          "itemId": "shoes_03",
+          "quantity": 1
+        }
+      ],
+      "text": "走进新街区之前，先把脚下这一步走稳。",
+      "grant": [
+        {
+          "kind": "producer_part",
+          "family": "footwear",
+          "level": 3,
+          "amount": 2
+        }
+      ],
+      "index": 8,
+      "minimumPlayerLevel": 7,
+      "autoGenerate": false,
+      "completion": "all_items_atomic",
+      "rewardProfile": "tutorial",
+      "xp": 180,
+      "producerPrerequisites": [
+        {
+          "id": "footwear",
+          "minLevel": 4
+        }
+      ],
+      "grantDeduplicationKey": "unlock_footwear_parts"
+    },
+    {
+      "id": "intro_09",
+      "customer": "买手许薇",
+      "needs": [
+        {
+          "itemId": "gloves_03",
+          "quantity": 1
+        }
+      ],
+      "text": "细节决定买手会不会把订单翻到下一页。",
+      "grant": [
+        {
+          "kind": "energy",
+          "amount": 20
+        }
+      ],
+      "index": 9,
+      "minimumPlayerLevel": 8,
+      "autoGenerate": false,
+      "completion": "all_items_atomic",
+      "rewardProfile": "tutorial",
+      "xp": 220,
+      "producerPrerequisites": [
+        {
+          "id": "footwear",
+          "minLevel": 5
+        }
+      ],
+      "grantDeduplicationKey": "tutorial_9",
+      "unlockHint": "皮具配饰台条件达成，在棋盘点击锁定生产器启用。"
+    },
+    {
+      "id": "intro_10",
+      "customer": "买手许薇",
+      "needs": [
+        {
+          "itemId": "bag_03",
+          "quantity": 1
+        },
+        {
+          "itemId": "shoes_04",
+          "quantity": 1
+        },
+        {
+          "itemId": "hat_03",
+          "quantity": 1
+        }
+      ],
+      "text": "别给我讲品牌故事，让你的第一套街区造型自己说。",
+      "story": true,
+      "grant": [
+        {
+          "kind": "chapter_flag",
+          "flag": "first_collection",
+          "amount": 1
+        }
+      ],
+      "index": 10,
+      "minimumPlayerLevel": 9,
+      "autoGenerate": false,
+      "completion": "all_items_atomic",
+      "rewardProfile": "story",
+      "xp": 260,
+      "producerPrerequisites": [
+        {
+          "id": "leather",
+          "minLevel": 4
+        },
+        {
+          "id": "footwear",
+          "minLevel": 5
+        },
+        {
+          "id": "styling",
+          "minLevel": 5
+        }
+      ],
+      "grantDeduplicationKey": "tutorial_10"
+    }
+  ],
+  "orderRules": {
+    "normalSlots": 3,
+    "slotRoles": [
+      "fast",
+      "medium",
+      "long"
+    ],
+    "storySlots": 1,
+    "chapter1LongUnlockPlayerLevel": 5,
+    "itemsPerOrder": [
+      1,
+      3
+    ],
+    "atMostLongOrders": 1,
+    "tutorialSequential": true,
+    "requireFunctionalSource": true,
+    "requireSecondaryProducerLevel": true,
+    "requireReachableTierAndBudget": true,
+    "ordinaryNeverRequiresLevel12Plus": true,
+    "mustHaveAtLeastOneFastOrder": true,
+    "deadline": false,
+    "delivery": "consume matching production inventory only; atomically validate and consume all requirements, then grant rewards once by order id",
+    "wardrobeIsNotProductionInventory": true,
+    "estimatedEnergy": "For each producer: max(unfilled primary base units / expected primary units per energy, unfilled secondary base units / expected secondary units per energy); sum across producer families. Inventory allocator cannot split higher tiers without an explicit tool.",
+    "guards": [
+      "ignore unclaimed producer grants",
+      "never ask unreleased item assets",
+      "exclude inactive family until it can be recalled",
+      "reserve enough charges for fast order or provide recovery path",
+      "reroll only not-yet-completed orders without consuming stock"
+    ],
+    "rewardDraft": {
+      "coinsPerCanonicalBaseUnit": 5,
+      "minimumCoins": 20,
+      "xpPerCanonicalBaseUnit": 0.5,
+      "minimumXp": 5,
+      "storyProgress": "chapter objective per specified delivered order; idle bank cannot supply it",
+      "tuningStatus": "proposal_not_original_values"
+    },
+    "reroll": {
+      "cost": 0,
+      "cooldownSeconds": 1800,
+      "keepItems": true
+    },
+    "longTerm": "max-tier auto-buy or special commission; never a mandatory early story gate",
+    "sideChainPity": {
+      "enabledForDemo": true,
+      "maxMisses": 12,
+      "meaning": "after 12 primary results, next eligible tap yields secondary; resets per producer family",
+      "origin": "our demo protection, not a verified original rule"
+    },
+    "benchmarkLevelRange": [
+      1,
+      10
+    ]
+  },
+  "inventory": {
+    "productionConsumes": true,
+    "wardrobePermanent": true,
+    "firstDiscoveryMarksOnly": true,
+    "actualWardrobeGrantRequiresAuthoredMapping": true,
+    "trashProtectsLastProducer": true,
+    "recycleUndoSeconds": 10
+  },
+  "tools": [
+    {
+      "id": "scissors",
+      "name": "拆分剪刀",
+      "effect": "one non-producer item level2+ becomes two previous-level items; require a spare tile; cannot split borrowed or special story items"
+    },
+    {
+      "id": "upgrade_card",
+      "name": "灵感升级卡",
+      "effect": "one production item gains one level; ordinary items up to level11 only; cannot upgrade producers or max-tier items"
+    },
+    {
+      "id": "hourglass",
+      "name": "充能沙漏",
+      "effect": "subtract a fixed amount of producer recovery time; no energy generation"
+    },
+    {
+      "id": "energy_box",
+      "name": "体力礼盒",
+      "effect": "finite chapter or daily grants; claim atomically with unique reward id"
+    }
+  ],
+  "effects": {
+    "drop": "producer compression, output flight to nearest empty tile, one sound per tap",
+    "merge": "source follows finger, valid-target outline, brief squash/pop and tier spark, no whole-board displacement",
+    "delivery": "reserve requirements, play item flight, grant rewards after atomic commit, input disabled only for the current order",
+    "bubbles": {
+      "enabledAfterTutorial": true,
+      "dropChanceDraft": 0.05,
+      "lifetimeSecondsDraft": 60,
+      "definition": "optional copy for visible voucher price, can dismiss; no real payment in demo",
+      "origin": "proposal_not_original_values"
+    }
+  },
+  "art": {
+    "itemIcons": 140,
+    "producerIcons": 63,
+    "extraAssets": "customer portraits, blockers, energy and tool chains; not counted in 203 base icons",
+    "baseIconSize": 256,
+    "masterIconSize": 512,
+    "background": "transparent",
+    "pivot": "consistent within each chain",
+    "genericIconsCannotStandForDifferentNamedItems": true,
+    "wardrobeLayers": "Separate authored assets aligned to base model; 140 icons do not imply 140 wearable parts."
+  },
+  "migration": {
+    "branch": "V54; preserve V53/V52/V51",
+    "saveKey": "fashion.loop.mobile.v54",
+    "oldKey": "fashion.loop.mobile.v53",
+    "preserveBackup": true,
+    "neverInferCategoryFromOldThreeChainId": true,
+    "oldMaterials": "legacy tray, freely exchange with visible preview at preserved old economic value; no silent category remap",
+    "oldOrders": "finish in legacy mode or cancel/refund before starting new order queue",
+    "oldCloset": "preserve all ownership and outfits",
+    "schema": 2
+  },
+  "rollout": [
+    {
+      "id": "A",
+      "scope": "new board, producers, unit item schema, 3 direct-delivery orders; 2 families, first8 tutorial orders",
+      "maxOrdinaryTier": 5
+    },
+    {
+      "id": "B",
+      "scope": "all7 families /14 chains, weighted drops, cooldowns, inventory, tools, order budgets and guards"
+    },
+    {
+      "id": "C",
+      "scope": "chapter milestones, mall upgrades, authored wardrobe rewards, story and full balance tests"
+    }
+  ],
+  "implementationDate": "2026-11-04",
+  "recurringSupply": {
+    "origin": "project_proposal_not_verified_original",
+    "deliveriesPerCrate": 5,
+    "partsPerCrate": 2,
+    "partLevel": 3,
+    "familyChoice": "unlocked_producer_family",
+    "claim": "manual_to_inbox",
+    "repeatProtection": "supplyClaims + unique grant id"
+  },
+  "benchmark": {
+    "target": "浪漫餐厅 / Gossip Harbor 类订单驱动合成经营体验",
+    "primaryStore": "Apple App Store（美国区公开版本）",
+    "primaryVersion": null,
+    "alternateListing": {
+      "store": "Apple App Store（中国区）",
+      "version": "3.98.0",
+      "note": "地区版本号不同，行为基准仍需同一地区实测。",
+      "verification": "Inherited V53 note; current listing not reverified."
+    },
+    "playerLevelRange": [
+      1,
+      10
+    ],
+    "acceptanceMode": "fashion-playable-mapping-original-thresholds-pending",
+    "publicBehaviorChecks": [
+      "生产器持续出料",
+      "相同物品二合升级",
+      "顾客订单直接消耗合成产物并发放经营奖励",
+      "能量限制与生产恢复",
+      "修复/经营推进与人物剧情联动"
+    ],
+    "localRouteChecks": [
+      "新档从设计师 1 级开始",
+      "十份教学委托顺序推进到 10 级",
+      "1–10 级内逐步开放裁缝、造型、制鞋、皮具四组生产器",
+      "订单需求只引用已开放且可生产的图谱节点",
+      "订单交付为原子结算，重复点击不会重复领奖"
+    ],
+    "notPubliclyVerifiable": [
+      "原作完整掉落概率与保底规则",
+      "原作每级订单刷新表、隐藏奖励和精确经验曲线",
+      "逐帧粒子、音效时长与内部冷却实现"
+    ],
+    "verdict": "可见锁定、条件提示、原地解锁、解锁后接单已实现；原作同版本逐级门槛仍待实测。",
+    "previousVersionAnchor": {
+      "version": "4.11.0",
+      "verification": "Inherited V53 note; not reverified as latest on 2026-11-04."
+    },
+    "unlockParity": "Not verified. Do not present the local level/tutorial/collection gates as original 1:1 values."
+  },
+  "producerUnlocks": {
+    "policy": "visible-locked-ready-unlocked",
+    "initialUnlocked": [
+      "tailoring"
+    ],
+    "reserveLockedCells": true,
+    "unlockCost": 0,
+    "keepCellOnUnlock": true,
+    "protectLockedToken": true,
+    "ordinaryOrdersRequireRealSource": true,
+    "legacyOwnedProducersStayUnlocked": true,
+    "pacingOrigin": "Local fashion tutorial/collection mapping; original exact unlock thresholds remain unverified.",
+    "newPlayerRange": "1–10: tailoring immediately; styling after tutorial 4; footwear after tutorial 7; leather after tutorial 9."
+  }
+}

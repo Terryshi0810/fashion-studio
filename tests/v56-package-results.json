@@ -1,0 +1,14 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "name": "390×844 signed APK startup, portraits, geometry and 5 repeated touch open/close cycles",
+      "pass": true
+    },
+    {
+      "name": "430×932 signed APK startup, portraits, geometry and 5 repeated touch open/close cycles",
+      "pass": true
+    }
+  ],
+  "deviceInstallTest": false
+}

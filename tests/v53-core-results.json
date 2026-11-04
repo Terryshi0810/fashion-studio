@@ -1,0 +1,73 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "name": "App Store benchmark metadata and ten-level route are explicit",
+      "pass": true
+    },
+    {
+      "name": "203 unique authored assets cover every item/producer grade and exact file hashes",
+      "pass": true
+    },
+    {
+      "name": "Fresh 7×9 board has three reachable orders, one producer and no clothing-name/icon alias",
+      "pass": true
+    },
+    {
+      "name": "Nearest output costs exactly one energy; full board and zero energy are atomic",
+      "pass": true
+    },
+    {
+      "name": "Merge conserves canonical units; different/max tier swaps and cancelled moves cannot lose items",
+      "pass": true
+    },
+    {
+      "name": "Delivery validates every requirement first, consumes production stock once, and cannot pay twice",
+      "pass": true
+    },
+    {
+      "name": "UI delivery adapter preserves imported high-balance saves and uses the existing currency cap",
+      "pass": true
+    },
+    {
+      "name": "Storage recall, 10-second recycle undo and split card preserve inventory",
+      "pass": true
+    },
+    {
+      "name": "Production charge fractional recovery survives save/reload; idle time cannot reset it for free",
+      "pass": true
+    },
+    {
+      "name": "V51 save migrates once without changing old materials, active orders, closet or mall",
+      "pass": true
+    },
+    {
+      "name": "All 7 families, 14 chains and 9 producer grades obey source/capacity/boost/tier constraints",
+      "pass": true
+    },
+    {
+      "name": "First 10 tutorial orders are playable by actual producer output, merge, grant and upgrade actions",
+      "pass": true
+    },
+    {
+      "name": "Publishing and drama choices award once, increase mall income, open tiles and survive reload",
+      "pass": true
+    },
+    {
+      "name": "Recurring order supply unlocks every secondary chain through real part merges without repeat grants",
+      "pass": true
+    },
+    {
+      "name": "New workshop progress opens mall expansion, second shop and outfit journal without faking legacy clothing",
+      "pass": true
+    },
+    {
+      "name": "A delayed unload save cannot disable refreshed progress, but a newer or removed save remains protected",
+      "pass": true
+    },
+    {
+      "name": "Invalid order references/duplicate item ids fail loudly without resetting progress",
+      "pass": true
+    }
+  ]
+}

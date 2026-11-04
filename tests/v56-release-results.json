@@ -1,0 +1,15 @@
+{
+  "pass": true,
+  "coreChecks": 24,
+  "uiChecks": 24,
+  "packageChecks": 2,
+  "assetCount": 396,
+  "portraitCount": 6,
+  "originalPortraitsUnchanged": true,
+  "v55RollbackUnchanged": true,
+  "deviceInstallTest": false,
+  "hashes": {
+    "artifacts/FashionStudio-V56-1080x1920.apk": "f08b9b509e8d48c081b56a72738f176561c5c8318d1248fd0108eb45e7c26e70",
+    "artifacts/FashionStudio-V56-MobileWeb.zip": "a2e12f2189537b907b7c972d5b83e3b04b80a2698e2728e66f2e04c574eb261d"
+  }
+}
